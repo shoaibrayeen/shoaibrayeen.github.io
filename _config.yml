@@ -1,1 +1,11 @@
+# basic options
+title: Shoaib Rayeen
+author: Shoaib Rayeen
+email: shoaib.mca17.du@gmail.com
+description: My Website
+twitter_username: shoaibrayeen
+github_username: shoaibrayeen
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-hacker
