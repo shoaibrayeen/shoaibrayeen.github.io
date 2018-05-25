@@ -1,0 +1,11 @@
+# basic options
+title: Shoaib Rayeen
+author: Shoaib Rayeen
+email: shoaib.mca17.du@gmail.com
+description: A wonderful site
+twitter_username: shoaibrayeen
+github_username: shoaibrayeen
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
