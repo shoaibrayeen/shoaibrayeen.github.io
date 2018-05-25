@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 ---
-## Index
+# Index
 
 1. [Resume](/doc/resume)
 2. Index 1 
