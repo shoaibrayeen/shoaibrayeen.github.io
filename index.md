@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: default
 ---
-# [Resume](/doc/resume)
-## Contact
+## Index
 
-1. [Facebook](https://www.facebook.com/MohdShoaibRayeen)
-2. [Linkedin](https://www.linkedin.com/in/shoaibrayeen)
-3. [Instagram](https://www.instagram.com/shoaibrayeen)
+1. [Resume](/doc/resume)
+2. Index 1 
+3. Index 2
+4. Index 3
+5. Index 4
+6. Index 5
+7. Index 6
