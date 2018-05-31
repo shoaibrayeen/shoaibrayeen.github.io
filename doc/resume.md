@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Mohd Shoaib Rayeen
-permalink: /resume/
+permalink: /doc/resume/
 ---
 
 # Mohd Shoaib Rayeen                          
