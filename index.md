@@ -2,8 +2,6 @@
 layout: page
 title: Index
 ---
-####
-
 1. [Resume](/doc/resume)
 2. Index 1 
 3. Index 2
