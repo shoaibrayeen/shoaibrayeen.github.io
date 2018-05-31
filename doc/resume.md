@@ -1,3 +1,9 @@
+---
+layout: page
+title: Mohd Shoaib Rayeen
+permalink: /resume/
+---
+
 # Mohd Shoaib Rayeen                          
 #### Student ,  M.C.A.
 
