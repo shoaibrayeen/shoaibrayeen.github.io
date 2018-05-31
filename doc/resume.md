@@ -4,7 +4,6 @@ title: Mohd Shoaib Rayeen
 permalink: /doc/resume/
 ---
 
-# Mohd Shoaib Rayeen                          
 #### Student ,  M.C.A.
 
 #### **Github :** _[Github Profile](https://github.com/shoaibrayeen)_
