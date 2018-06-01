@@ -29,7 +29,8 @@ permalink: /doc/resume/
 #### ● [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699) - Interesting facts about football
 ### Actions on Google
 #### ● [Brain Teaser](https://assistant.google.com/services/a/uid/000000f87db14c78) - Implemented game on Data Structure Concepts
-#### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game Blood Relation Concepts
+#### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
+#### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 
 ## Position of Responsibility
 ### Equinox , Hansraj College — _Head Organizer_
