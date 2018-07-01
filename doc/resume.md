@@ -2,9 +2,9 @@
 layout: page
 title: Mohd Shoaib Rayeen
 permalink: /doc/resume/
+background: #5A0000
+color: #fff
 ---
-<!-- background: #5A0000  -->
-<!-- color: #fff -->
 
 #### Student ,  M.C.A.
 
