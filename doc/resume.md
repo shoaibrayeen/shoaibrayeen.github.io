@@ -2,8 +2,6 @@
 layout: page
 title: Mohd Shoaib Rayeen
 permalink: /doc/resume/
-background: red
-color: blue
 ---
 
 #### Student ,  M.C.A.
@@ -24,7 +22,7 @@ color: blue
 #### ● Implemented Basic Probability and Statistics Functions
 
 ## Technical Skills and Activities
-### Programming Languages : C++ , Python , C , R , Shell Script , Java 
+### Programming Languages : C++ , Python , C , R , Shell Scripting , Java 
 ### Amazon Alexa Skills
 #### ● [Cricket Fact](https://www.amazon.com/gp/product/B07BQ3WKGD) - Interesting facts about Men Cricket
 #### ● [Prime Learn](https://www.amazon.com/gp/product/B07C7MFDH6) - Interesting facts about basic Mathematics
