@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume
+title: Mohd Shoaib Rayeen
 permalink: /doc/resume/
 ---
 
