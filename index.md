@@ -7,6 +7,6 @@ title: Index
 3. How to think logic of a program
 4. Amazon Alexa
 5. Google Assistant Action SDK
-6. How to prapare for Entrance Exam
+6. How to prepare for Entrance Exam
 7. Way to be expert in A Specific Programming Language
 8. How to be better in communication
