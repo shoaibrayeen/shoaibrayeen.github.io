@@ -12,4 +12,4 @@ title: About
 #### ● [How to start a new programming Language](/doc/start_a_new_programming_language) 
 
 
-### Here is my [Resume](/doc/resume). It could be useful if you are an recruiter.
+### Here is my [Resume](/doc/resume). It could be useful if you are a recruiter.
