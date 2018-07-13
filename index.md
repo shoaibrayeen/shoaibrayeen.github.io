@@ -1,15 +1,25 @@
 ---
-layout: page
-title: About
+layout: homepage
+title: Shoaib Rayeen
+imageURL: /images/ShoaibRayeen.jpg
 ---
 
-### This is **_Shoaib Rayeen_**. I am currently pursuing Master of Computer Applications at Department of Computer Science , University of Delhi. I am familiar with _[C](https://github.com/shoaibrayeen/Cplusplus-and-C) , [C++](https://github.com/shoaibrayeen/Cplusplus-and-C) , [Python](https://github.com/shoaibrayeen/Python) , [R](https://github.com/shoaibrayeen/R) , [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc) , [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming) , [Assembly Language ( MASM and EMU8086 ) ](https://github.com/shoaibrayeen/Assembly-Language) and [Java](https://github.com/shoaibrayeen/Java)_. Apart from programming languages , I have developed some skills such as :  
+<p style="text-align: center; font-size: 2em">
+Hi, This is Shoaib Rayeen.
+</p>
+I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
+I am familiar with [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
+[Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
+[LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
+[Assembly Language](https://github.com/shoaibrayeen/Assembly-Language).
 
-#### ● [Amazon Alexa](/doc/amazon_alexa)
-#### ● [Actions on Google](/doc/Actions_on_Google)
+Apart from programming languages, I have developed some skills such as :
 
-### I tried to write an article for beginners that might be useful for them.
-#### ● [How to start a new programming Language](/doc/start_a_new_programming_language) 
+- [Amazon Alexa Skills](/doc/amazon_alexa)
+- [Actions on Google](/doc/Actions_on_Google)
 
+I'm also an occasional writer -
 
-### Here is my [Resume](/doc/resume). It could be useful if you are a recruiter.
+- [How to start a new programming Language](/doc/how-to-start-a-new-programming-language)
+
+##### If you are a recruiter, you may want to see my [Resume](/doc/resume).
