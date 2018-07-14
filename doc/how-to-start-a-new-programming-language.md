@@ -4,7 +4,7 @@ title: How to start a new programming language
 permalink: /doc/how-to-start-a-new-programming-language/
 ---
 
-When we want to learn a new programming language, we often think how to start and where to start. The best way to learn anything is on your own, and the best time to start is right now.
+When we want to learn a new programming language, we often think how to start and where to start. The best way to learn anything is by your own, and the best time to start is right now.
 
 I suggest the following steps :
 
