@@ -17,8 +17,7 @@ The Following Alexa skills are developed by me -
 **Enable Alexa Skills** through Mobile Phone by following some steps -
 
 - Download [Amazon Alexa](https://play.google.com/store/apps/details?id=com.amazon.dee.app) app.
-- Download [Reverb](https://play.google.com/store/apps/details?id=agency.rain.android.alexa) app.
-- Login with **Amazon developer Account** to both apps.
-- Open **Reverb** app and Try any skill. For Example , say - "Alexa Open Science Inventions" and respond accordingly.
+- Login with **Amazon developer Account**.
+- Tap to middle icon and say For Example - "Alexa Open Science Inventions" and respond accordingly.
 
 By Following such steps , you can enable any skill through your mobile phone.
