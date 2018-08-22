@@ -13,6 +13,7 @@ The Following Alexa skills are developed by me -
 - [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699) - Interesting facts about football
 - [Brain Teaser](https://www.amazon.com/gp/product/B07DGS3LJV) - Interesting facts about C and C++
 - [Science Inventions ](https://www.amazon.com/gp/product/B07FFRVGYK) - Quiz Game based on Inventions and their Inventor(s)
+- [Catch Exception](https://www.amazon.com/dp/product/B07GNLY7SL) - Trivia game on Odd Man Out
 
 **Enable Alexa Skills** through Mobile Phone by following some steps -
 
