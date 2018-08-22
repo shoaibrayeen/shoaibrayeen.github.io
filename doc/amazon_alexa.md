@@ -19,6 +19,6 @@ The Following Alexa skills are developed by me -
 
 - Download [Amazon Alexa](https://play.google.com/store/apps/details?id=com.amazon.dee.app) app.
 - Login with **Amazon developer Account**.
-- Tap to middle icon and say For Example - "Alexa Open Science Inventions" and respond accordingly.
+- Tap to middle icon and say For Example - "Alexa Open Catch Exception" and respond accordingly.
 
 By Following such steps , you can enable any skill through your mobile phone.
