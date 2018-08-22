@@ -8,12 +8,12 @@ Amazon Alexa is a virtual assistant developed by Amazon. Alexa provides capabili
 
 The Following Alexa skills are developed by me -
 
-- [Cricket Fact](https://www.amazon.com/gp/product/B07BQ3WKGD) - Interesting facts about Men Cricket
-- [Prime Learn](https://www.amazon.com/gp/product/B07C7MFDH6) - Interesting facts about basic Mathematics
+- [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD) - Interesting facts about Men Cricket
+- [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6) - Interesting facts about basic Mathematics
 - [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699) - Interesting facts about football
-- [Brain Teaser](https://www.amazon.com/gp/product/B07DGS3LJV) - Interesting facts about C and C++
-- [Science Inventions ](https://www.amazon.com/gp/product/B07FFRVGYK) - Quiz Game based on Inventions and their Inventor(s)
-- [Catch Exception](https://www.amazon.com/dp/product/B07GNLY7SL) - Trivia game on Odd Man Out
+- [Brain Teaser](https://www.amazon.in/gp/product/B07DGS3LJV) - Interesting facts about C and C++
+- [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK) - Quiz Game based on Inventions and their Inventor(s)
+- [Catch Exception](https://www.amazon.in/dp/product/B07GNLY7SL) - Trivia game on Odd Man Out
 
 **Enable Alexa Skills** through Mobile Phone by following some steps -
 
