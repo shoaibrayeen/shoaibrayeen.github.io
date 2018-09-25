@@ -30,6 +30,7 @@ permalink: /doc/resume/
 #### ● [Brain Teaser](https://www.amazon.in/gp/product/B07DGS3LJV) - Interesting facts about C and C++
 #### ● [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK) - Quiz Game based on Inventions and their Inventor(s)
 #### ● [Catch Exception](https://www.amazon.in/dp/product/B07GNLY7SL) - Trivia game on Odd Man Out
+#### ●  [Artificial Intelligence Trivia](https://www.amazon.in/dp/product/B07HMPSGG7) - Trivia game on AI and its working
 ### Actions on Google
 #### ● [Brain Teaser](https://assistant.google.com/services/a/uid/000000f87db14c78) - Implemented game on Data Structure Concepts
 #### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
