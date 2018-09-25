@@ -14,6 +14,7 @@ The Following Alexa skills are developed by me -
 - [Brain Teaser](https://www.amazon.in/gp/product/B07DGS3LJV) - Interesting facts about C and C++
 - [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK) - Quiz Game based on Inventions and their Inventor(s)
 - [Catch Exception](https://www.amazon.in/dp/product/B07GNLY7SL) - Trivia game on Odd Man Out
+- [Artificial Intelligence Trivia](https://www.amazon.in/dp/product/B07HMPSGG7) - Trivia game on AI and its working
 
 **Enable Alexa Skills** through Mobile Phone by following some steps -
 
