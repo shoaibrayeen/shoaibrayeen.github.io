@@ -39,7 +39,7 @@ permalink: /doc/resume/
 #### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
 #### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 #### ● [Artificial Intelligence Trivia](https://assistant.google.com/services/a/uid/000000651e98d7e8) - Trivia game on Artificial Intelligence
-
+#### ● [JAVA Trivia](https://assistant.google.com/services/a/uid/000000b8504152e5) - Trivia on JAVA
 ## Position of Responsibility
 ### Equinox , Hansraj College — _Head Organizer_
 #### April 2016 - March 2017
