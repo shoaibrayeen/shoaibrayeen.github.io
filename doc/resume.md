@@ -40,6 +40,7 @@ permalink: /doc/resume/
 #### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 #### ● [Artificial Intelligence Trivia](https://assistant.google.com/services/a/uid/000000651e98d7e8) - Trivia game on Artificial Intelligence
 #### ● [JAVA Trivia](https://assistant.google.com/services/a/uid/000000b8504152e5) - Trivia on JAVA
+#### ● [DBMS Trivia](https://assistant.google.com/services/a/uid/000000407760e9f1) - Trivia on DBMS
 ## Position of Responsibility
 ### Equinox , Hansraj College — _Head Organizer_
 #### April 2016 - March 2017
