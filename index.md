@@ -21,3 +21,4 @@ Apart from programming languages, I have developed some skills such as :
 I'm also an occasional writer -
 
 - [How to start a new programming Language](/doc/how-to-start-a-new-programming-language)
+- [How to Prepare for Placement](/doc/Placement)
