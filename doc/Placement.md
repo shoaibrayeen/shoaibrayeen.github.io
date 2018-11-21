@@ -12,29 +12,33 @@ permalink: /doc/Placement/
 
 ## How to Prepare for Placement
 - For Quantitative Aptitude and Logical Reasoning -> Practice at least 10 Problems of one topic
+
 ```
-Quantitative Aptitude - R.S. Aggarwal
-Quantitative Aptitude and Logical Reasoning  - JEE Mains or MCA Entrance Notes/Books
+ Quantitative Aptitude - R.S. Aggarwal
+ Quantitative Aptitude and Logical Reasoning  - JEE Mains or MCA Entrance Notes/Books
 ```
 - For CS based MCQ Round , Some points should be kept in the mind.
 
 ```
  Like , 
- - You should know about C language in depth.
- - You should know Important topics from DBMS such as Normalization , Transations ,
-   SQL , Contraints , Relational Mappings etc.
- - You should know basics about Computer Networks [ DNS , TCP , HTTPS etc. ] , 
-   Operating System [ About OS , Process Management , Memory Management etc. ] etc.
+  - You should know about C language in depth.
+  - You should know Important topics from DBMS such as Normalization , Transations ,
+    SQL , Contraints , Relational Mappings etc.
+  - You should know basics about Computer Networks [ DNS , TCP , HTTPS etc. ] , 
+    Operating System [ About OS , Process Management , Memory Management etc. ] etc.
 ```
 
 - For Data Structure and Algorithms -> MIT Tutions will be one of the best sources. 
+
 ```
-    For Algorithms -> NG Ma'am notes
-    For DS -> Any book referred by DU Guidlines
+ Another Resource ,
+  For Algorithms -> NG Ma'am notes
+  For DS -> Any book referred by DU Guidlines
 ```
 - For Beginners , Go through each Concept in depth -> [Geeksforgeeks](https://www.geeksforgeeks.org) or [HackerRank](https://www.hackerrank.com)
+
 ```
-  For Example , 
+ For Example , 
   If you are studying about Array , you should know some points about Array :-
    - Advantages of Array
    - Disvantages of Array
@@ -44,12 +48,13 @@ Quantitative Aptitude and Logical Reasoning  - JEE Mains or MCA Entrance Notes/B
 - After doing problems on Geeksforgeeks and HackerRank , Do Topic-wise problems either on [ InterviewBit ](https://www.interviewbit.com/practice/) or [HackerEarth](https://www.hackerearth.com/practice/)
 
 - Now , For Paper-Pen Coding , Start from Scratch.
+
 ```
  As Most of companies prefer C++ for Paper-Pen Coding , So You should start writing your code(s)
  on Paper-Pen and then on any of following plateforms.
-   For Unix Users , they should use g++.
-   For Window Users , they should use CodeBlocks.
-   For Mac Users , they should use xCode.
+  For Unix Users , they should use g++.
+  For Window Users , they should use CodeBlocks.
+  For Mac Users , they should use xCode.
  Some point should be kept in the mind :
   - Your program should be clean and no cross/cut should be on the page.
   - You should use Modular Programming i.e. write your code in function(s).
@@ -120,17 +125,18 @@ bool check() {
 - You should have done some projects.
 
 ```
-Like , 
- - At least 2 Projects on C , C++ , Java.
- - One project based on Client-Server.
- - One Full Stack Project.
- - One Project -> Front-end in HTML , CSS and Back-end in Java/JSP/PHP
- - [ Optional ] - One Project on any framework.
+ Like , 
+  - At least 2 Projects on C , C++ , Java.
+  - One project based on Client-Server.
+  - One Full Stack Project.
+  - One Project -> Front-end in HTML , CSS and Back-end in Java/JSP/PHP
+  - [ Optional ] - One Project on any framework.
 ```
 
 - For Preparing for Interviews , Follow [Cracking The Coding Interview](https://drive.google.com/open?id=1PbXGSAj6X4yUIuQyouV5vgUQKtpCePJC) book.
+
 ```
-Make a group of 5-6 students and practice for interviews after reading the book.
+  Make a group of 5-6 students and practice for interviews after reading the book.
 ```
 
 ## Placement Round(s)
