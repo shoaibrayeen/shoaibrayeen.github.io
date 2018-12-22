@@ -48,9 +48,9 @@ a:visited { color: #205caa; }
   background-color: white;
 }
 
-.site-title1,
-.site-title1:hover,
-.site-title1:visited {
+.site-title_blog,
+.site-title_blog:hover,
+.site-title_blog:visited {
   display: block;
   color: #333;
   font-size: 26px;
