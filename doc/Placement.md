@@ -14,8 +14,8 @@ permalink: /doc/Placement/
 - For Quantitative Aptitude and Logical Reasoning -> Practice at least 10 Problems of one topic
 
 ```
- Quantitative Aptitude - R.S. Aggarwal
- Quantitative Aptitude and Logical Reasoning  - JEE Mains or MCA Entrance Notes/Books
+ Quantitative Aptitude - R.S. Aggarwal OR Arun Sharma
+ Quantitative Aptitude and Logical Reasoning  - MCA Entrance Notes/Books
 ```
 - For CS based MCQ Round , Some points should be kept in the mind.
 
@@ -32,7 +32,7 @@ permalink: /doc/Placement/
 
 ```
  Another Resource ,
-  For Algorithms -> NG Ma'am notes
+  For Algorithms -> Cormen
   For DS -> Any book referred by DU Guidlines
 ```
 - For Beginners , Go through each Concept in depth -> [Geeksforgeeks](https://www.geeksforgeeks.org) or [HackerRank](https://www.hackerrank.com)
