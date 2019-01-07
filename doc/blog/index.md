@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Actions on Google
+title: Blog index
 permalink: /doc/blog/index
 ---
 
