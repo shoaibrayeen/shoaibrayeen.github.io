@@ -15,9 +15,6 @@ The Following Alexa skills are developed by me -
 - [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK)
 - [Catch Exception](https://www.amazon.in/dp/product/B07GNLY7SL)
 - [Artificial Intelligence Trivia](https://www.amazon.in/dp/product/B07HMPSGG7)
-- [Random Fact](https://www.amazon.in/dp/product/B07J17DY8)
-- [Amazing Fact](https://www.amazon.in/dp/B07J1HW9JW)
-- [Unknown Fact](https://www.amazon.in/dp/B07J1WQSPB)
 
 **Enable Alexa Skills** through Mobile Phone by following some steps -
 
