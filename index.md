@@ -7,9 +7,13 @@ imageURL: /images/ShoaibRayeen.jpg
 <p style="text-align: center; font-size: 3em">
 Shoaib Rayeen
 </p>
-<p style="text-align: center; color: #00CCFF; font-size: 1.4em">
-Alexa Student Influencer, Chegg Expert
+<p style="text-align: center; color: #FF8050; font-size: 1.4em">
+[Chegg Expert](https://github.com/CheggEng)
 </p>
+<p style="text-align: center; color: #1589FF; font-size: 1.4em">
+[Alexa Student Influencer](https://developer.amazon.com/en-in/alexa/alexa-student-influencer)
+</p>
+
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
 I am familiar with [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
