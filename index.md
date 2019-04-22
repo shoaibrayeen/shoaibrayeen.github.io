@@ -7,7 +7,7 @@ imageURL: /images/ShoaibRayeen.jpg
 <p style="text-align: center; font-size: 3em">
 Shoaib Rayeen
 </p>
-<p style="text-align: center; font-size: 1.4em">
+<p style="text-align: center; color: #00CCFF; font-size: 1.4em">
 Alexa Student Influencer, Chegg Expert
 </p>
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
