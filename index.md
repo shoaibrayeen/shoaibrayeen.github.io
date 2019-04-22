@@ -7,6 +7,9 @@ imageURL: /images/ShoaibRayeen.jpg
 <p style="text-align: center; font-size: 2em">
 Hi, This is Shoaib Rayeen.
 </p>
+<p style="text-align: center; font-size: 1em">
+Alexa Student Influence, Chegg Expert
+</p>
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
 I am familiar with [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
