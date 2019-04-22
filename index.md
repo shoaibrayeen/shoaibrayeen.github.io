@@ -7,11 +7,11 @@ imageURL: /images/ShoaibRayeen.jpg
 <p style="text-align: center; font-size: 3em">
 Shoaib Rayeen
 </p>
-<p style="text-align: center; color: #FF8050; font-size: 1.4em">
-  <a href="https://www.chegg.com/my/expertqa" target="_self">Chegg Expert</a>
+<p style="text-align: center; color: #FF8050; font-size: 1.3em">
+Chegg Expert
 </p>
-<p style="text-align: center; color: #1589FF; font-size: 1.4em">
-  <a href="https://developer.amazon.com/en-in/alexa/alexa-student-influencer" target="_self">Alexa Student Influencer</a>
+<p style="text-align: center; color: #1589FF; font-size: 1.3em">
+Alexa Student Influencer
 </p>
 
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
