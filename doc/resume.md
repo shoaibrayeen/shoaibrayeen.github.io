@@ -2,7 +2,6 @@
 layout: homepage
 title: Mohd Shoaib Rayeen
 imageURL: /ShoaibRayeen.jpg
-permalink: /doc/resume/
 ---
 <p style="text-align: center; font-size: 3em">
 Mohd Shoaib Rayeen
