@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mohd Shoaib Rayeen
+title: All Skill Ids
 permalink: /doc/SkillIds/
 ---
 
