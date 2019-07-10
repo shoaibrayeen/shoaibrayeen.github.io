@@ -1,17 +1,21 @@
 ---
-layout: page
+layout: homepage
 title: Mohd Shoaib Rayeen
+imageURL: ../images/ShoaibRayeen.jpg
 permalink: /doc/resume/
 ---
-
-#### ALEXA STUDENT INFLUENCER, AMAZON
-
+<p style="text-align: center; font-size: 3em">
+Mohd Shoaib Rayeen
+</p>
+<p style="text-align: center; font-size: 1.5em">
+Alexa Studen Influencer, Amazon
+</p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Email :** _shoaib.mca17.du@gmail.com_
 #### **Mobile :** _**+91-(818)-181-3999**_
 
-<p style="text-align: left; color: #FF7F50; font-size: 2em">
+<p style="text-align: left; color: #FF6347; font-size: 2em">
   Education 
 </p>
 ### Department of Computer Science , University of Delhi — _Master of Computer Applications_ 
@@ -19,7 +23,7 @@ permalink: /doc/resume/
 ###  Hansraj College , University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
 
-<p style="text-align: left; color: #FF7F50; font-size: 2em">
+<p style="text-align: left; color: #FF6347; font-size: 2em">
   Project
 </p>
 ### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
@@ -31,7 +35,7 @@ permalink: /doc/resume/
 ### [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
 #### ● Prediction of Heart Disease for the given data using Regression Model
 
-<p style="text-align: left; color: #FF7F50; font-size: 2em">
+<p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
 </p>
 ### Programming Languages : _C++, Python, C, R, Shell Scripting, Java _ 
@@ -48,12 +52,12 @@ permalink: /doc/resume/
 #### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
 #### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 #### ● [Artificial Intelligence Trivia](https://assistant.google.com/services/a/uid/000000651e98d7e8) - Trivia game on Artificial Intelligence
-<p style="text-align: left; color: #FF7F50; font-size: 2em">
+<p style="text-align: left; color: #FF6347; font-size: 2em">
   Position of Responsibility
 </p>
-### Amazon Alexa, Amazon — Alexa Student Influencer
+### Amazon Alexa, Amazon — _Alexa Student Influencer_
 #### March 2019 - Present
-### Chegg — Chegg Subject Expert
+### Chegg — _Chegg Subject Expert_
 #### October 2018 - Present
 ### Equinox , Hansraj College — _Head Organizer_
 #### April 2016 - March 2017
@@ -62,7 +66,7 @@ permalink: /doc/resume/
 ### Haritima , Hansraj College — _Senior Coordinator_
 #### July 2016 - April 2017
 
-<p style="text-align: left; color: #FF7F50; font-size: 2em">
+<p style="text-align: left; color: #FF6347; font-size: 2em">
   Notable Achievements
 </p>
 ### Awarded by Akhilesh Yadav , _Former Chief Minister of Uttar Pradesh_
