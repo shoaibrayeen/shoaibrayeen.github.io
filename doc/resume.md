@@ -1,12 +1,9 @@
 ---
-layout: homepage
+layout: page
 title: Mohd Shoaib Rayeen
 permalink: /doc/resume/
 ---
 
-<p style="text-align: center; font-size: 3em">
-Mohd Shoaib Rayeen
-</p>
 <p style="text-align: center; font-size: 1.5em">
 Alexa Studen Influencer, Amazon
 </p>
