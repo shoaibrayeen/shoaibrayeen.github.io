@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: Mohd Shoaib Rayeen
-imageURL: ../images/ShoaibRayeen.jpg
+imageURL: /ShoaibRayeen.jpg
 permalink: /doc/resume/
 ---
 <p style="text-align: center; font-size: 3em">
