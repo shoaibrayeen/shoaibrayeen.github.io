@@ -21,22 +21,12 @@ Alexa Studen Influencer, Amazon
 #### July 2014 - June 2017 - First Division - _88.41%_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
-  Project
-</p>
-### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
-#### ● Implemented Basic Probability and Statistics Functions
-### [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
-#### ● Implemented FTP application between a server and client(s) using sockets
-### [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
-#### ● Simulate Getblk Algorithm that handles the allocation of buffers to processes
-### [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
-#### ● Prediction of Heart Disease for the given data using Regression Model
-
-<p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
 </p>
-### Programming Languages : _C++, Python, C, R, Shell Scripting, Java _ 
-### Amazon Alexa Skills
+### Programming Languages : _C++, Python, C, R, Shell Scripting, Java_ 
+### Front-End Development Skill : _HTML, CSS, Javascript_
+### Database : _DynamoDB, MySQL_
+### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
 #### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)
 #### ● [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699)
@@ -49,6 +39,21 @@ Alexa Studen Influencer, Amazon
 #### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
 #### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 #### ● [Artificial Intelligence Trivia](https://assistant.google.com/services/a/uid/000000651e98d7e8) - Trivia game on Artificial Intelligence
+
+<p style="text-align: left; color: #FF6347; font-size: 2em">
+  Project
+</p>
+### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
+#### ● Implemented Basic Probability and Statistics Functions
+### [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
+#### ● Implemented FTP application between a server and client(s) using sockets
+### [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
+#### ● Simulate Getblk Algorithm that handles the allocation of buffers to processes
+### [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
+#### ● Prediction of Heart Disease for the given data using KNN Model
+### [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
+#### ● Development of My website using github pages - https://shoaibrayeen.github.io
+
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Position of Responsibility
 </p>
@@ -58,9 +63,9 @@ Alexa Studen Influencer, Amazon
 #### October 2018 - Present
 ### Equinox , Hansraj College — _Head Organizer_
 #### April 2016 - March 2017
-### Society of General Awareness , Hansraj College — _Senior Coordinator_
+### Society of General Awareness , Hansraj College — _Senior Co-ordinator_
 #### July 2016 - April 2017
-### Haritima , Hansraj College — _Senior Coordinator_
+### Haritima , Hansraj College — _Senior Co-ordinator_
 #### July 2016 - April 2017
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
