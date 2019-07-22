@@ -69,7 +69,7 @@ Alexa Studen Influencer, Amazon
 #### July 2016 - April 2017
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
-  Notable Achievements
+ Achievements
 </p>
 ### Awarded by Akhilesh Yadav , _Former Chief Minister of Uttar Pradesh_
 #### August 2014 - _17th Rank in Uttar Pradesh_
