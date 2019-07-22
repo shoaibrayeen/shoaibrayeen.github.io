@@ -10,7 +10,7 @@ Alexa Studen Influencer, Amazon
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Email :** _shoaib.mca17.du@gmail.com_
-#### **Mobile :** _**+91-(818)-181-3999**_
+#### **Mobile :** _**+91-8181813999**_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Education 
