@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Blog index
+title: Chapters
 permalink: /doc/blog/index
 ---
 
-## Under Processing
+## [Love](./chapter1)
+## [Friends](./chapter2)
+ 
