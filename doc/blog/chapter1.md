@@ -5,7 +5,7 @@ permalink: /doc/blog/chapter1
 ---
 
 <p style = "color: #000080; font-size: 1.4em">
-   There are two types of People - one who gets love and another who does not. I am kind of the second type.
+There are two types of People - one who gets love and another who does not. I am kind of the second type.
 </p>
 
 <p style = "color: #000080; font-size: 1.4em">
