@@ -12,4 +12,4 @@ permalink: /doc/Algorithms/
 
 Here's some links related to Algorithms :
 - [Algorithm Design Techniques](https://github.com/shoaibrayeen/Algorithms/blob/master/readMe.md)
-- [Assignment](https://github.com/shoaibrayeen/Algorithms/tree/master/ASSIGNMENTS_MCA_3RD_SEM) 
+- [Assignment](https://github.com/shoaibrayeen/Course-Work/tree/master/Algorithms/Assignment) 
