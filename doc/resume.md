@@ -5,7 +5,7 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Alexa Studen Influencer, Amazon
+Software Development Engineer, PropTiger
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
@@ -16,9 +16,38 @@ Alexa Studen Influencer, Amazon
   Education 
 </p>
 ### Department of Computer Science , University of Delhi — _Master of Computer Applications_ 
-#### July 2017 - June 2020 - _85.00%_ ( Till III Semester )
+#### July 2017 - June 2020 - _83.25%_ ( Till IV Semester )
 ###  Hansraj College , University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
+### Sachidanand Inter College, U.P. Board — _12th_
+#### July 2013 - May 2014 - First Division - 94.00%
+### Sachidanand Inter College, U.P. Board — _10th_
+#### July 2011 - May 2012 - First Division - 87.83%
+
+<p style="text-align: left; color: #FF6347; font-size: 2em">
+  Experience
+</p>
+### [PropTiger](http://proptiger.com/) — _Software Development Engineer Intern_ 
+#### Jan 2020 - Present
+
+
+<p style="text-align: left; color: #FF6347; font-size: 2em">
+  Project
+</p>
+### [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
+#### ● Implemented chatbot using AIML and UI using Flask, HTML, CSS and Javascript
+### [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
+#### ● Detecting A person is sleeping or yawning while driving and alerting accordingly
+### [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
+#### ● Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
+### [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
+#### ● Prediction of Heart Disease for the given data using KNN Model
+### [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
+#### ● Implemented FTP application between a server and client(s) using sockets
+### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
+#### ● Implemented Basic Probability and Statistics Functions
+### [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
+#### ● Development of My website using the github pages - https://shoaibrayeen.github.io
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
@@ -34,25 +63,12 @@ Alexa Studen Influencer, Amazon
 #### ● [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK)
 #### ● [Catch Exception](https://www.amazon.in/dp/product/B07GNLY7SL)
 #### ● [Artificial Intelligence Trivia](https://www.amazon.in/dp/product/B07HMPSGG7)
+#### ● [Odd Man Out](https://www.amazon.in/dp/product/B081TYDS78)
 ### Actions on Google
 #### ● [Brain Teaser](https://assistant.google.com/services/a/uid/000000f87db14c78) - Implemented game on Data Structure Concepts
 #### ● [Red Relation](https://assistant.google.com/services/a/uid/0000007832c77e08) - Implemented game on Blood Relation Concepts
 #### ● [Country Abbr Trivia](https://assistant.google.com/services/a/uid/000000ca2b057b79) - Implemented game on Country Abbreviation
 #### ● [Artificial Intelligence Trivia](https://assistant.google.com/services/a/uid/000000651e98d7e8) - Trivia game on Artificial Intelligence
-
-<p style="text-align: left; color: #FF6347; font-size: 2em">
-  Project
-</p>
-### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
-#### ● Implemented Basic Probability and Statistics Functions
-### [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
-#### ● Implemented FTP application between a server and client(s) using sockets
-### [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
-#### ● Simulate Getblk Algorithm that handles the allocation of buffers to processes
-### [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
-#### ● Prediction of Heart Disease for the given data using KNN Model
-### [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
-#### ● Development of My website using github pages - https://shoaibrayeen.github.io
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Position of Responsibility
