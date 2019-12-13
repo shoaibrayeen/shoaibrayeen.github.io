@@ -8,17 +8,20 @@ imageURL: /images/ShoaibRayeen.jpg
 Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Chegg Expert
+Software Development Engineer, PropTiger
 </p>
 <p style="text-align: center; color: #1589FF; font-size: 1.3em">
 Alexa Student Influencer
+</p>
+<p style="text-align: center; color: #FF8050; font-size: 1.3em">
+Chegg Expert
 </p>
 
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
 I am familiar with [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
-[Assembly Language](https://github.com/shoaibrayeen/Assembly-Language).
+[Assembly Language](https://github.com/shoaibrayeen/Assembly-Language). I have used DynamoDB and MySQL as Databases.
 
 Apart from programming languages, I have developed some skills such as :
 
