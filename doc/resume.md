@@ -9,15 +9,16 @@ Software Development Engineer, PropTiger
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
+#### **Twitter :** _[@shoaibrayeen/](https://twitter.com/Shoaibrayeen)_
 #### **Email :** _shoaib.mca17.du@gmail.com_
 #### **Mobile :** _**+91-8181813999**_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Education 
 </p>
-### Department of Computer Science , University of Delhi — _Master of Computer Applications_ 
+### Department of Computer Science, University of Delhi — _Master of Computer Applications_ 
 #### July 2017 - June 2020 - _83.25%_ ( Till IV Semester )
-###  Hansraj College , University of Delhi — _B.Sc. (H.) Computer Science_
+###  Hansraj College, University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
 ### Sachidanand Inter College, U.P. Board — _12th_
 #### July 2013 - May 2014 - First Division - 94.00%
@@ -28,8 +29,9 @@ Software Development Engineer, PropTiger
   Experience
 </p>
 ### [PropTiger](http://proptiger.com/) — _Software Development Engineer Intern_ 
-#### Jan 2020 - Present
-
+#### January 2020 - Present
+### ChatSpot - _Co-Author of Chatbot Report 2019_
+#### December 2019 - Present
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Project
