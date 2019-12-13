@@ -9,7 +9,7 @@ Software Development Engineer, PropTiger
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
-#### **Twitter :** _[@shoaibrayeen/](https://twitter.com/Shoaibrayeen)_
+#### **Twitter :** _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
 #### **Email :** _shoaib.mca17.du@gmail.com_
 #### **Mobile :** _**+91-8181813999**_
 
@@ -37,7 +37,7 @@ Software Development Engineer, PropTiger
   Project
 </p>
 ### [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
-#### ● Implemented chatbot using AIML and UI using Flask, HTML, CSS and Javascript
+#### ● Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 ### [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
 #### ● Detecting A person is sleeping or yawning while driving and alerting accordingly
 ### [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
