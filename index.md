@@ -41,12 +41,14 @@ I have completed the following Projects :
 - [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
   - Development of My website using the github pages - https://shoaibrayeen.github.io
 
-Apart from programming languages, I have developed some skills such as :
+I have built the following games based on Artificial Intelligence :
+- [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
+- [Tic Toc Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
 
+I have worked on Voice Apps such as :
 - [Amazon Alexa Skills](/doc/amazon_alexa)
 - [Actions on Google](/doc/Actions_on_Google)
 
 I'm also an occasional writer -
-
 - [How to start a new programming Language](/doc/how-to-start-a-new-programming-language)
 - [How to Prepare for Placement](/doc/Placement)
