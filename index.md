@@ -25,21 +25,21 @@ I am familiar with [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [
 
 I have completed the following Projects :
 - [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
-  ● Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
+  - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 - [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
-  ● Detecting A person is sleeping or yawning while driving and alerting accordingly
+  - Detecting A person is sleeping or yawning while driving and alerting accordingly
 - [Cats or Dogs](https://github.com/shoaibrayeen/Course-Work/tree/master/Neural%20Network/Cats%20or%20Dogs) - _Keras, Python_
-  ● Detecting that the image has a dog or a cat
+  - Detecting that the image has a dog or a cat
 - [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
-  ● Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
+  - Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
 - [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
-  ● Prediction of Heart Disease for the given data using KNN Model
+  - Prediction of Heart Disease for the given data using KNN Model
 - [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
-  ● Implemented FTP application between a server and client(s) using sockets
+  - Implemented FTP application between a server and client(s) using sockets
 - [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
-  ● Implemented Basic Probability and Statistics Functions
+  - Implemented Basic Probability and Statistics Functions
 - [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
-  ● Development of My website using the github pages - https://shoaibrayeen.github.io
+  - Development of My website using the github pages - https://shoaibrayeen.github.io
 
 Apart from programming languages, I have developed some skills such as :
 
