@@ -14,7 +14,7 @@ Software Development Engineer, PropTiger
 Alexa Student Influencer
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Chegg Expert
+Subject Expert(CS), Chegg
 </p>
 
 I am currently pursuing Master of Computer Applications at Department of Computer Science, University of Delhi. 
