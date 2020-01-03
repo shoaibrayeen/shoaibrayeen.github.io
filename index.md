@@ -43,7 +43,7 @@ I have completed the following Projects :
 
 I have built the following games based on Artificial Intelligence :
 - [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
-- [Tic Toc Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
+- [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
 
 I have worked on Voice Apps such as :
 - [Amazon Alexa Skills](/doc/amazon_alexa)
