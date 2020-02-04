@@ -5,13 +5,20 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer, PropTiger
+Software Development Engineer Intern, PropTiger
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Twitter :** _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
 #### **Email :** _shoaib.mca17.du@gmail.com_
 #### **Mobile :** _**+91-8181813999**_
+
+<p style="text-align: left; color: #FF6347; font-size: 2em">
+  Experience
+</p>
+### [PropTiger](http://proptiger.com/) — _Software Development Engineer Intern_ 
+#### 6th January 2020 - Present
+
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Education 
@@ -26,16 +33,9 @@ Software Development Engineer, PropTiger
 #### July 2011 - May 2012 - First Division - 87.83%
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
-  Experience
-</p>
-### [PropTiger](http://proptiger.com/) — _Software Development Engineer Intern_ 
-#### January 2020 - Present
-### ChatSpot - _Co-Author of Chatbot Report 2019_
-#### December 2019 - Present
-
-<p style="text-align: left; color: #FF6347; font-size: 2em">
   Project
 </p>
+### [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
 ### [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
 #### ● Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 ### [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
@@ -54,9 +54,9 @@ Software Development Engineer, PropTiger
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
 </p>
-### Programming Languages : _C++, Python, C, R, Shell Scripting, Java_ 
-### Front-End Development Skill : _HTML, CSS, Javascript_
-### Database : _DynamoDB, MySQL_
+### Programming Languages : _C++, Python,Ruby, C, R, Shell Scripting, Java_ 
+### Database : _PostgreSQL_
+### Framework : Rails
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
 #### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)
