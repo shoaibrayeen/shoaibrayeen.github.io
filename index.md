@@ -13,9 +13,6 @@ Software Development Engineer Intern, PropTiger
 <p style="text-align: center; color: #1589FF; font-size: 1.3em">
 Alexa Student Influencer, Amazon
 </p>
-<p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Subject Expert ( Computer Science ), Chegg
-</p>
 
 I am a Software Development Engineer Intern at Proptiger ( Housing.com ) and currently in the final year of Master of Computer Applications at Department of Computer Science, University of Delhi. 
 I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
