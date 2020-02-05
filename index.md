@@ -19,7 +19,7 @@ I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
 [Assembly Language](https://github.com/shoaibrayeen/Assembly-Language). 
-I have used PostgreSQL for Database, Rails for Framework and ElasticSearch for Searching. I am Familiar with REST API, Redis (Caching/Tokenizing) and Sidekiq (Asynchronous Processing).
+I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django and Flask for Frameworks and ElasticSearch for Searching. I am Familiar with REST API, Redis (Caching/Tokenizing) and Sidekiq (Asynchronous Processing).
 
 I have completed the following Projects :
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
