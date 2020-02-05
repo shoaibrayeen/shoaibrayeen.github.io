@@ -54,9 +54,10 @@ Software Development Engineer Intern, PropTiger
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
 </p>
-### Programming Languages : _C++, Python,Ruby, C, R, Shell Scripting, Java_ 
-### Database : _PostgreSQL_
-### Framework : Rails
+### Programming Languages : _C++, Python, Ruby, C, R, Shell Scripting, Java_ 
+### Database : _PostgreSQL, MySQL, DynamoDB_
+### Framework : _Rails, Flask, Django_
+### Other Skills : _REST API, Redis, Sidekiq_
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
 #### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)
