@@ -16,7 +16,7 @@ Software Development Engineer Intern, PropTiger
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Experience
 </p>
-### [PropTiger](http://proptiger.com/) — _Software Development Engineer Intern_ 
+### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
 #### 6th January 2020 - Present
 
 
