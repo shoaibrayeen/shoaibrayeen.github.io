@@ -8,7 +8,7 @@ imageURL: /images/ShoaibRayeen.jpg
 Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Software Development Engineer Intern, Housing.com
+Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan) 
 </p>
 <p style="text-align: center; color: #1589FF; font-size: 1.3em">
 Alexa Student Influencer, Amazon
