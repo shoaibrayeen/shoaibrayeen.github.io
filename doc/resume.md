@@ -5,7 +5,7 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer Intern, PropTiger
+Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
@@ -24,7 +24,7 @@ Software Development Engineer Intern, PropTiger
   Education 
 </p>
 ### Department of Computer Science, University of Delhi — _Master of Computer Applications_ 
-#### July 2017 - June 2020 - _83.25%_ ( Till IV Semester )
+#### July 2017 - June 2020 - _82.32%_ ( Till V Semester )
 ###  Hansraj College, University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
 ### Sachidanand Inter College, U.P. Board — _12th_
@@ -56,7 +56,7 @@ Software Development Engineer Intern, PropTiger
 </p>
 ### Programming Languages : _C++, Python, Ruby, C, R, Shell Scripting, Java_ 
 ### Database : _PostgreSQL, MySQL, DynamoDB_
-### Framework : _Rails, Flask, Django_
+### Framework : _Rails, Flask, Django, Sping Boot_
 ### Other Skills : _REST API, Redis, Sidekiq_
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
