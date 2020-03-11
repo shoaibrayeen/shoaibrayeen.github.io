@@ -56,7 +56,7 @@ Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
 </p>
 ### Programming Languages : _C++, Python, Ruby, C, R, Shell Scripting, Java_ 
 ### Database : _PostgreSQL, MySQL, DynamoDB_
-### Framework : _Rails, Flask, Django, Sping Boot_
+### Framework : _Rails, Flask, Django, Spring Boot_
 ### Other Skills : _REST API, Redis, Sidekiq_
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
