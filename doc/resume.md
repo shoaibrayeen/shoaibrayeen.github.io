@@ -36,6 +36,8 @@ Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
   Project
 </p>
 ### [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
+### [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
+#### ● Shortening Long URLs and Storing in the table
 ### [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
 #### ● Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 ### [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
