@@ -17,7 +17,7 @@ Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
   Experience
 </p>
 ### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
-#### 6th January 2020 - Present
+#### 6th January 2020 - 3rd July 2020
 
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
@@ -59,10 +59,10 @@ Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
 ### Programming Languages : _C++, Python, Ruby, C, R, Shell Scripting, Java_ 
 ### Database : _PostgreSQL, MySQL, DynamoDB_
 ### Framework : _Rails, Flask, Django, Spring Boot_
-### Other Skills : _REST API, Redis, Sidekiq_
+### Other Skills : _REST API, Redis, Sidekiq, Git, JIRA, Agile Development_
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
-#### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)
+#### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)m
 #### ● [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699)
 #### ● [Brain Teaser](https://www.amazon.in/gp/product/B07DGS3LJV)
 #### ● [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK)
