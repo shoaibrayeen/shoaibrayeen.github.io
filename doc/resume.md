@@ -5,7 +5,7 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan)
+Software Development Engineer
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
