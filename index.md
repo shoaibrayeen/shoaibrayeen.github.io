@@ -8,18 +8,18 @@ imageURL: /images/ShoaibRayeen.jpg
 Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan) 
+Former Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan) 
 </p>
 <p style="text-align: center; color: #1589FF; font-size: 1.3em">
 Alexa Student Influencer, Amazon
 </p>
 
-I am a Software Development Engineer Intern at Elara Group (Housing, PropTiger & Makaan) and currently in the final year of Master of Computer Applications at Department of Computer Science, University of Delhi. 
+I am a Software Development Engineer. 
 I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
 [Assembly Language](https://github.com/shoaibrayeen/Assembly-Language). 
-I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django, Spring Boot and Flask for Frameworks and ElasticSearch for Searching. I am Familiar with REST API, Redis (Caching/Tokenizing) and Sidekiq (Asynchronous Processing).
+I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django, Spring Boot and Flask for Frameworks and ElasticSearch for Searching. I am Familiar with REST API, Redis (Caching/Tokenizing) and Sidekiq (Asynchronous Processing). I have worked in Microservice Architecture following Agile Methodology. I have knowledge of Git, JIRA, Kibaana, RPM, etc.
 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
