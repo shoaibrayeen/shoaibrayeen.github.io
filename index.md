@@ -19,7 +19,7 @@ I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
 [Assembly Language](https://github.com/shoaibrayeen/Assembly-Language). 
-I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django, Spring Boot and Flask for Frameworks and ElasticSearch for Searching. I am Familiar with REST API, Redis (Caching/Tokenizing) and Sidekiq (Asynchronous Processing). I have worked in Microservice Architecture following Agile Methodology. I have knowledge of Git, JIRA, Kibaana, RPM, etc.
+I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django, Spring Boot and Flask for Frameworks and ElasticSearch for Searching. I have working experience of Redis & Aerospike (Caching/Tokenizing), Sidekiq (Asynchronous Processing), Rspec, Rake, REST API, Microservice Architecture, Agile Development, Git, JIRA, Kibaana, Vagrant, CentOS, Confluence, RPM Interface, and Cron Server.
 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
