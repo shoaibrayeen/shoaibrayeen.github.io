@@ -51,7 +51,7 @@ Software Development Engineer
 ### [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
 #### ● Implemented Basic Probability and Statistics Functions
 ### [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
-#### ● Development of My website using the github pages - https://shoaibrayeen.github.io
+#### ● Development of My website using the github pages - [https://shoaibrayeen.github.io](https://shoaibrayeen.github.io)
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Technical Skills and Activities
@@ -59,10 +59,10 @@ Software Development Engineer
 ### Programming Languages : _C++, Python, Ruby, C, R, Shell Scripting, Java_ 
 ### Database : _PostgreSQL, MySQL, DynamoDB_
 ### Framework : _Rails, Flask, Django, Spring Boot_
-### Other Skills : _REST API, Redis, Sidekiq, Git, JIRA, Agile Development_
+### Other Skills : _REST API, Redis, Sidekiq, Git, JIRA, Agile Development, Kibaan, Rspec, RPM_
 ### Amazon Alexa Skills : _Alexa Skills Kit, Python, Nodejs_
 #### ● [Cricket Fact](https://www.amazon.in/gp/product/B07BQ3WKGD)
-#### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)m
+#### ● [Prime Learn](https://www.amazon.in/gp/product/B07C7MFDH6)
 #### ● [Foot Fact](https://www.amazon.com/gp/product/B07CTBS699)
 #### ● [Brain Teaser](https://www.amazon.in/gp/product/B07DGS3LJV)
 #### ● [Science Inventions ](https://www.amazon.in/gp/product/B07FFRVGYK)
