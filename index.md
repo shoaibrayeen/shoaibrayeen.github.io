@@ -8,13 +8,10 @@ imageURL: /images/ShoaibRayeen.jpg
 Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Former Software Development Engineer Intern, Elara Group (Housing, PropTiger & Makaan) 
-</p>
-<p style="text-align: center; color: #1589FF; font-size: 1.3em">
-Alexa Student Influencer, Amazon
+Software Development Engineer, Woovly
 </p>
 
-I am a Software Development Engineer. 
+I am a Software Development Engineer at [Woovly](https://www.woovly.com/). 
 I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
