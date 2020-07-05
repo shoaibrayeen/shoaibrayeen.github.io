@@ -5,7 +5,7 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer
+Software Development Engineer, Woovly
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
@@ -16,6 +16,8 @@ Software Development Engineer
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Experience
 </p>
+### [Woovly](https://www.woovly.com/) — _Software Development Engineer_
+#### 6th July 2020 - Present
 ### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
 #### 6th January 2020 - 3rd July 2020
 
@@ -79,9 +81,9 @@ Software Development Engineer
   Position of Responsibility
 </p>
 ### Amazon Alexa, Amazon — _Alexa Student Influencer_
-#### March 2019 - Present
+#### March 2019 - June 2020
 ### Chegg — _Chegg Subject Expert_
-#### October 2018 - Present
+#### October 2018 - April 2020
 ### Equinox , Hansraj College — _Head Organizer_
 #### April 2016 - March 2017
 ### Society of General Awareness , Hansraj College — _Senior Co-ordinator_
