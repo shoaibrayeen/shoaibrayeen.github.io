@@ -5,7 +5,7 @@ permalink: /doc/resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer, Woovly
+Software Development Engineer
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
@@ -17,7 +17,7 @@ Software Development Engineer, Woovly
   Experience
 </p>
 ### [Woovly](https://www.woovly.com/) — _Software Development Engineer_
-#### 6th July 2020 - Present
+#### 6th July 2020 - 28th July 2020
 ### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
 #### 6th January 2020 - 3rd July 2020
 
