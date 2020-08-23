@@ -1,7 +1,7 @@
 ---
 layout: page
 title: All Skill Ids
-permalink: /doc/SkillIds/
+permalink: /alexa-skill-ids/
 ---
 
 
