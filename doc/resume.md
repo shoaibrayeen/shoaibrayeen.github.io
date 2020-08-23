@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Mohd Shoaib Rayeen
-permalink: /doc/resume/
+permalink: /resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Development Engineer
+Software Engineer, Airtel International LLP
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
@@ -16,7 +16,9 @@ Software Development Engineer
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Experience
 </p>
-### [Woovly](https://www.woovly.com/) — _Software Development Engineer_
+### [Airtel International LLP](https://airtel.africa) — _Software Engineer_
+#### 20th August 2020 - Current
+### [Woovly](https://www.woovly.com/) — _Backend Developer_
 #### 6th July 2020 - 28th July 2020
 ### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
 #### 6th January 2020 - 3rd July 2020
