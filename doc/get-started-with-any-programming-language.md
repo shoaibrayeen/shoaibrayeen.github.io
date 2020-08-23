@@ -1,12 +1,10 @@
 ---
 layout: page
-title: How to start a new programming language
-permalink: /doc/how-to-start-a-new-programming-language/
+title: How to get started with any programming language
+permalink: /get-started-with-any-programming-language/
 ---
 
-When we want to learn a new programming language, we often think how to start and where to start. The best way to learn anything is by your own , and the best time to start is right now.
-
-I would like to suggest following steps :
+Beginners are always confused about how to start with any new programming languages. To give a brief idea to get started with them -
 
 - Read the documentation of the language.
 - Install the tool(s) for the language in your laptop/PC.
