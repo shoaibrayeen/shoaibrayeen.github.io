@@ -8,10 +8,10 @@ imageURL: /images/ShoaibRayeen.jpg
 Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Software Development Engineer
+Software Engineer, Airtel Africa
 </p>
 
-I am a Software Development Engineer. 
+I am a Software Engineer at Airtel Africa. 
 I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
@@ -46,9 +46,9 @@ I have built the following games based on Artificial Intelligence :
 - [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
 
 I have worked on Voice Apps such as :
-- [Amazon Alexa Skills](/doc/amazon_alexa)
-- [Actions on Google](/doc/Actions_on_Google)
+- [Amazon Alexa Skills](/amazon_alexa)
+- [Actions on Google](/Actions_on_Google)
 
 I'm also an occasional writer -
-- [How to start a new programming Language](/doc/how-to-start-a-new-programming-language)
-- [How to Prepare for Placement](/doc/Placement)
+- [How to start a new programming Language](/get-started-with-any-programming-language)
+- [How to Prepare for Placement](/placement)
