@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Actions on Google
-permalink: /doc/Actions_on_Google/
+permalink: /Actions_on_Google/
 ---
 
 Actions on google let you extend the functionality of the Google Assistant with Actions. Actions let users get things done through a conversational interface that can range from a quick command to turn on some lights or a longer conversation, such as playing a trivia game.
