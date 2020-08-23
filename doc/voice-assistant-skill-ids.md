@@ -1,7 +1,7 @@
 ---
 layout: page
-title: All Skill Ids
-permalink: /alexa-skill-ids/
+title: All Voice Assistant Skill Ids
+permalink: /voice-assistant-skill-ids/
 ---
 
 
