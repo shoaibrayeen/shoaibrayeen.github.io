@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DBMS Assignment
-permalink: /doc/dbms/
+permalink: /dbms-assignment/
 ---
 
 Q1 : Write an SQL query to determine the 5th highest salary from employee table without using TOP or limit method.
