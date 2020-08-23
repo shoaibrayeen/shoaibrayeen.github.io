@@ -1,7 +1,7 @@
 ---
 layout: page
 title: General Overview About Placement
-permalink: /doc/Placement/
+permalink: /placement/
 ---
 
 ## Number of different Posts
