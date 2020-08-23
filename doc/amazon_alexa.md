@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Amazon Alexa Skills
-permalink: /doc/amazon_alexa/
+permalink: /amazon_alexa/
 ---
 
 Amazon Alexa is a virtual assistant developed by Amazon. Alexa provides capabilities, or skills, that enable customers to create a more personalized experience. 
