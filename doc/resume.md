@@ -28,7 +28,7 @@ Software Engineer, Airtel International LLP
   Education 
 </p>
 ### Department of Computer Science, University of Delhi — _Master of Computer Applications_ 
-#### July 2017 - June 2020 - _82.32%_ ( Till V Semester )
+#### July 2017 - June 2020 - _83.93%_
 ###  Hansraj College, University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
 ### Sachidanand Inter College, U.P. Board — _12th_
