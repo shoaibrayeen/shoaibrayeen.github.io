@@ -28,7 +28,7 @@ Software Engineer, Airtel International LLP
   Education 
 </p>
 ### Department of Computer Science, University of Delhi — _Master of Computer Applications_ 
-#### July 2017 - June 2020 - _83.93%_
+#### July 2017 - June 2020 - First Division - _83.93%_
 ###  Hansraj College, University of Delhi — _B.Sc. (H.) Computer Science_
 #### July 2014 - June 2017 - First Division - _88.41%_
 ### Sachidanand Inter College, U.P. Board — _12th_
@@ -40,6 +40,11 @@ Software Engineer, Airtel International LLP
   Project
 </p>
 ### [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
+#### ● Managing Team Hierarchy, User Creation and User Search
+### [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
+#### ● UI for managing Exchange Rate for different countries
+### [API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation) - _Java, Karate, Javascript_
+#### ● Developed the whole microservice to test APIs of different microservices
 ### [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
 #### ● Shortening Long URLs and Storing in the table
 ### [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
