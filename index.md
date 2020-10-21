@@ -21,9 +21,15 @@ I have used PostgreSQL, MySQL and DynamoDB for Databases, Rails, Django, Spring 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
 
-I have completed the following Projects :
+I have worked on Following Projects :
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
+  - Managing Team Hierarchy, User Creation and User Search
+- [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
+  - UI for managing Exchange Rate for different countries
+- [API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation) - _Java, Karate, Javascript_
+  - Developed the whole microservice to test APIs of different microservices
 - [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
+  - Shortening Long URLs and Storing in the table
 - [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
   - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 - [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
