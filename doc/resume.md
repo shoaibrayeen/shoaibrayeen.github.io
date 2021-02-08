@@ -10,7 +10,7 @@ Software Engineer, Airtel International LLP
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Twitter :** _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
-#### **Email :** _shoai6rayeen@gmail.com_
+#### **Email :** _shoaibrayeenofficial@gmail.com_
 #### **Mobile :** _**+91-8181813999**_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
