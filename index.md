@@ -11,7 +11,8 @@ Shoaib Rayeen
 Software Engineer, Airtel Africa
 </p>
 
-I am a Software Engineer at [Airtel Africa](https://airtel.africa). I have completed M.C.A. at [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) and B.Sc.(H.) Computer Science at [Hansraj College](https://www.hansrajcollege.ac.in). 
+I am a Software Engineer at [Airtel Africa](https://airtel.africa). I have completed M.C.A. at [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) and B.Sc.(H.) Computer Science at [Hansraj College](https://www.hansrajcollege.ac.in).
+
 I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
 [Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
 [LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
