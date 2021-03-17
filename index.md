@@ -13,12 +13,18 @@ Software Engineer, Airtel Africa
 
 I am a Software Engineer at [Airtel Africa](https://airtel.africa). I have completed M.C.A. at [Department of Computer Science](http://cs.du.ac.in/), University of Delhi and B.Sc.(H.) Computer Science at [Hansraj College](https://www.hansrajcollege.ac.in), University of Delhi.
 
-I am familiar with Ruby, [C / C++](https://github.com/shoaibrayeen/Cplusplus-and-C), [Java](https://github.com/shoaibrayeen/Java), [Python](https://github.com/shoaibrayeen/Python), [R](https://github.com/shoaibrayeen/R), 
-[Shell Scripting](https://github.com/shoaibrayeen/Shell-Programming), 
-[LEX and YACC](https://github.com/shoaibrayeen/Lex-and-Yacc), and
-[Assembly Language](https://github.com/shoaibrayeen/Assembly-Language). 
-I have used PostgreSQL, MySQL and DynamoDB as Databases, Ruby on Rails, Django, Spring Boot and Flask as Frameworks and ElasticSearch as Searching. I have working experience of Redis & Aerospike (Caching/Tokenizing), Sidekiq (Asynchronous Processing), Mockito, Karate, Rspec, Rake, RESTful API, Microservice Architecture, Agile Development, Git, JIRA, Kibaana, Vagrant, CentOS, Confluence, RPM, and Cron Server.
-
+I am familiar with following tech stacks:
+- **Framework -** Ruby on Rails, Django, Spring Boot, Angular 9, Flask, Express.js
+- **Testing Framework -** Karate, RSpec, Mockito
+- **Database -** PostgreSQL, MySQL, DynamoDB
+- **Programming Language -** C, C++, R, Python, Ruby, Java, Node.js, Javascript, Typescript, Shell Script, LEX and YACC
+- **Cache -** Redis, Aerospike, Amazon S3
+- **Job Scheduler -** Sidekiq
+- **Search Engine -** ElasticSearch
+- **Voice Assistant -** Alexa, Actions on Google
+- **Tool -** Jenkins, Kubernates, Confluence, JIRA, Git, Bitbucket, Github, SonarQube, Confluence
+- **Monitoring -** Kibaana, RPM
+- **Other -** REST API, Agile Development, Microservice Architecture
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
 
