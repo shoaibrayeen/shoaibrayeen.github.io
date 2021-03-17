@@ -5,18 +5,17 @@ permalink: /resume/
 ---
 
 <p style="text-align: center; font-size: 1.5em">
-Software Engineer, Airtel International LLP
+Software Engineer, Airtel Africa
 </p>
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Twitter :** _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
 #### **Email :** _shoaibrayeenofficial@gmail.com_
-#### **Mobile :** _**+91-8181813999**_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Experience
 </p>
-### [Airtel International LLP](https://airtel.africa) — _Software Engineer_
+### [Airtel Africa](https://airtel.africa) — _Software Engineer_
 #### 20th August 2020 - Current
 ### [Woovly](https://www.woovly.com/) — _Backend Developer_
 #### 6th July 2020 - 28th July 2020
