@@ -10,7 +10,7 @@ Software Engineer, Airtel Africa
 #### **Github :** _[/shoaibrayeen](https://github.com/shoaibrayeen)_
 #### **Linkedin :** _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
 #### **Twitter :** _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
-#### **Email :** <shoaib.rayeen@yahoo.com>
+#### **Email :** _<shoaib.rayeen@yahoo.com>_
 
 <p style="text-align: left; color: #FF6347; font-size: 2em">
   Experience
