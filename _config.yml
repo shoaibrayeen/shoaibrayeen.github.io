@@ -8,4 +8,4 @@ github_username: shoaibrayeen
 
 # Build settings
 markdown: kramdown
-theme: jekyll-readme-index
+theme: jekyll-theme-cayman
