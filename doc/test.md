@@ -1,7 +1,7 @@
 ---
-layout: homepage
-title: Shoaib Rayeen
-imageURL: /images/ShoaibRayeen.jpg
+layout: page
+title: Mohd Shoaib Rayeen
+permalink: /test/
 ---
 
 <p style="text-align: center; font-size: 3em">
@@ -31,31 +31,32 @@ I am familiar with following tech stacks:
 
 I have worked on Following Projects:
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
-  - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
+    - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
+
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
-  - Managing Team Hierarchy, User Creation and User Search
+    - Managing Team Hierarchy, User Creation and User Search
 - [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
-  - UI for managing Exchange Rate for different countries
+    - UI for managing Exchange Rate for different countries
 - [API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation) - _Java, Karate, Javascript_
-  - Developed the whole microservice to test APIs of different microservices
+    - Developed the whole microservice to test APIs of different microservices
 - [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
-  - Shortening Long URLs and Storing in the table
+    - Shortening Long URLs and Storing in the table
 - [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
-  - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
+    - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 - [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
-  - Detecting A person is sleeping or yawning while driving and alerting accordingly
+    - Detecting A person is sleeping or yawning while driving and alerting accordingly
 - [Cats or Dogs](https://github.com/shoaibrayeen/Course-Work/tree/master/Neural%20Network/Cats%20or%20Dogs) - _Keras, Python_
-  - Detecting that the image has a dog or a cat
+    - Detecting that the image has a dog or a cat
 - [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
-  - Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
+    - Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
 - [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
-  - Prediction of Heart Disease for the given data using KNN Model
+    - Prediction of Heart Disease for the given data using KNN Model
 - [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
-  - Implemented FTP application between a server and client(s) using sockets
+    - Implemented FTP application between a server and client(s) using sockets
 - [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
-  - Implemented Basic Probability and Statistics Functions
+    - Implemented Basic Probability and Statistics Functions
 - [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
-  - Development of My website using the github pages - https://shoaibrayeen.github.io
+    - Development of My website using the github pages - https://shoaibrayeen.github.io
 
 I have built the following games based on Artificial Intelligence :
 - [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
