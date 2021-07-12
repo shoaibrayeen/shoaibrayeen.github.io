@@ -364,9 +364,9 @@ a:visited { color: #205caa; }
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
-  .wrap { padding: 0 10px; }
+  .wrap { padding: 0 12px; }
 
   .site-nav {
     position: fixed;
