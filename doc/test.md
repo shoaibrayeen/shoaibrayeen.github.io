@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Mohd Shoaib Rayeen
 permalink: /test/
 ---
 
 <p style="text-align: center; font-size: 3em">
-Shoaib Rayeen
+Mohd Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF8050; font-size: 1.3em">
 Software Engineer
