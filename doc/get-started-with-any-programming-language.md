@@ -3,6 +3,9 @@ layout: page
 title: How to get started with any programming language
 permalink: /get-started-with-any-programming-language/
 ---
+<p style="text-align: center; font-size: 1.7em">
+How to get started with any programming language
+</p>
 
 Beginners are always confused about how to start with any new programming languages. To give a brief idea to get started with them -
 

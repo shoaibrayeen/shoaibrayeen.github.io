@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Amazon Alexa Skills
-permalink: /amazon_alexa/
+permalink: /Amazon_Alexa/
 ---
+<p style="text-align: center; font-size: 2em">
+Amazon Alexa Skills
+</p>
 
 Amazon Alexa is a virtual assistant developed by Amazon. Alexa provides capabilities, or skills, that enable customers to create a more personalized experience. 
 

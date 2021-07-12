@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Shoaib Rayeen
+title: Home
 imageURL: /images/ShoaibRayeen.jpg
 ---
 

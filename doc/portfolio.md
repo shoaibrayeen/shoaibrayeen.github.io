@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: homepage
+title: Portfolio
 permalink: /portfolio/
+imageURL: /images/Shoaib.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">

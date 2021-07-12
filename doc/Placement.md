@@ -3,6 +3,10 @@ layout: page
 title: General Overview About Placement
 permalink: /placement/
 ---
+<p style="text-align: center; font-size: 1.7em">
+General Overview About Placement
+</p>
+
 
 ## Number of different Posts
 - Software Development Engineer/Developer [ Specific Posts Under SDE - Solution Engineer and UI Designer ]
