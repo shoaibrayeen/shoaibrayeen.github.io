@@ -1,7 +1,8 @@
 ---
 layout: homepage
-title: Home
-imageURL: /images/ShoaibRayeen.jpg
+title: Portfolio
+permalink: /portfolio/
+imageURL: /images/Shoaib.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">
@@ -13,7 +14,14 @@ Software Engineer - Backend
 
 This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
 
-**Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Contact
+</p>
+
+- Github : _[/shoaibrayeen](https://github.com/shoaibrayeen)_
+- Linkedin : _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
+- Twitter : _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
+- Email : _<shoaib.rayeen@yahoo.com>_
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Experience
@@ -21,17 +29,23 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 
 - [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
   - 20th August 2020 - 27th August 2021
-- [Housing.com](https://housing.com/) — _Software Engineer Intern_ 
+- [Woovly](https://www.woovly.com/) — _Backend Developer_
+  - 6th July 2020 - 28th July 2020
+- [Housing.com](https://housing.com/) — _Software Engineer Intern_
   - 6th January 2020 - 3rd July 2020
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Education 
 </p>
 
-- [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) — _Master of Computer Applications_ 
+- [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) — _Master of Computer Applications_
   - July 2017 - June 2020 - First Division - _83.93%_
 - [Hansraj College, University of Delhi](https://www.hansrajcollege.ac.in) — _B.Sc. (H.) Computer Science_
   - July 2014 - June 2017 - First Division - _88.41%_
+- Sachidanand Inter College, U.P. Board — 12th
+  - July 2013 - May 2014 - First Division - 94.00%
+- Sachidanand Inter College, U.P. Board — 10th
+  - July 2011 - May 2012 - First Division - 87.83%
   
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Projects 
@@ -119,5 +133,5 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
   Articles by me
 </p>
 
-- [How to Start a New Programming Language](/get-started-with-any-programming-language)
+- [How to start a new programming Language](/get-started-with-any-programming-language)
 - [How to Prepare for Placement](/placement)
