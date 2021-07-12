@@ -16,7 +16,7 @@ Software Engineer, Airtel Africa
   Experience
 </p>
 ### [Airtel Africa](https://airtel.africa) — _Software Engineer_
-#### 20th August 2020 - Current
+#### 20th August 2020 - 27th August 2021
 ### [Woovly](https://www.woovly.com/) — _Backend Developer_
 #### 6th July 2020 - 28th July 2020
 ### [Housing.com](https://housing.com/) — _Software Development Engineer Intern_ 
