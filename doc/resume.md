@@ -125,7 +125,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
   Voice Skills 
 </p>
 
-- [Amazon Alexa Skills](/amazon_alexa)
+- [Amazon Alexa Skills](/Amazon_Alexa)
 - [Actions on Google](/Actions_on_Google)
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
