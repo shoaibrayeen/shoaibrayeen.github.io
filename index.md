@@ -100,15 +100,6 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
   - July 2016 - April 2017
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
- Achievements
-</p>
-
-- Awarded by Akhilesh Yadav , _Former Chief Minister of Uttar Pradesh_
-  - August 2014 - _17th Rank in Uttar Pradesh_
-    - Intermediate Education - _94.00%_
-
-
-<p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Voice Skills 
 </p>
 
