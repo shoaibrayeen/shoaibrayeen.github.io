@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: homepage
 title: Resume
 permalink: /resume/
+imageURL: /images/me/resume.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">
@@ -12,15 +13,6 @@ Software Engineer - Backend
 </p>
 
 This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
-
-<p style="text-align: left; color: #FF6347; font-size: 1.75em">
-  Contact
-</p>
-
-- Github : _[/shoaibrayeen](https://github.com/shoaibrayeen)_
-- Linkedin : _[/in/shoaibrayeen/](https://www.linkedin.com/in/shoaibrayeen/)_
-- Twitter : _[@shoaibrayeen](https://twitter.com/Shoaibrayeen)_
-- Email : _<shoaib.rayeen@yahoo.com>_
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Experience

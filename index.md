@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: Home
-imageURL: /images/ShoaibRayeen.jpg
+imageURL: /images/me/home.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">
