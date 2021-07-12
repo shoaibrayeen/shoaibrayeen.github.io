@@ -5,31 +5,38 @@ imageURL: /images/ShoaibRayeen.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">
-Shoaib Rayeen
+Mohd Shoaib Rayeen
 </p>
-<p style="text-align: center; color: #FF8050; font-size: 1.3em">
-Software Engineer
+<p style="text-align: center; color: #FF6347; font-size: 1.4em">
+Software Engineer - Backend
 </p>
 
-I am a Software Engineer. I have completed M.C.A. at [Department of Computer Science](http://cs.du.ac.in/), University of Delhi and B.Sc.(H.) Computer Science at [Hansraj College](https://www.hansrajcollege.ac.in), University of Delhi.
-
-I am familiar with following tech stacks:
-- **Framework -** Ruby on Rails, Django, Spring Boot, Angular 9, Flask, Express.js
-- **Testing Framework -** Karate, RSpec, Mockito, Rest Assured
-- **Database -** PostgreSQL, MySQL, DynamoDB
-- **Programming Language -** C, C++, R, Python, Ruby, Java, Node.js, Javascript, Typescript, Shell Script, LEX and YACC
-- **Cache -** Redis, Aerospike, Amazon S3
-- **Job Scheduler -** Sidekiq
-- **Search Engine -** ElasticSearch
-- **Voice Assistant -** Alexa, Actions on Google
-- **Tool -** Jenkins, Kubernates, Confluence, JIRA, Git, Bitbucket, Github, SonarQube, Confluence
-- **Monitoring -** Kibaana, RPM, Grafana
-- **Other -** REST API, Agile Development, Microservice Architecture
+This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Experience
+</p>
 
-I have worked on Following Projects:
+- [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
+  - 20th August 2020 - 27th August 2021
+- [Housing.com](https://housing.com/) — _Software Engineer Intern_ 
+  - 6th January 2020 - 3rd July 2020
+
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Education 
+</p>
+
+- [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) — _Master of Computer Applications_ 
+  - July 2017 - June 2020 - First Division - _83.93%_
+- [Hansraj College, University of Delhi](https://www.hansrajcollege.ac.in) — _B.Sc. (H.) Computer Science_
+  - July 2014 - June 2017 - First Division - _88.41%_
+  
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Projects 
+</p>
+
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
   - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
@@ -56,15 +63,61 @@ I have worked on Following Projects:
   - Implemented Basic Probability and Statistics Functions
 - [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
   - Development of My website using the github pages - https://shoaibrayeen.github.io
-
-I have built the following games based on Artificial Intelligence :
-- [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
 - [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
+  - Developed an AI game based on Minimax Algorithm
+- [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
+  - Developed an AI game
+  
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Technical Skills 
+</p>
 
-I have worked on Voice Apps such as :
+- **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Flask, Express.js
+- **Testing Framework -** Karate, RSpec, Mockito, Rest Assured
+- **Database -** PostgreSQL, MySQL, DynamoDB
+- **Programming Language -** C, C++, R, Python, Ruby, Java, Node.js, Javascript, Typescript, Shell Script, LEX and YACC
+- **Cache -** Redis, Aerospike, Amazon S3
+- **Job Scheduler -** Sidekiq
+- **Search Engine -** ElasticSearch
+- **Voice Assistant -** Alexa, Actions on Google
+- **Tool -** Jenkins, Kubernetes, Confluence, JIRA, Git, Bitbucket, Github, SonarQube, Confluence, Lens, Mockoon
+- **Monitoring -** Kibana, RPM, Grafana
+- **Other -** REST API, Agile Development, Microservice Architecture
+
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Position of Responsibility
+</p>
+
+- [Amazon Alexa, Amazon](https://developer.amazon.com/en-IN/alexa/alexa-student-influencer#alexa-student-influencers) — _Alexa Student Influencer_
+  - March 2019 - June 2020
+- Chegg — _Chegg Subject Expert_
+  - October 2018 - April 2020
+- Equinox , Hansraj College — _Head Organizer_
+  - April 2016 - March 2017
+- Society of General Awareness , Hansraj College — _Senior Coordinator_
+  - July 2016 - April 2017
+- Haritima , Hansraj College — _Senior Coordinator_
+  - July 2016 - April 2017
+
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+ Achievements
+</p>
+
+- Awarded by Akhilesh Yadav , _Former Chief Minister of Uttar Pradesh_
+  - August 2014 - _17th Rank in Uttar Pradesh_
+    - Intermediate Education - _94.00%_
+
+
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Voice Skills 
+</p>
+
 - [Amazon Alexa Skills](/amazon_alexa)
 - [Actions on Google](/Actions_on_Google)
 
-I'm also an occasional writer -
-- [How to start a new programming Language](/get-started-with-any-programming-language)
+<p style="text-align: left; color: #FF6347; font-size: 1.75em">
+  Articles by me
+</p>
+
+- [How to Start a New Programming Language](/get-started-with-any-programming-language)
 - [How to Prepare for Placement](/placement)

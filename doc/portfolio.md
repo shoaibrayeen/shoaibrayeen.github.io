@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Mohd Shoaib Rayeen
-permalink: /resume/
+permalink: /portfolio/
 ---
 
 <p style="text-align: center; font-size: 3em">
@@ -27,60 +26,60 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 </p>
 
 - [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
-    - 20th August 2020 - 27th August 2021
+  - 20th August 2020 - 27th August 2021
 - [Woovly](https://www.woovly.com/) — _Backend Developer_
-    - 6th July 2020 - 28th July 2020
+  - 6th July 2020 - 28th July 2020
 - [Housing.com](https://housing.com/) — _Software Engineer Intern_
-    - 6th January 2020 - 3rd July 2020
+  - 6th January 2020 - 3rd July 2020
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Education 
 </p>
 
 - [Department of Computer Science, University of Delhi](http://cs.du.ac.in/) — _Master of Computer Applications_
-    - July 2017 - June 2020 - First Division - _83.93%_
+  - July 2017 - June 2020 - First Division - _83.93%_
 - [Hansraj College, University of Delhi](https://www.hansrajcollege.ac.in) — _B.Sc. (H.) Computer Science_
-    - July 2014 - June 2017 - First Division - _88.41%_
+  - July 2014 - June 2017 - First Division - _88.41%_
 - Sachidanand Inter College, U.P. Board — 12th
-    - July 2013 - May 2014 - First Division - 94.00%
+  - July 2013 - May 2014 - First Division - 94.00%
 - Sachidanand Inter College, U.P. Board — 10th
-    - July 2011 - May 2012 - First Division - 87.83%
-      
+  - July 2011 - May 2012 - First Division - 87.83%
+  
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Projects 
 </p>
 
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
-    - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
+  - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
-    - Managing Team Hierarchy, User Creation and User Search
+  - Managing Team Hierarchy, User Creation and User Search
 - [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
-    - UI for managing Exchange Rate for different countries
+  - UI for managing Exchange Rate for different countries
 - [API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation) - _Java, Karate, Javascript_
-    - Developed the whole microservice to test APIs of different microservices
+  - Developed the whole microservice to test APIs of different microservices
 - [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
-    - Shortening Long URLs and Storing in the table
+  - Shortening Long URLs and Storing in the table
 - [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
-    - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
+  - Implemented chatbot with general topics such as Sports, Dictionary, Inventions, etc.
 - [Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention) — _OpenCV, Python_
-    - Detecting A person is sleeping or yawning while driving and alerting accordingly
+  - Detecting A person is sleeping or yawning while driving and alerting accordingly
 - [Cats or Dogs](https://github.com/shoaibrayeen/Course-Work/tree/master/Neural%20Network/Cats%20or%20Dogs) - _Keras, Python_
-    - Detecting that the image has a dog or a cat
+  - Detecting that the image has a dog or a cat
 - [Buffer Cache Simulation](https://github.com/shoaibrayeen/Buffer-Cache-Simulation) - _C++_
-    - Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
+  - Simulate Getblk Algorithm that handles the allocation of the buffers to the processes
 - [Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor) - _R, Shiny_
-    - Prediction of Heart Disease for the given data using KNN Model
+  - Prediction of Heart Disease for the given data using KNN Model
 - [File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol) - _C_
-    - Implemented FTP application between a server and client(s) using sockets
+  - Implemented FTP application between a server and client(s) using sockets
 - [Statistical Calculator](https://github.com/shoaibrayeen/R) — _R_
-    - Implemented Basic Probability and Statistics Functions
+  - Implemented Basic Probability and Statistics Functions
 - [Website Implementation Using Github Pages](https://shoaibrayeen.github.io) - _HTML, CSS_
-    - Development of My website using the github pages - https://shoaibrayeen.github.io
+  - Development of My website using the github pages - https://shoaibrayeen.github.io
 - [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
-    - Developed an AI game based on Minimax Algorithm
+  - Developed an AI game based on Minimax Algorithm
 - [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
-    - Developed an AI game
-    
+  - Developed an AI game
+  
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Technical Skills 
 </p>
@@ -102,23 +101,23 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 </p>
 
 - [Amazon Alexa, Amazon](https://developer.amazon.com/en-IN/alexa/alexa-student-influencer#alexa-student-influencers) — _Alexa Student Influencer_
-    - March 2019 - June 2020
+  - March 2019 - June 2020
 - Chegg — _Chegg Subject Expert_
-    - October 2018 - April 2020
+  - October 2018 - April 2020
 - Equinox , Hansraj College — _Head Organizer_
-    - April 2016 - March 2017
+  - April 2016 - March 2017
 - Society of General Awareness , Hansraj College — _Senior Coordinator_
-    - July 2016 - April 2017
+  - July 2016 - April 2017
 - Haritima , Hansraj College — _Senior Coordinator_
-    - July 2016 - April 2017
+  - July 2016 - April 2017
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
  Achievements
 </p>
 
 - Awarded by Akhilesh Yadav , _Former Chief Minister of Uttar Pradesh_
-    - August 2014 - _17th Rank in Uttar Pradesh_
-        - Intermediate Education - _94.00%_
+  - August 2014 - _17th Rank in Uttar Pradesh_
+    - Intermediate Education - _94.00%_
 
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
