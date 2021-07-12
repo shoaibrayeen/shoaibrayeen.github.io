@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: Portfolio
-permalink: /portfolio/
+permalink: /portfolio
 imageURL: /images/me/portfolio.jpg
 ---
 
@@ -93,7 +93,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
   Position of Responsibility
 </p>
 
-- [Amazon Alexa, Amazon](https://developer.amazon.com/en-IN/alexa/alexa-student-influencer#alexa-student-influencers) — _Alexa Student Influencer_
+- Amazon Alexa, Amazon — _[Alexa Student Influencer](https://developer.amazon.com/en-IN/alexa/alexa-student-influencer#alexa-student-influencers)_
   - March 2019 - June 2020
 - Chegg — _Chegg Subject Expert_
   - October 2018 - April 2020
