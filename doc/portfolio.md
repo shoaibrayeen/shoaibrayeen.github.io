@@ -2,7 +2,7 @@
 layout: homepage
 title: Portfolio
 permalink: /portfolio/
-imageURL: /images/Shoaib.jpg
+imageURL: /images/me/portfolio.jpg
 ---
 
 <p style="text-align: center; font-size: 3em">
