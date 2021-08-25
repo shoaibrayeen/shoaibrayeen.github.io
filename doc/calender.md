@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Calender
-permalink: /calender
+title: Calendar
+permalink: /calendar
 ---
 
 <p style="text-align: center; color: #FF6347; font-size: 3em">
-    Calender
+    Calendar
     </p>
 
 <div align="center">
