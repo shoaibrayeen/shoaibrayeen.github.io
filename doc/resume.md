@@ -10,7 +10,7 @@ permalink: /resume
 
 <div align="center">
     <iframe frameborder="0" scrolling="no"
-      width="100%" height="640"
+      style="border: 0" width="800" height="600"
       src="https://docs.google.com/document/d/1tvibGcON-6AlDMLJ0eIibCe7dlQ-ZcTjp3ub_jL0CmA/preview">
     </iframe>
 </div>
