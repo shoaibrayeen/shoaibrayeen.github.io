@@ -1,10 +1,11 @@
 ---
-layout: page
+layout: homepage
 title: Resume
 permalink: /resume
+imageURL: /images/me/resume.jpg
 ---
 
-<p style="text-align: center; color: #FF6347; font-size: 3em">
+<p style="text-align: center; color: #FF6347; font-size: 2.5em">
     Resume
 </p>
 
