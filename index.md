@@ -74,7 +74,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 - [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
   - Developed an AI game based on Minimax Algorithm
 - [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
-  - Developed an AI game
+  - Developed an Randomized AI game
   
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Technical Skills 
