@@ -18,8 +18,9 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Experience
 </p>
-
-- [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
+- [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
+  - 30th August 2021 - Present
+- [Airtel Africa](https://airtel.africa) — _Software Engineer_
   - 20th August 2020 - 27th August 2021
 - [Housing.com](https://housing.com/) — _Software Engineer Intern_ 
   - 6th January 2020 - 3rd July 2020
@@ -38,7 +39,13 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 </p>
 
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
-  - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
+  - Developed Transactional APIs and  Non-Transactional APIs in All 13 Operating Countries
+  - Worked on Production bugs, and UAT bugs  in 13 Operating Countries
+- Canza, Airtel Africa — _Spring Boot, PostgreSQL, Redis, Angular 9, Node.js 12_
+  - Designed and Developed UI for managing Exchange Rate for different countries
+  - Developed APIs to add, view, update, and delete conversion rate  across All Operating Countries
+- Housing FAQ Service, Housing.com — _Ruby on Rails, PostgreSQL, Sidekiq, Redis_
+  - Redesigned and Developed FAQ Microservice based on Property Listing
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
   - Managing Team Hierarchy, User Creation and User Search
 - [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
