@@ -11,7 +11,7 @@ Mohd Shoaib Rayeen
 Software Engineer
 </p>
 
-This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
+This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
