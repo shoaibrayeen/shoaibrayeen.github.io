@@ -7,8 +7,8 @@ imageURL: /images/me/home.jpg
 <p style="text-align: center; font-size: 3em">
 Mohd Shoaib Rayeen
 </p>
-<p style="text-align: center; color: #FF6347; font-size: 1.4em">
-Software Engineer - Backend
+<p style="text-align: center; color: #FF6347; font-size: 2em">
+Software Engineer
 </p>
 
 This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
