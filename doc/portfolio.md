@@ -20,7 +20,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 
 - [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
   - 30th August 2021 - Present
-- [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
+- [Airtel Africa](https://airtel.africa) — _Software Engineer_
   - 20th August 2020 - 27th August 2021
 - [Woovly](https://www.woovly.com/) — _Backend Developer_
   - 6th July 2020 - 28th July 2020
