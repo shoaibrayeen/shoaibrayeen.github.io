@@ -8,8 +8,8 @@ imageURL: /images/me/portfolio.jpg
 <p style="text-align: center; font-size: 3em">
 Mohd Shoaib Rayeen
 </p>
-<p style="text-align: center; color: #FF6347; font-size: 1.4em">
-Software Engineer - Backend
+<p style="text-align: center; color: #FF6347; font-size: 1.9em">
+Software Engineer
 </p>
 
 This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on Backend architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
@@ -17,7 +17,8 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Experience
 </p>
-
+- [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
+  - 30th August 2021 - Present
 - [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
   - 20th August 2020 - 27th August 2021
 - [Woovly](https://www.woovly.com/) — _Backend Developer_
