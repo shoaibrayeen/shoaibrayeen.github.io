@@ -46,7 +46,13 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 </p>
 
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
-  - Developing Transactional APIs, User-related APIs, etc. in the Payment  Microservice
+  - Developed Transactional APIs and  Non-Transactional APIs in All 13 Operating Countries
+  - Worked on Production bugs, and UAT bugs  in 13 Operating Countries
+- Canza, Airtel Africa — _Spring Boot, PostgreSQL, Redis, Angular 9, Node.js 12_
+  - Designed and Developed UI for managing Exchange Rate for different countries
+  - Developed APIs to add, view, update, and delete conversion rate  across All Operating Countries
+- Housing FAQ Service, Housing.com — _Ruby on Rails, PostgreSQL, Sidekiq, Redis_
+  - Redesigned and Developed FAQ Microservice based on Property Listing
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
   - Managing Team Hierarchy, User Creation and User Search
 - [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
@@ -74,7 +80,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 - [Tic Tac Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
   - Developed an AI game based on Minimax Algorithm
 - [Rock Paper Scissor](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Rock%20Paper%20Scissor/index.html)
-  - Developed an AI game
+  - Developed an Randomized AI game
   
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Technical Skills 
