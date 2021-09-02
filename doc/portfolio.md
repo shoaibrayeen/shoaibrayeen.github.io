@@ -17,6 +17,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Experience
 </p>
+
 - [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
   - 30th August 2021 - Present
 - [Airtel Africa](https://airtel.africa) — _Software Engineer - Backend_
@@ -25,6 +26,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I have primarily worked on
   - 6th July 2020 - 28th July 2020
 - [Housing.com](https://housing.com/) — _Software Engineer Intern_
   - 6th January 2020 - 3rd July 2020
+
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Education 
