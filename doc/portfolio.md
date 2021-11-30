@@ -99,7 +99,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 - **Other -** REST API, Agile Development, Microservice Architecture
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
-  Position of Responsibility
+  Positions of Responsibility
 </p>
 
 - Amazon Alexa, Amazon — _[Alexa Student Influencer](https://developer.amazon.com/en-IN/alexa/alexa-student-influencer#alexa-student-influencers)_
