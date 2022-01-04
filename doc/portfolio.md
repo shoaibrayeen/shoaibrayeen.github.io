@@ -20,12 +20,15 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 
 - [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
   - 30th August 2021 - Present
+    - Working with Auto Extraction Team to fetch and process information from a document
 - [Airtel Africa](https://airtel.africa) — _Software Engineer_
   - 20th August 2020 - 27th August 2021
-- [Woovly](https://www.woovly.com/) — _Backend Developer_
-  - 6th July 2020 - 28th July 2020
-- [Housing.com](https://housing.com/) — _Software Engineer Intern_
+    - Worked on Spring Boot, PostgreSQL, Angular 9,  Rest Assured, Karate, Java 8, and Java 11
+    - Worked on Payment System, Exchange Management System,  and API Automation microservices
+- [Housing.com](https://housing.com/) — _Software Engineer Intern_ 
   - 6th January 2020 - 3rd July 2020
+    - Redesigned and Developed FAQ Microservice based on Property Listings
+    - Worked with Platform Growth Team to perform SEO-related tasks
 
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
@@ -83,20 +86,20 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
   - Developed an Randomized AI game
   
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
-  Technical Skills 
+  Skills Summary 
 </p>
 
-- **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Flask, Express.js
+- **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Express.js, Flask, Node.js
 - **Testing Framework -** Karate, RSpec, Mockito, Rest Assured
-- **Database -** PostgreSQL, MySQL, DynamoDB
-- **Programming Language -** C, C++, R, Python, Ruby, Java, Node.js, Javascript, Typescript, Shell Script, LEX and YACC
+- **Database -** PostgreSQL, MySQL, DynamoDB, MongoDB, ElasticSearch
+- **Programming Language -** C, C++, R, Python, Ruby, Java, Javascript, Typescript, Shell Script, LEX and YACC
 - **Cache -** Redis, Aerospike, Amazon S3
 - **Job Scheduler -** Sidekiq
-- **Search Engine -** ElasticSearch
 - **Voice Assistant -** Alexa, Actions on Google
 - **Tools and Products -** Jenkins, Kubernetes, Confluence, JIRA, Git, Bitbucket, Github, SonarQube, Confluence, Lens, Mockoon, Keycloak
 - **Monitoring -** Kibana, RPM, Grafana
-- **Other -** REST API, Agile Development, Microservice Architecture
+- **Others -** REST API, Agile Development, Microservice Architecture, HTML, CSS
+- **Soft Skills -** Leadership, Event Management, Time Management, Event Organisation, Public Relations
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Positions of Responsibility
