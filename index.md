@@ -104,7 +104,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 - **Voice Assistant -** Alexa, Actions on Google
 - **Tools and Products -** Jenkins, Kubernetes, Confluence, JIRA, Git, Bitbucket, Github, SonarQube, Confluence, Lens, Mockoon, Keycloak
 - **Monitoring -** Kibana, RPM, Grafana
-- **Others -** REST API, Agile Development, Microservice Architecture, HTML, CSS
+- **Others -** REST API, Agile Development, Microservice Architecture, HTML, CSS, Queue Management
 - **Soft Skills -** Leadership, Event Management, Time Management, Event Organisation, Public Relations
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
