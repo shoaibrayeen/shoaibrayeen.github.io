@@ -54,6 +54,9 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
   Projects 
 </p>
 
+- Bulk Processor — _Spring Boot, PostgreSQL, Pulsar_
+  - Context Initialization of Service Restart to avoid any Failure and Retry
+  - Add Feature in Enum, Topic into Pulsar, Email Template into DB, Excel Download API and Feature Implementation to Integrate any features for Bulk processing
 - ESB, Airtel Africa — _Spring Boot, PostgreSQL, Redis_
   - Developed Transactional APIs and  Non-Transactional APIs in All 13 Operating Countries
   - Worked on Production bugs, and UAT bugs  in 13 Operating Countries
@@ -63,11 +66,11 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 - Housing FAQ Service, Housing.com — _Ruby on Rails, PostgreSQL, Sidekiq, Redis_
   - Redesigned and Developed FAQ Microservice based on Property Listing
 - [Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System) —  _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_
-  - Managing Team Hierarchy, User Creation and User Search
+  - Management of Team Hierarchy, CRUD Operations on User
 - [Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System) - _Angular 9, Node.js 12_
   - UI for managing Exchange Rate for different countries
 - [API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation) - _Java, Karate, Javascript_
-  - Developed the whole microservice to test APIs of different microservices
+  - Integration of All Micro-service to test APIs of different micro services and generate Reports of Test Execution
 - [URL Shortener](https://github.com/shoaibrayeen/Url-Shortener) - _Spring Boot, Java, MySQL_
   - Shortening Long URLs and Storing in the table
 - [Chatbot](https://github.com/shoaibrayeen/Chatbot) - _Flask, Python, AIML, Javascript, HTML, CSS_
