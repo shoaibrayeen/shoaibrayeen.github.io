@@ -22,14 +22,24 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 - [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
   - 30th August 2021 - Present
     - Working with Auto Extraction Team to fetch and process information from a document
+    - Enhancement of Bulk Processing and Implement Generic Features using Java17, Spring Boot, PostgreSQL, Message Queue, and Redis
+    - Integration, Design, and Development of Email into existing features and Development of Excel Download using Spring Boot, Java17, MongoDB, and PostgreSQL
+    - Enhancement and Integration of Elastic Search into Listing to Provide a better user experience using Spring Boot, Go Lang Java17, Elastic Search, and MongoDB
+    - Development of New Features, Async Flow for Heavy Processing Features, and Refactoring of existing Features to reduce Production/Development bugs 
+    - Management of Sandbox, Prod, and QA Environment for Auto Extraction Feature
 - [Airtel Africa](https://airtel.africa) — _Software Engineer_
   - 20th August 2020 - 27th August 2021
     - Worked on Spring Boot, PostgreSQL, Angular 9,  Rest Assured, Karate, Java 8, and Java 11
     - Worked on Payment System, Exchange Management System,  and API Automation microservices
+    - Designed and Developed Foreign Exchange Management System using Spring Boot, Java, Redis, and PostgreSQL for 13 Operating Countries in North Africa
+    - Integrated User Profile Management System into the Payment Flow to provide payment history and Developed APIs for Forex Payment Transactions using Sprint Boot, Java, and PostgreSQL
+    - Developed Dashboard for Latest Transaction and Transaction between countries using Angular and Node.js
+    - Developed API Automation Micro-service to generate a report using Karate for All Micro-services
 - [Housing.com](https://housing.com/) — _Software Engineer Intern_ 
   - 6th January 2020 - 3rd July 2020
-    - Redesigned and Developed FAQ Microservice based on Property Listings
+    - Redesigned and Developed FAQ Micro-service based on Property Listings and SEO requirements using Ruby on Rails, PostgreSQL, and Redis
     - Worked with Platform Growth Team to perform SEO-related tasks
+    - Developed New APIs to fetch Coordinates from Elastic Search, Django, Ruby On Rails, and PostgreSQL for SEO, and Reduced Production/Development Bugs for the Team.
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
   Education 
@@ -85,7 +95,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
   Skills Summary 
 </p>
 
-- **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Express.js, Flask, Node.js
+- **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Express.js, Flask, Node.js, GoLang
 - **Testing Framework -** Karate, RSpec, Mockito, Rest Assured
 - **Database -** PostgreSQL, MySQL, DynamoDB, MongoDB, ElasticSearch
 - **Programming Language -** C, C++, R, Python, Ruby, Java, Javascript, Typescript, Shell Script, LEX and YACC
