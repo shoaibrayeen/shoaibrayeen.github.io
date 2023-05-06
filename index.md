@@ -99,7 +99,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
 </p>
 
 - **Framework -** Spring Boot, Ruby on Rails, Django, Angular 9, Express.js, Flask, Node.js, GoLang
-- **Testing Framework -** Karate, RSpec, Mockito, Rest Assured
+- **Testing Framework -** Karate, RSpec, Mockito, Rest Assured, JUnit
 - **Database -** PostgreSQL, MySQL, DynamoDB, MongoDB, ElasticSearch
 - **Programming Language -** C, C++, R, Python, Ruby, Java, Javascript, Typescript, Shell Script, LEX and YACC
 - **Cache -** Redis, Aerospike, Amazon S3
