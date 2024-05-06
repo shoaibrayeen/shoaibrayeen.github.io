@@ -18,7 +18,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
   Experience
 </p>
 
-- [SirionLabs](https://www.sirionlabs.com/) — _Software Engineer_
+- [Sirion](https://www.sirion.ai/) — _Software Engineer_
   - 30th August 2021 - Present
     - Working with Auto Extraction Team to fetch and process information from a document
 - [Airtel Africa](https://airtel.africa) — _Software Engineer_
