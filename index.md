@@ -19,7 +19,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
   Experience
 </p>
 
-- [Sirion](https://www.sirion.ai/) — _Software Engineer_
+- [Sirion](https://www.sirion.ai/) — _Senior Software Engineer_
   - 30th August 2021 - Present
     - Working with Auto Extraction Team to fetch and process information from a document
     - Integration of Alert Frameworks for Exceptions and Dynamic Logger to AE Services
@@ -28,6 +28,7 @@ This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architec
     - Enhancement and Integration of Elastic Search into Listing to Provide a better user experience using Spring Boot, Go Lang Java17, Elastic Search, and MongoDB
     - Development of New Features, Async Flow for Heavy Processing Features, and Refactoring of existing Features to reduce Production/Development bugs 
     - Monitoring of Sandbox, Prod, and QA Environments for Auto Extraction Feature
+    - Integrating external extraction with Sirion extraction 
 - [Airtel Africa](https://airtel.africa) — _Software Engineer_
   - 20th August 2020 - 27th August 2021
     - Worked on Spring Boot, PostgreSQL, Angular 9,  Rest Assured, Karate, Java 8, and Java 11
