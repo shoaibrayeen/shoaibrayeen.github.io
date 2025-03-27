@@ -59,27 +59,66 @@ I am **Mohd Shoaib Rayeen**, a **Senior Software Engineer** specializing in **Ba
 
 ---
 
-<h2>🛠 Projects</h2>
 
-📌 **[Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System)** – Angular 9, Node.js  
-📌 **[API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation)** – Java, Karate  
-📌 **[URL Shortener](https://github.com/shoaibrayeen/Url-Shortener)** – Spring Boot, MySQL  
-📌 **[Chatbot](https://github.com/shoaibrayeen/Chatbot)** – Flask, AIML  
-📌 **[Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention)** – OpenCV, Python  
-📌 **[Heart Disease Predictor](https://github.com/shoaibrayeen/Heart-Disease-Predictor)** – R, Shiny  
-📌 **[Tic Tac Toe AI](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)** – Minimax Algorithm  
+<h2>🔥 Projects</h2>
+
+- **Bulk Processor** — _Spring Boot, PostgreSQL, Pulsar_  
+  - Designed a **fault-tolerant** system for bulk data processing with **context-aware service restart and retry mechanisms**.  
+  - Integrated **Pulsar messaging**, **email notification templates**, and **Excel download APIs** for improved usability.  
+
+- **ESB, Airtel Africa** — _Spring Boot, PostgreSQL, Redis_  
+  - Developed **transactional and non-transactional APIs** for **13 operating countries**.  
+  - Managed **production and UAT bug fixes**, improving system stability.  
+
+- **Canza, Airtel Africa** — _Spring Boot, PostgreSQL, Redis, Angular 9, Node.js 12_  
+  - Built an intuitive **Exchange Rate Management UI** for multiple countries.  
+  - Developed APIs to **add, update, and manage forex conversion rates**.  
+
+- **Housing FAQ Service** — _Ruby on Rails, PostgreSQL, Sidekiq, Redis_  
+  - Revamped an **SEO-optimized FAQ microservice**, enhancing search discoverability.  
+
+- **[Profile Management System](https://github.com/shoaibrayeen/Profile-Management-System)** — _Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq_  
+  - Developed a **team hierarchy and CRUD-based user management system**.  
+
+- **[Exchange Management System](https://github.com/shoaibrayeen/Exchange-Management-System)** — _Angular 9, Node.js 12_  
+  - Built a UI for **managing forex rates across multiple countries**.  
+
+- **[API Testing Automation](https://github.com/shoaibrayeen/API-Testing-Automation)** — _Java, Karate, JavaScript_  
+  - Automated **microservice API testing** with reporting capabilities.  
+
+- **[URL Shortener](https://github.com/shoaibrayeen/Url-Shortener)** — _Spring Boot, Java, MySQL_  
+  - Implemented a **long URL shortening service** with persistent storage.  
+
+- **[Chatbot](https://github.com/shoaibrayeen/Chatbot)** — _Flask, Python, AIML, JavaScript, HTML, CSS_  
+  - Developed an AI-powered chatbot supporting **sports, dictionary, and general knowledge queries**.  
+
+- **[Accident Prevention](https://github.com/shoaibrayeen/Accident-Prevention)** — _OpenCV, Python_  
+  - Implemented a **drowsiness detection system** for driver safety alerts.  
+
+- **[File Transfer Protocol](https://github.com/shoaibrayeen/File-Transfer-Protocol)** — _C_  
+  - Built a **socket-based FTP application** for **secure file transfers**.  
+
+- **[Prediction of Heart Disease](https://github.com/shoaibrayeen/Heart-Disease-Predictor)** — _R, Shiny_  
+  - Used **KNN models** to predict **heart disease risk** based on patient data.  
+
+- **[Website Implementation Using GitHub Pages](https://shoaibrayeen.github.io)** — _HTML, CSS_  
+  - Developed my **personal website** using **GitHub Pages**.  
 
 ---
 
-<h2>🚀 Skills Summary</h2>
+<h2>🛠 Skills Summary</h2>
 
-🛠 **Frameworks:** Spring Boot, Ruby on Rails, Django, Angular, Express.js  
-🛠 **Testing:** Karate, RSpec, Mockito, Rest Assured, JUnit  
-🛠 **Databases:** PostgreSQL, MySQL, DynamoDB, MongoDB, ElasticSearch  
-🛠 **Languages:** Java, Python, Ruby, JavaScript, C++, TypeScript  
-🛠 **Caching & Storage:** Redis, Aerospike, Amazon S3  
-🛠 **Tools & Platforms:** Kubernetes, Jenkins, Confluence, Git, Bitbucket  
-🛠 **Monitoring:** Kibana, New Relic, Grafana  
+- **Frameworks** - Spring Boot, Ruby on Rails, Django, Angular 9, Express.js, Flask, Node.js, GoLang  
+- **Testing** - Karate, RSpec, Mockito, Rest Assured, JUnit  
+- **Databases** - PostgreSQL, MySQL, DynamoDB, MongoDB, ElasticSearch  
+- **Programming Languages** - Java, Python, Ruby, JavaScript, TypeScript, C, C++, R, Shell Script, LEX, YACC  
+- **Job Scheduler, Queue & Caching** - Apache Pulsar, Redis, Sidekiq, Aerospike, Amazon S3  
+- **AI & LLM Integration** - Retrieval-Augmented Generation (RAG), AI-driven API development  
+- **DevOps & Tools** - Kubernetes, Jenkins, Keycloak, Bitbucket, GitHub, SonarQube, Confluence, JIRA, Lens, Mockoon  
+- **Monitoring** - Kibana, New Relic (NRM), Grafana  
+- **Others** - REST API, Microservice Architecture, Agile Development, Cloud Computing  
+- **Soft Skills** - Leadership, Event Management, Time Management, Event Organization, Public Relations  
+
 
 ---
 
@@ -100,7 +139,7 @@ I am **Mohd Shoaib Rayeen**, a **Senior Software Engineer** specializing in **Ba
 
 ---
 
-<h2>📝 Articles by Me</h2>
+<h2>📝 Articles</h2>
 
 📝 **[How to Start a New Programming Language](/get-started-with-any-programming-language)**  
 📝 **[How to Prepare for Placement](/placement)**  
