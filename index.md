@@ -8,10 +8,14 @@ imageURL: /images/me/home.jpg
 Mohd Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF6347; font-size: 2em">
-Software Engineer
+Senior Software Enginee
 </p>
 
-This is Mohd Shoaib Rayeen. I am a Software Engineer. I work on Backend Architecture, and I got opportunities to work on Frontend Architecture, System Designing, Automation Testing, and Site Reliability Engineering.
+I am **Mohd Shoaib Rayeen**, a **Senior Software Engineer** specializing in **Backend Architecture, AI Integrations, and Scalable Distributed Systems**. With expertise in **system design, automation testing, and site reliability engineering**, I have contributed to building **high-performance, resilient, and AI-driven solutions**.  
+
+I have experience in designing **robust APIs, microservices, and queue-based architectures** while working with **Spring Boot, Java, PostgreSQL, Apache Pulsar, and Redis**. My work also extends to **LLM-based AI integrations**, optimizing workflows for **contract intelligence, metadata extraction, and automation**.  
+
+🚀 **Passionate about AI-driven automation, distributed computing, and building scalable backend systems!**  
 
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
