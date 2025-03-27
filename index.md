@@ -8,7 +8,7 @@ imageURL: /images/me/home.jpg
 Mohd Shoaib Rayeen
 </p>
 <p style="text-align: center; color: #FF6347; font-size: 2em">
-Senior Software Enginee
+Senior Software Engineer
 </p>
 
 I am **Mohd Shoaib Rayeen**, a **Senior Software Engineer** specializing in **Backend Architecture, AI Integrations, and Scalable Distributed Systems**. With expertise in **system design, automation testing, and site reliability engineering**, I have contributed to building **high-performance, resilient, and AI-driven solutions**.  
