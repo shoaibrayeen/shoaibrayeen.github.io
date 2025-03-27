@@ -20,7 +20,7 @@ I have experience in designing **robust APIs, microservices, and queue-based arc
 **Feel Free to Contribute in [Programmers Community](https://shoaibrayeen.github.io/Programmers-Community/) managed by Me!**
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
-  🚀 Professional Experience  
+  🚀 Experience  
 </p>
 
 - [Sirion](https://www.sirion.ai/) — _Senior Software Engineer_  
@@ -154,7 +154,7 @@ I have experience in designing **robust APIs, microservices, and queue-based arc
 - [Actions on Google](/Actions_on_Google) — **Created AI-driven voice experiences for Google Assistant.**  
 
 <p style="text-align: left; color: #FF6347; font-size: 1.75em">
-  ✍️ Articles by Me 
+  ✍️ Articles 
 </p>
 
 - [🚀 How to Start a New Programming Language](/get-started-with-any-programming-language)  
