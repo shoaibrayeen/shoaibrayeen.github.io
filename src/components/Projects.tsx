@@ -2,39 +2,49 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Talk-to-Document",
+      tech: "Spring Boot, Vector Search, LLM",
+      description: "Pioneered an LLM-powered semantic Q&A engine handling 10,000+ user queries/month with sub-second response times for contract review at Sirion."
+    },
+    {
+      title: "Gen AI Extraction Pipeline",
+      tech: "OpenAI, Claude, RAG, Spring Boot",
+      description: "Automated full document ingestion lifecycle (parse → extract → validate) via OpenAI and Claude with RAG fallback, achieving 90%+ accuracy across diverse legal document formats at Sirion."
+    },
+    {
+      title: "MCP Server Integration",
+      tech: "Model Context Protocol, Spring Boot",
+      description: "Streamlined AI tooling access by exposing 15+ standardized operations via Model Context Protocol, enabling plug-and-play LLM integration for enterprise clients at Sirion."
+    },
+    {
       title: "Bulk Processor",
-      tech: "Spring Boot, PostgreSQL, Pulsar",
-      description: "Designed a fault-tolerant system for bulk data processing with context-aware service restart and retry mechanisms. Integrated Pulsar messaging, email notification templates, and Excel download APIs for improved usability."
+      tech: "Java 17, Spring Boot, PostgreSQL, Apache Pulsar",
+      description: "Scaled an async contract processing engine to 5M+ daily events with zero data loss under sustained peak load at Sirion."
     },
     {
-      title: "ESB, Airtel Africa",
-      tech: "Spring Boot, PostgreSQL, Redis",
-      description: "Developed transactional and non-transactional APIs for 13 operating countries. Managed production and UAT bug fixes, improving system stability."
+      title: "Canza",
+      tech: "Angular 9, Node.js, REST APIs",
+      description: "Grew a real-time financial exchange platform into a production-grade tool across 13 African countries, contributing to 1.5x revenue uplift at Airtel Africa."
     },
     {
-      title: "Canza, Airtel Africa",
-      tech: "Spring Boot, PostgreSQL, Redis, Angular 9, Node.js 12",
-      description: "Built an intuitive Exchange Rate Management UI for multiple countries. Developed APIs to add, update, and manage forex conversion rates."
+      title: "ESB Payment Gateway",
+      tech: "Spring Boot, Event-Driven Architecture",
+      description: "Facilitated cross-border settlement for millions of users via an event-driven payment API gateway with sub-100ms transaction routing across pan-African markets at Airtel Africa."
+    },
+    {
+      title: "RAG & AI API Integration",
+      tech: "Qdrant, Weaviate, Vector Search",
+      description: "Integrated Qdrant and Weaviate vector databases into knowledge retrieval APIs, accelerating semantic search speed by 40% over keyword-based baseline systems."
     },
     {
       title: "Housing FAQ Service",
       tech: "Ruby on Rails, PostgreSQL, Sidekiq, Redis",
-      description: "Revamped an SEO-optimized FAQ microservice, enhancing search discoverability."
-    },
-    {
-      title: "Profile Management System",
-      tech: "Ruby on Rails, PostgreSQL, ElasticSearch, Sidekiq",
-      description: "Developed a team hierarchy and CRUD-based user management system."
-    },
-    {
-      title: "API Testing Automation",
-      tech: "Java, Karate, JavaScript",
-      description: "Automated microservice API testing with reporting capabilities."
+      description: "Revamped an SEO-optimized FAQ microservice for property listings, enhancing search engine discoverability and lifting organic traffic by 20%+."
     },
     {
       title: "URL Shortener",
       tech: "Spring Boot, Java, MySQL",
-      description: "Implemented a long URL shortening service with persistent storage."
+      description: "Implemented a long URL shortening service with persistent storage and fast redirect lookups."
     },
     {
       title: "AI Chatbot",
@@ -44,7 +54,7 @@ const Projects = () => {
     {
       title: "Accident Prevention System",
       tech: "OpenCV, Python",
-      description: "Implemented a drowsiness detection system for driver safety alerts."
+      description: "Implemented a drowsiness detection system for driver safety alerts using computer vision."
     }
   ];
 

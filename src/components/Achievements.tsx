@@ -7,6 +7,14 @@ const Achievements = () => {
     }
   ];
 
+  const certifications = [
+    {
+      title: "Advanced Prompt Engineering Techniques",
+      organization: "LinkedIn Learning",
+      year: "2024"
+    }
+  ];
+
   const positions = [
     {
       title: "Alexa Student Influencer",
@@ -30,10 +38,6 @@ const Achievements = () => {
     }
   ];
 
-  const articles = [
-    "How to Start a New Programming Language",
-    "How to Prepare for Placement"
-  ];
 
   return (
     <section id="achievements" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50">
@@ -62,6 +66,22 @@ const Achievements = () => {
             ))}
           </div>
 
+          {/* Certifications */}
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+              <span className="text-2xl mr-3">📜</span>
+              Certifications
+            </h3>
+            <div className="space-y-4">
+              {certifications.map((cert, index) => (
+                <div key={index} className="border-l-4 border-amber-500 pl-4">
+                  <h4 className="font-semibold text-gray-800">{cert.title}</h4>
+                  <p className="text-sm text-amber-600 font-medium">{cert.organization}, {cert.year}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Leadership Positions */}
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
@@ -73,21 +93,6 @@ const Achievements = () => {
                 <div key={index} className="border-l-4 border-cyan-500 pl-4">
                   <h4 className="font-semibold text-gray-800">{position.title}</h4>
                   <p className="text-sm text-cyan-600 font-medium">{position.organization}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Articles */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-              <span className="text-2xl mr-3">📝</span>
-              Articles
-            </h3>
-            <div className="space-y-4">
-              {articles.map((article, index) => (
-                <div key={index} className="border-l-4 border-emerald-500 pl-4">
-                  <h4 className="font-semibold text-gray-800">{article}</h4>
                 </div>
               ))}
             </div>

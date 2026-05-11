@@ -3,12 +3,14 @@ const Education = () => {
     {
       institution: "University of Delhi - Dept. of Computer Science",
       degree: "MCA (Master of Computer Applications)",
-      grade: "83.93%"
+      grade: "83.93%",
+      duration: "Jul 2017 - Jun 2020"
     },
     {
       institution: "Hansraj College, University of Delhi",
-      degree: "B.Sc. (H) Computer Science",
-      grade: "88.41%"
+      degree: "B.Sc. (Hons.) Computer Science",
+      grade: "88.41%",
+      duration: "Jul 2014 - Jun 2017"
     }
     // COMMENTED - 12th and 10th Grade entries
     // {
@@ -41,7 +43,10 @@ const Education = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
-                  <h4 className="text-lg text-teal-600 font-semibold mb-2">{edu.institution}</h4>
+                  <h4 className="text-lg text-teal-600 font-semibold mb-1">{edu.institution}</h4>
+                  {edu.duration && (
+                    <p className="text-sm text-gray-500 font-medium">{edu.duration}</p>
+                  )}
                 </div>
                 {/* COMMENTED - Grade percentages */}
                 {/* <div className="mt-4 md:mt-0">

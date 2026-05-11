@@ -65,8 +65,8 @@ const Hero = () => {
             </h2>
             
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-delay-2">
-              Specializing in Backend Architecture, Gen AI, MCP, and Scalable Distributed Systems. 
-              Building high-performance, resilient, and AI-driven solutions.
+              6+ years architecting scalable backend systems, AI-powered pipelines, and LLM-integrated workflows 
+              across legal-tech and fintech. Delivering production-grade Gen AI, RAG, and MCP solutions.
             </p>
           </div>
           

@@ -3,43 +3,58 @@ const Skills = () => {
   const skillCategories = [
     {
       title: 'Programming Languages',
-      skills: ['Go', 'Java', 'Python', 'Ruby', 'JavaScript', 'TypeScript'],
+      skills: ['Java', 'Go (Golang)', 'Python', 'Ruby', 'JavaScript', 'TypeScript'],
       color: 'bg-teal-500'
     },
     {
       title: 'Frameworks',
-      skills: ['GoLang', 'Spring Boot', 'Ruby on Rails', 'Django', 'Flask', 'Fast API'],
+      skills: ['Spring Boot', 'Golang', 'Ruby on Rails', 'Django', 'Flask', 'FastAPI'],
       color: 'bg-cyan-500'
     },
     {
-      title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'MySQL', 'DynamoDB', 'ElasticSearch', 'Redis'],
-      color: 'bg-emerald-500'
-    },
-    {
-      title: 'Testing',
-      skills: ['Karate', 'RSpec', 'Mockito', 'Rest Assured', 'JUnit'],
-      color: 'bg-blue-500'
-    },
-    {
-      title: 'DevOps & Tools',
-      skills: ['Jenkins', 'Keycloak', 'Bitbucket', 'GitHub', 'SonarQube', 'Confluence', 'JIRA'],
-      color: 'bg-indigo-500'
-    },
-    {
-      title: 'Queue & Caching',
-      skills: ['Apache Pulsar', 'Redis', 'Sidekiq', 'Aerospike', 'Amazon S3'],
-      color: 'bg-purple-500'
-    },
-    {
-      title: 'Gen AI',
-      skills: ['Prompt Engineering', 'Prompt Studio', 'LLM Studio', 'Retrieval-Augmented Generation (RAG)', 'AI-driven API development', 'MCP Integration'],
+      title: 'AI & Machine Learning',
+      skills: ['Generative AI', 'Retrieval-Augmented Generation (RAG)', 'LLM Inference Integration', 'MCP Server Development', 'AI Extraction Pipelines', 'Prompt Engineering', 'Prompt Repository', 'LLM Repository', 'LLM Management'],
       color: 'bg-pink-500'
     },
     {
-      title: 'Monitoring',
-      skills: ['Kibana', 'New Relic (NRM)', 'Grafana', 'ELK'],
+      title: 'LLM Inference APIs',
+      skills: ['OpenAI', 'Claude (Anthropic)', 'Llama (Meta)', 'Gemini (Google)', 'Mistral AI', 'Cerebras', 'WatsonX.AI'],
+      color: 'bg-rose-500'
+    },
+    {
+      title: 'Vector Databases',
+      skills: ['Qdrant', 'Weaviate'],
+      color: 'bg-violet-500'
+    },
+    {
+      title: 'Databases',
+      skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'DynamoDB', 'ElasticSearch', 'Redis'],
+      color: 'bg-emerald-500'
+    },
+    {
+      title: 'Messaging & Caching',
+      skills: ['Apache Pulsar', 'Apache Kafka', 'Redis', 'Sidekiq', 'Aerospike', 'Amazon S3'],
+      color: 'bg-purple-500'
+    },
+    {
+      title: 'Cloud Platforms',
+      skills: ['AWS', 'Microsoft Azure', 'Oracle Cloud'],
+      color: 'bg-sky-500'
+    },
+    {
+      title: 'DevOps & CI/CD',
+      skills: ['Docker', 'Jenkins', 'GitHub Actions', 'SonarQube', 'Bitbucket', 'Keycloak'],
+      color: 'bg-indigo-500'
+    },
+    {
+      title: 'Monitoring & Observability',
+      skills: ['ELK Stack', 'Kibana', 'Grafana', 'New Relic', 'Performance Monitoring'],
       color: 'bg-orange-500'
+    },
+    {
+      title: 'Testing',
+      skills: ['JUnit', 'Mockito', 'Rest Assured', 'Karate', 'RSpec', 'Go Testing'],
+      color: 'bg-blue-500'
     }
   ];
 
@@ -81,14 +96,15 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-gray-800 mb-6">Core Competencies</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {[
-              'REST API',
-              'Microservice Architecture',
-              'Agile Development',
-              'Cloud Computing',
+              'Distributed Systems',
+              'Microservices Architecture',
+              'RESTful API Design',
+              'Async Processing',
+              'Event-Driven Architecture',
               'System Design',
-              'Site Reliability Engineering',
-              'Leadership',
-              'Event Management'
+              'Agile & Scrum',
+              'Cloud Computing',
+              'Leadership'
             ].map((competency, index) => (
               <span
                 key={index}

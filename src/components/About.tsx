@@ -10,14 +10,15 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            I am Mohd Shoaib Rayeen, a Senior Software Engineer specializing in Backend Architecture, AI Integrations, and Scalable Distributed Systems. 
-            Currently focused on Contractual Metadata Extraction through LLM, MCP Integration and Agentic AI Integration. 
-            Passionate about creating resilient, high-performance solutions that serve millions of users globally.
+            I am Mohd Shoaib Rayeen, a Senior Software Engineer with 6+ years of experience architecting scalable backend systems, 
+            AI-powered pipelines, and LLM-integrated workflows across legal-tech and fintech domains. 
+            Delivered production-grade Generative AI, RAG, and MCP server solutions integrated with OpenAI, Claude, Llama, Gemini, Mistral, Cerebras, and WatsonX.AI. 
+            Consistently boosted throughput, slashed processing latency, and accelerated revenue growth through high-performance distributed microservices in Java 17, Spring Boot, and Golang.
           </p>
           
           <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
             <div className="text-center p-4 bg-teal-50 rounded-lg">
-              <div className="text-2xl font-bold text-teal-600">5+</div>
+              <div className="text-2xl font-bold text-teal-600">6+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center p-4 bg-cyan-50 rounded-lg">
