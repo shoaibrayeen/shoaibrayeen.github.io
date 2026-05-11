@@ -1,31 +1,56 @@
 
-import { Mail, Github, Linkedin, Phone, MessageCircle } from 'lucide-react';
+import { useState, FormEvent } from 'react';
+import { Mail, Github, Linkedin, Send, Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
+
+const WEB3FORMS_ACCESS_KEY = '8884658f-82c2-434a-ba5f-d0693d4b70fd';
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleEmailClick = () => {
     const userAgent = navigator.userAgent;
     const email = 'shoaibrayeen.me@gmail.com';
     
-    // Check if user is on mobile or has Outlook installed
     if (userAgent.includes('Outlook') || userAgent.includes('Windows')) {
       window.location.href = `mailto:${email}`;
     } else {
-      // Default to Gmail web interface
       window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank');
     }
   };
 
-  const handlePhoneClick = () => {
-    window.location.href = 'tel:+918181813999';
-  };
-
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/918181813999', '_blank');
-  };
-
   const handleConversationClick = () => {
-    // Redirect to LinkedIn for professional conversations
     window.open('https://www.linkedin.com/in/shoaibrayeen/', '_blank');
+  };
+
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+    formData.append('subject', 'New message from shoaibrayeen.github.io');
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success('Message sent successfully! I\'ll get back to you soon.');
+        form.reset();
+      } else {
+        toast.error('Failed to send message. Please try again.');
+      }
+    } catch {
+      toast.error('Something went wrong. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -68,7 +93,6 @@ const Contact = () => {
               <p className="text-gray-600 text-xs break-all">shoaibrayeen.me@gmail.com</p>
             </button>
 
-
             {/* GitHub */}
             <a
               href="https://github.com/shoaibrayeen"
@@ -82,10 +106,89 @@ const Contact = () => {
               <h3 className="text-lg font-bold text-gray-800 mb-2">GitHub</h3>
               <p className="text-gray-600 text-sm">@shoaibrayeen</p>
             </a>
-
           </div>
 
-          {/* Additional Contact Info */}
+          {/* Contact Form */}
+          <div className="mt-12">
+            <div className="bg-gradient-to-br from-gray-50 to-teal-50 rounded-xl p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2 text-center">
+                Send Me a Message
+              </h3>
+              <p className="text-gray-600 text-center mb-8">
+                Have a question or want to work together? Drop me a message below.
+              </p>
+
+              <form onSubmit={handleFormSubmit} className="max-w-2xl mx-auto space-y-6">
+                {/* Honeypot for spam protection */}
+                <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      placeholder="John Doe"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Your Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="john@example.com"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={5}
+                    placeholder="Tell me about your project or idea..."
+                    className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200 resize-none"
+                  />
+                </div>
+
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-10 py-4 rounded-full font-semibold hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-xl hover:from-teal-700 hover:to-cyan-700 disabled:opacity-60 disabled:hover:scale-100 disabled:cursor-not-allowed inline-flex items-center gap-2"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 size={20} className="animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send size={20} />
+                        Send Message
+                      </>
+                    )}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          {/* Ready to Collaborate */}
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-teal-600 to-cyan-600 rounded-xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Ready to Collaborate?</h3>
