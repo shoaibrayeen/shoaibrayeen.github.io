@@ -23,9 +23,8 @@ const Index = () => {
   return (
     <div className={`min-h-screen transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <Header />
-      <main>
+      <main className="pb-14">
         <Hero />
-        {/* Removed <ResumeSection /> */}
         <About />
         <Experience />
         <Skills />
