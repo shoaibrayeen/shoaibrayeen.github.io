@@ -61,7 +61,7 @@ const Hero = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-700 font-semibold animate-fade-in-delay-1">
-              Senior Software Engineer
+              Technical Lead I
             </h2>
             
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-delay-2">

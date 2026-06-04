@@ -10,7 +10,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            I am Mohd Shoaib Rayeen, a Senior Software Engineer with 6+ years of experience architecting scalable backend systems, 
+            I am Mohd Shoaib Rayeen, a Technical Lead with 6+ years of experience architecting scalable backend systems, 
             AI-powered pipelines, and LLM-integrated workflows across legal-tech and fintech domains. 
             Delivered production-grade Generative AI, RAG, and MCP server solutions integrated with OpenAI, Claude, Llama, Gemini, Mistral, Cerebras, and WatsonX.AI. 
             Consistently boosted throughput, slashed processing latency, and accelerated revenue growth through high-performance distributed microservices in Java 17, Spring Boot, and Golang.

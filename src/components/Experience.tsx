@@ -6,8 +6,13 @@ const Experience = () => {
       company: "Sirion",
       positions: [
         {
+          title: "Technical Lead I",
+          duration: "Jun 2025 - Present",
+          promotion: "Promoted from Senior Software Engineer 1"
+        },
+        {
           title: "Senior Software Engineer 1",
-          duration: "Apr 2024 - Present",
+          duration: "Apr 2024 - May 2025",
           promotion: "Promoted from Software Engineer 1"
         },
         {
