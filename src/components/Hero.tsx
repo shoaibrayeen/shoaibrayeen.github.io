@@ -10,7 +10,7 @@ const Hero = () => {
     console.log('Download button clicked');
     
     // Google Drive direct download URL
-    const driveUrl = 'https://drive.google.com/uc?export=download&id=1uIxXCEDzKNIDLiA7lw_ONSRKNxUkA3d8';
+    const driveUrl = 'https://drive.google.com/uc?export=download&id=1xwVsgSsioC3KwySH5GDdMTzo8IPBXhkP';
     
     // Create download link
     const link = document.createElement('a');
