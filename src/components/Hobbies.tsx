@@ -1,8 +1,16 @@
 
-import { Play, Heart, Headphones, Camera, Coffee, MapPin, Film } from 'lucide-react';
+import { Play, Heart, Headphones, Camera, Coffee, Film, ExternalLink } from 'lucide-react';
+
+type Hobby = {
+  title: string;
+  description: string;
+  icon: JSX.Element;
+  color: string;
+  link?: { href: string; label: string };
+};
 
 const Hobbies = () => {
-  const hobbies = [
+  const hobbies: Hobby[] = [
     {
       title: "Sports Enthusiast",
       description: "Passionate about Cricket, Carrom, and Badminton - love the strategy and teamwork",
@@ -37,7 +45,11 @@ const Hobbies = () => {
       title: "Cinema Enthusiast",
       description: "Passionate about films from different genres and cultures, appreciating storytelling and cinematography",
       icon: <Film size={24} className="text-red-600" />,
-      color: "from-red-50 to-pink-50"
+      color: "from-red-50 to-pink-50",
+      link: {
+        href: "https://shoaibrayeen.github.io/cinema-hub/",
+        label: "Explore my Cinema Hub"
+      }
     }
   ];
 
@@ -61,6 +73,19 @@ const Hobbies = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{hobby.title}</h3>
               <p className="text-gray-600 text-center">{hobby.description}</p>
+              {hobby.link && (
+                <div className="mt-4 text-center">
+                  <a
+                    href={hobby.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2 bg-white text-teal-700 rounded-full text-sm font-semibold border border-teal-200 shadow-sm hover:bg-gradient-to-r hover:from-teal-600 hover:to-cyan-600 hover:text-white hover:border-transparent transition-all duration-200"
+                  >
+                    {hobby.link.label}
+                    <ExternalLink size={16} />
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portfolio-dev",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "export PATH=/Users/shoaib.rayeen/tools/node-v22.22.2-darwin-arm64/bin:$PATH && cd /Users/shoaib.rayeen/my_space/shoaibrayeen.github.io && npm run dev"
+      ],
+      "port": 8080
+    },
+    {
+      "name": "portfolio-preview",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "export PATH=/Users/shoaib.rayeen/tools/node-v22.22.2-darwin-arm64/bin:$PATH && cd /Users/shoaib.rayeen/my_space/shoaibrayeen.github.io && npm run preview"
+      ],
+      "port": 4173
+    }
+  ]
+}

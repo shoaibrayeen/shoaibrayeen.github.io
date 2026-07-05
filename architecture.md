@@ -1,0 +1,104 @@
+# shoaibrayeen.github.io — Architecture
+
+> **Rule:** this document and [architecture.svg](architecture.svg) must be updated in the same commit as any change that affects structure, routing, sections, content model, build, or deployment. See [CLAUDE.md](CLAUDE.md).
+
+![Architecture flow diagram](architecture.svg)
+
+## Overview
+
+A fully static single-page portfolio: one scrolling page composed of self-contained section components, rendered client-side with all content hardcoded in the components themselves. No backend and no CMS — the only network calls are the contact form (Web3Forms) and the resume download (Google Drive). It deploys as a **GitHub Pages user site** served at the domain root `https://shoaibrayeen.github.io/`.
+
+**Stack:** Vite 5 · React 18 · TypeScript (loose mode) · React Router 6 · Tailwind CSS + shadcn/ui (Radix) · lucide-react icons · sonner toasts. **Tests:** Vitest 3 + Testing Library (jsdom).
+
+## Directory layout
+
+```
+├── index.html                  # SEO meta (title/OG/Twitter/canonical) + SPA-redirect decode script
+├── vite.config.ts              # default base "/" (user site), @ → src alias, dev port 8080
+├── .github/workflows/deploy.yml  # CI/CD — triggers on master_revamp (NOT master)
+├── MIGRATION.md                # historical: Jekyll → React migration notes
+├── public/
+│   ├── 404.html                # spa-github-pages redirect (pathSegmentsToKeep = 0) + branded "redirecting" splash
+│   ├── .nojekyll               # disable Jekyll on Pages
+│   ├── profile.png             # hero profile photo (~914 KB)
+│   └── robots.txt              # allow-all crawler rules
+└── src/
+    ├── main.tsx                # mounts <App /> into #root
+    ├── App.tsx                 # providers + router ("/" → Index, "*" → NotFound)
+    ├── pages/
+    │   ├── Index.tsx           # THE page — composes all sections in order
+    │   └── NotFound.tsx        # branded 404 page (teal/cyan, requested-path echo, home/back CTAs, mailto)
+    ├── components/             # one component per portfolio section (content lives inside each)
+    │   ├── Header.tsx          # fixed top nav, scroll-blur effect, mobile hamburger
+    │   ├── Hero.tsx            # #home — profile, headline, CTAs, resume download (Google Drive)
+    │   ├── About.tsx           # #about — bio, stat cards, 3 expertise cards  ← source of truth for cinema-hub's About Me
+    │   ├── Experience.tsx      # #experience — experiences[] timeline (Sirion ×4 roles, Airtel, PropTiger)
+    │   ├── Skills.tsx          # #skills — skillCategories[] (11 categories) + competency badges
+    │   ├── Projects.tsx        # #projects — projects[] (11 featured project cards)
+    │   ├── Education.tsx       # #education — education[] (MCA, B.Sc.)
+    │   ├── Contact.tsx         # #contact — social cards + form → Web3Forms API
+    │   ├── Achievements.tsx    # #achievements — awards / certifications / leadership arrays
+    │   ├── Hobbies.tsx         # #hobbies — hobbies[] (6 cards); Cinema card links out to cinema-hub
+    │   ├── Footer.tsx          # fixed bottom copyright bar
+    │   ├── ResumeSection.tsx   # UNUSED — commented out of Index; resume DL lives in Hero
+    │   └── ui/                 # ~47 shadcn/ui primitives (generated; only a few used)
+    ├── hooks/                  # use-mobile (768px media query), use-toast
+    ├── lib/utils.ts            # cn() class merge helper
+    └── test/                   # vitest setup + suites (see Testing)
+```
+
+## Page composition & content model
+
+`Index.tsx` renders every section in a fixed order (Header → Hero → About → Experience → Skills → Projects → Education → Contact → Achievements → Hobbies → Footer) with a fade-in on mount. **Navigation is smooth-scroll to section `id`s** (`scrollIntoView`), not routing — the router only distinguishes `/` from the 404 fallback.
+
+**All content is hardcoded inside each section component** as local data arrays (`experiences[]`, `skillCategories[]`, `projects[]`, `education[]`, `achievements[]`, `hobbies[]`) or inline JSX (Hero, About). There is no shared data file — to edit portfolio content, edit the owning component. No props flow between sections; each is self-contained.
+
+### External integrations (the only network calls)
+
+| Integration | Where | How |
+|---|---|---|
+| **Web3Forms** | `Contact.tsx` | `POST https://api.web3forms.com/submit` with hardcoded access key; honeypot spam field; sonner toast feedback; `isSubmitting` state |
+| **Google Drive** | `Hero.tsx` | Direct-download link for `Mohd_Shoaib_Rayeen_Resume.pdf` via temporary `<a>` element |
+| **Social links** | `Contact.tsx`, `Hero.tsx` | LinkedIn, GitHub, mailto |
+| **cinema-hub** | `Hobbies.tsx` | "Explore my Cinema Hub" link on the Cinema Enthusiast card → https://shoaibrayeen.github.io/cinema-hub/ (new tab, noopener) |
+
+## Routing & deep links
+
+`App.tsx`: `QueryClientProvider → TooltipProvider → Toaster/Sonner → BrowserRouter` (no basename — user site at root) with routes `/` → Index and `*` → NotFound.
+
+Deep links on GitHub Pages use the spa-github-pages pair: `public/404.html` (**`pathSegmentsToKeep = 0`**, root domain — unlike a project site) redirects unknown paths to `/?/<path>`, and the decode script in `index.html` restores the URL with `history.replaceState` before React mounts.
+
+## Styling
+
+Tailwind utility-first with HSL design tokens in `src/index.css` (dark-mode variables exist but no toggle is wired). Brand palette: **teal/cyan gradients** (`from-teal-600 to-cyan-600`) on headings, CTAs, and accents; section backgrounds alternate white and soft teal gradients. Icons via lucide-react. No custom fonts (system stack).
+
+## Build & deployment
+
+⚠️ **Deploys trigger on `master_revamp`** — the repo's default branch on origin is `master`, but pushing `master` does **not** deploy. [deploy.yml](.github/workflows/deploy.yml):
+
+```
+push to master_revamp → checkout → setup-node 24 → npm install → npm test → npm run build
+                      → configure-pages → upload dist/ → deploy-pages
+```
+
+- **No lockfile is committed** (no package-lock.json/bun.lockb) and CI uses `npm install`, so dependencies re-resolve on every deploy.
+- **Tests gate the deploy** — a red suite blocks publishing.
+- Vite outputs `dist/` with root-relative asset URLs; `404.html`, `.nojekyll`, `profile.png`, `robots.txt` copy over from `public/`.
+- Live URL: https://shoaibrayeen.github.io/ (also the source of truth for the About Me card in the cinema-hub repo).
+
+## Testing
+
+Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mocks matchMedia/ResizeObserver/IntersectionObserver/scrollIntoView). `npm test` runs once (CI mode); `npm run test:watch` for development. **Every change must ship with tests** (see CLAUDE.md). One suite per component/page/hook/util in `src/test/`; contracts worth knowing:
+
+- `src/test/about.test.tsx` — About section content, including the strings the cinema-hub About Me card mirrors (the cross-repo contract)
+- `src/test/hobbies.test.tsx` — the 6 hobby cards and the cinema-hub link (href/target/rel)
+- `src/test/app.test.tsx` — the portfolio renders at `/`, 404 fallback for unknown routes
+- `src/test/contact.test.tsx` — contact form posts to Web3Forms (fetch mocked), success/failure paths
+
+## Known gaps (accepted, documented for maintainers)
+
+- `Hero.tsx` uses `animate-fade-in` / `animate-fade-in-delay-*` classes that are **not defined** in `tailwind.config.ts` — those entrance animations silently don't run.
+- `ResumeSection.tsx` is dead code (commented out of Index); the resume button lives in Hero.
+- Many installed deps are unused (recharts, next-themes, embla-carousel, most shadcn primitives, react-query is mounted but fetches nothing).
+- TypeScript runs in loose mode (`strict: false`, `noImplicitAny: false`).
+- No README.md — this file and MIGRATION.md are the repo documentation.
