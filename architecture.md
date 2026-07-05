@@ -13,13 +13,17 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 ## Directory layout
 
 ```
-├── index.html                  # SEO meta (title/OG/Twitter/canonical) + SPA-redirect decode script
+├── README.md                   # repo overview, quick start, deploy notes
+├── index.html                  # SEO meta (title/OG/Twitter/canonical) + favicon links + SPA-redirect decode script
 ├── vite.config.ts              # default base "/" (user site), @ → src alias, dev port 8080
 ├── .github/workflows/deploy.yml  # CI/CD — triggers on master_revamp (NOT master)
 ├── MIGRATION.md                # historical: Jekyll → React migration notes
 ├── public/
 │   ├── 404.html                # spa-github-pages redirect (pathSegmentsToKeep = 0) + branded "redirecting" splash
 │   ├── .nojekyll               # disable Jekyll on Pages
+│   ├── favicon.svg             # "SR" monogram tab icon (teal→cyan brand gradient)
+│   ├── favicon-32x32.png       # PNG fallback favicon
+│   ├── apple-touch-icon.png    # 180×180 iOS home-screen icon
 │   ├── profile.png             # hero profile photo (~914 KB)
 │   └── robots.txt              # allow-all crawler rules
 └── src/
@@ -88,7 +92,9 @@ push to master_revamp → checkout → setup-node 24 → npm install → npm tes
 
 ## Testing
 
-Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mocks matchMedia/ResizeObserver/IntersectionObserver/scrollIntoView). `npm test` runs once (CI mode); `npm run test:watch` for development. **Every change must ship with tests** (see CLAUDE.md). One suite per component/page/hook/util in `src/test/`; contracts worth knowing:
+Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mocks matchMedia/ResizeObserver/IntersectionObserver/scrollIntoView). `npm test` runs once (CI mode); `npm run test:watch` for development. **Every change must ship with tests** (see CLAUDE.md).
+
+**Every source file is covered** (except `vite-env.d.ts`, which has no runtime code): one suite per section component/page/hook/util, `main.test.tsx` for the entry point (including the `index.html` mount-container contract), `resume-section.test.tsx` for the dead-code component, and clustered `ui-*.test.tsx` suites covering all 48 shadcn/ui primitives. Contracts worth knowing:
 
 - `src/test/about.test.tsx` — About section content, including the strings the cinema-hub About Me card mirrors (the cross-repo contract)
 - `src/test/hobbies.test.tsx` — the 6 hobby cards and the cinema-hub link (href/target/rel)
@@ -101,4 +107,3 @@ Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mo
 - `ResumeSection.tsx` is dead code (commented out of Index); the resume button lives in Hero.
 - Many installed deps are unused (recharts, next-themes, embla-carousel, most shadcn primitives, react-query is mounted but fetches nothing).
 - TypeScript runs in loose mode (`strict: false`, `noImplicitAny: false`).
-- No README.md — this file and MIGRATION.md are the repo documentation.
