@@ -3,7 +3,9 @@ import { useState, FormEvent } from 'react';
 import { Mail, Github, Linkedin, Send, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 
-const WEB3FORMS_ACCESS_KEY = '8884658f-82c2-434a-ba5f-d0693d4b70fd';
+// Injected at build time: mapped from the EMAIL_API_KEY repo secret in the deploy
+// workflow; .env.local for local dev (template in .env.example); random stub in tests.
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -27,6 +27,7 @@ Node 22+ is required (CI uses Node 24).
 
 ```bash
 npm install        # no lockfile is committed by design — see below
+cp .env.example .env.local   # placeholder is fine for dev; real key lives only in the EMAIL_API_KEY GitHub secret
 npm run dev        # dev server → http://localhost:8080/
 npm test           # run the full test suite once (CI mode)
 npm run test:watch # watch mode for development
@@ -46,11 +47,12 @@ Every source file has a test suite in `src/test/` — one per component/page/hoo
 ⚠️ **Deploys trigger on `master_revamp`, not `master`.** The GitHub Actions workflow ([deploy.yml](.github/workflows/deploy.yml)) runs on every push to `master_revamp`:
 
 ```
-push → npm install → npm test → vite build → deploy dist/ to GitHub Pages
+push → npm install → npm test → vite build (⊕ EMAIL_API_KEY secret) → deploy dist/ to GitHub Pages
 ```
 
 Notes:
 
+- The contact-form key is **not in the source**: the build step maps the `EMAIL_API_KEY` repo secret (Settings → Secrets and variables → Actions) onto the `VITE_WEB3FORMS_ACCESS_KEY` env var (Vite only exposes `VITE_*` to client code) and fails if it's unset. The real key exists only in that secret — `.env.local` uses a placeholder and tests use a random stub. Locally, put it in `.env.local` (see `.env.example`). Note that Vite bakes `VITE_`-prefixed vars into the shipped JS bundle — Web3Forms access keys are public-facing by design, so this is repo hygiene, not true secrecy.
 - This is a GitHub Pages **user site** served at the domain root — Vite `base` stays `/` and the router has no basename.
 - Deep links work via the [spa-github-pages](https://github.com/rafgraph/spa-github-pages) pattern: `public/404.html` redirects unknown paths into a query string that `index.html` decodes before React mounts. Don't delete `public/404.html` or `public/.nojekyll`.
 - **No lockfile is committed** — CI runs `npm install`, so dependencies re-resolve on each deploy. Don't commit `package-lock.json` unless the workflow is switched to `npm ci` at the same time.

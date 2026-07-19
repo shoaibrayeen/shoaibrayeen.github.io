@@ -120,7 +120,12 @@ describe("Contact section", () => {
     expect(body.get("name")).toBe("Jane Tester");
     expect(body.get("email")).toBe("jane@example.com");
     expect(body.get("message")).toBe("Hello Shoaib!");
-    expect(body.get("access_key")).toBe("8884658f-82c2-434a-ba5f-d0693d4b70fd");
+    // The access key is no longer hardcoded — it must flow from import.meta.env
+    // (a random per-run stub from vitest.config.ts; the real key exists only in
+    // the EMAIL_API_KEY GitHub secret at deploy time). The equality also fails
+    // if the env var is missing (body would hold "undefined").
+    expect(body.get("access_key")).toBe(import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+    expect(body.get("access_key")).toBeTruthy();
     expect(body.get("subject")).toBe("New message from shoaibrayeen.github.io");
 
     expect(toast.success).toHaveBeenCalledWith(expect.stringMatching(/message sent successfully/i));

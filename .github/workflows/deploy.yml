@@ -36,7 +36,17 @@ jobs:
         run: npm test
 
       - name: Build
-        run: npm run build
+        env:
+          # Contact-form key: the EMAIL_API_KEY repo secret (Settings → Secrets and
+          # variables → Actions) mapped onto the VITE_-prefixed var that Vite exposes
+          # to Contact.tsx. Baked into the client bundle; without it the form can't submit.
+          VITE_WEB3FORMS_ACCESS_KEY: ${{ secrets.EMAIL_API_KEY }}
+        run: |
+          if [ -z "$VITE_WEB3FORMS_ACCESS_KEY" ]; then
+            echo "::error::EMAIL_API_KEY secret is not set (repo Settings → Secrets and variables → Actions) — failing instead of deploying a broken contact form."
+            exit 1
+          fi
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
