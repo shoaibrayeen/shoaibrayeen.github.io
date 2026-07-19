@@ -5,7 +5,11 @@ import { toast } from 'sonner';
 
 // Injected at build time: mapped from the EMAIL_API_KEY repo secret in the deploy
 // workflow; .env.local for local dev (template in .env.example); random stub in tests.
-const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+// Strip ALL whitespace: GitHub stores secrets verbatim, so a value pasted with a
+// stray newline/CR (or a trailing "\n" from `echo`) would otherwise be baked into
+// the bundle and rejected by Web3Forms as an invalid UUID. .trim() only clears the
+// ends, so use /\s/g to also kill a break spliced into the middle of the key.
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY?.replace(/\s/g, '');
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

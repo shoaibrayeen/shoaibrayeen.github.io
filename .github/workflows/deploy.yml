@@ -46,6 +46,10 @@ jobs:
             echo "::error::EMAIL_API_KEY secret is not set (repo Settings → Secrets and variables → Actions) — failing instead of deploying a broken contact form."
             exit 1
           fi
+          # GitHub stores secrets verbatim, so a value pasted with a stray newline/CR
+          # (or a trailing "\n" from `echo`) would be baked into the bundle and rejected
+          # by Web3Forms as an invalid UUID. Strip all whitespace before the build.
+          export VITE_WEB3FORMS_ACCESS_KEY="$(printf '%s' "$VITE_WEB3FORMS_ACCESS_KEY" | tr -d '[:space:]')"
           npm run build
 
       - name: Setup Pages

@@ -27,6 +27,7 @@ const stubUserAgent = (value: string) =>
 describe("Contact section", () => {
   afterEach(() => {
     vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
     vi.clearAllMocks();
   });
@@ -132,6 +133,34 @@ describe("Contact section", () => {
     // form.reset() ran on success
     expect(screen.getByLabelText(/your name/i)).toHaveValue("");
     expect(toast.error).not.toHaveBeenCalled();
+  });
+
+  it("strips stray whitespace/newlines from the access key before submitting", async () => {
+    // GitHub stores secrets verbatim, so a key pasted with an embedded CR/LF (or a
+    // trailing newline from `echo`) reaches the bundle intact and Web3Forms rejects
+    // it with "Must be a valid UUID." Contact.tsx reads the key at module load, so
+    // stub the env and re-import a fresh copy to exercise the /\s/g sanitization.
+    // The real key never lives in the repo — it's read from the EMAIL_API_KEY
+    // secret at build time — so this uses an arbitrary fake value with whitespace.
+    const clean = "fake-access-key-value";
+    const corrupted = " fake-access\r\n-key\t-value \n";
+    vi.stubEnv("VITE_WEB3FORMS_ACCESS_KEY", corrupted);
+    vi.resetModules();
+    const { default: FreshContact } = await import("@/components/Contact");
+
+    const fetchMock = vi.fn().mockResolvedValue({ json: async () => ({ success: true }) });
+    vi.stubGlobal("fetch", fetchMock);
+
+    const user = userEvent.setup();
+    render(<FreshContact />);
+    await fillForm(user);
+    await user.click(screen.getByRole("button", { name: /send message/i }));
+
+    await waitFor(() => expect(toast.success).toHaveBeenCalled());
+
+    const body = fetchMock.mock.calls[0][1].body as FormData;
+    expect(body.get("access_key")).toBe(clean);
+    expect(body.get("access_key")).not.toMatch(/\s/);
   });
 
   it("disables the submit button and shows Sending... while the request is in flight", async () => {
