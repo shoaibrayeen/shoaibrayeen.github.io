@@ -16,7 +16,8 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 ├── README.md                   # repo overview, quick start, deploy notes
 ├── index.html                  # SEO meta (title/OG/Twitter/canonical) + favicon links + SPA-redirect decode script
 ├── vite.config.ts              # default base "/" (user site), @ → src alias, dev port 8080
-├── .github/workflows/deploy.yml  # CI/CD — triggers on master_revamp (NOT master)
+├── .env.example                # template for .env.local (VITE_WEB3FORMS_ACCESS_KEY — contact-form key)
+├── .github/workflows/deploy.yml  # CI/CD — triggers on master_revamp (NOT master); maps EMAIL_API_KEY secret → build env
 ├── MIGRATION.md                # historical: Jekyll → React migration notes
 ├── public/
 │   ├── 404.html                # spa-github-pages redirect (pathSegmentsToKeep = 0) + branded "redirecting" splash
@@ -61,7 +62,7 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 
 | Integration | Where | How |
 |---|---|---|
-| **Web3Forms** | `Contact.tsx` | `POST https://api.web3forms.com/submit` with hardcoded access key; honeypot spam field; sonner toast feedback; `isSubmitting` state |
+| **Web3Forms** | `Contact.tsx` | `POST https://api.web3forms.com/submit` with access key from `import.meta.env.VITE_WEB3FORMS_ACCESS_KEY` (GitHub Actions secret in CI, `.env.local` locally); honeypot spam field; sonner toast feedback; `isSubmitting` state |
 | **Google Drive** | `Hero.tsx` | Direct-download link for `Mohd_Shoaib_Rayeen_Resume.pdf` via temporary `<a>` element |
 | **Social links** | `Contact.tsx`, `Hero.tsx` | LinkedIn, GitHub, mailto |
 | **cinema-hub** | `Hobbies.tsx` | "Explore my Cinema Hub" link on the Cinema Enthusiast card → https://shoaibrayeen.github.io/cinema-hub/ (new tab, noopener) |
@@ -81,12 +82,14 @@ Tailwind utility-first with HSL design tokens in `src/index.css` (dark-mode vari
 ⚠️ **Deploys trigger on `master_revamp`** — the repo's default branch on origin is `master`, but pushing `master` does **not** deploy. [deploy.yml](.github/workflows/deploy.yml):
 
 ```
-push to master_revamp → checkout → setup-node 24 → npm install → npm test → npm run build
+push to master_revamp → checkout → setup-node 24 → npm install → npm test
+                      → npm run build (env: VITE_WEB3FORMS_ACCESS_KEY ← EMAIL_API_KEY repo secret)
                       → configure-pages → upload dist/ → deploy-pages
 ```
 
 - **No lockfile is committed** (no package-lock.json/bun.lockb) and CI uses `npm install`, so dependencies re-resolve on every deploy.
 - **Tests gate the deploy** — a red suite blocks publishing.
+- **Build-time secret:** the Web3Forms access key is not in the source — the build step maps the **`EMAIL_API_KEY`** repo secret (Settings → Secrets and variables → Actions) onto the `VITE_WEB3FORMS_ACCESS_KEY` env var (Vite only exposes `VITE_`-prefixed vars to client code) and **fails the workflow if it's missing** rather than deploying a broken contact form. The real key exists **only** in that secret — `.env.local` (gitignored; template in `.env.example`) holds a placeholder so local dev builds run (local form submissions are rejected by Web3Forms unless the real key is pasted in temporarily), and tests use a random per-run stub (`vitest.config.ts` `test.env`). Being a Vite `VITE_`-prefixed var, it is still embedded in the built JS bundle — Web3Forms keys are public-facing by design; the secret keeps it out of the repo source, not out of the shipped site.
 - Vite outputs `dist/` with root-relative asset URLs; `404.html`, `.nojekyll`, `profile.png`, `robots.txt` copy over from `public/`.
 - Live URL: https://shoaibrayeen.github.io/ (also the source of truth for the About Me card in the cinema-hub repo).
 

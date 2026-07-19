@@ -32,7 +32,7 @@
 ## Content model
 
 - All portfolio content is **hardcoded in the owning section component** (`experiences[]` in Experience.tsx, `projects[]` in Projects.tsx, `skillCategories[]` in Skills.tsx, etc.). There are no data files, no CMS, no fetching — keep it that way unless explicitly asked.
-- The contact form posts to Web3Forms (access key hardcoded in `Contact.tsx`); the resume downloads from a Google Drive link in `Hero.tsx`. These are the app's only network calls.
+- The contact form posts to Web3Forms; the access key is **not in the repo** — `Contact.tsx` reads `import.meta.env.VITE_WEB3FORMS_ACCESS_KEY`. The real key exists **only** in the `EMAIL_API_KEY` repo secret (mapped in `deploy.yml`); `.env.local` holds a placeholder for local dev (template in `.env.example`) and tests use a random per-run stub from `vitest.config.ts`. Never hardcode the key anywhere. The resume downloads from a Google Drive link in `Hero.tsx`. These are the app's only network calls.
 - `ResumeSection.tsx` is dead code (not imported); the resume button lives in Hero.
 
 ## No Lovable references
