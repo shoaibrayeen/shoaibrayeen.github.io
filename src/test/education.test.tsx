@@ -80,4 +80,16 @@ describe("Education section", () => {
     expect(screen.queryByText(/83\.93%/)).not.toBeInTheDocument();
     expect(screen.queryByText(/88\.41%/)).not.toBeInTheDocument();
   });
+
+  it("carries dark-theme classes on the section and entry cards", () => {
+    const { container } = render(<Education />);
+    expect(container.querySelector("section#education")!.className).toContain(
+      "dark:bg-slate-900"
+    );
+    const card = screen
+      .getByRole("heading", { name: /MCA \(Master of Computer Applications\)/i })
+      .closest(".bg-gradient-to-r") as HTMLElement;
+    expect(card).not.toBeNull();
+    expect(card.className).toContain("dark:from-teal-950");
+  });
 });

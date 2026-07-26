@@ -92,4 +92,19 @@ describe("Hobbies section", () => {
       expect(within(getHobbyCard(title)).queryByRole("link")).toBeNull();
     }
   });
+
+  it("carries dark-theme classes on the section, cards, and cinema chip", () => {
+    const { container } = render(<Hobbies />);
+    expect(container.querySelector("section#hobbies")!.className).toContain(
+      "dark:from-slate-950"
+    );
+    // Card gradients live in the data-driven `color` strings; the ring keeps
+    // teal-tinted cards separable from the teal-tinted section in dark mode.
+    const card = getHobbyCard("Sports Enthusiast");
+    expect(card.className).toContain("dark:from-teal-950");
+    expect(card.className).toContain("dark:ring-1");
+    const link = screen.getByRole("link", { name: /explore my cinema hub/i });
+    expect(link.className).toContain("dark:bg-slate-800");
+    expect(link.className).toContain("dark:hover:text-white");
+  });
 });

@@ -107,4 +107,16 @@ describe("Achievements section", () => {
       ).toBeInTheDocument();
     }
   });
+
+  it("carries dark-theme classes on the section and all three cards", () => {
+    const { container } = render(<Achievements />);
+    expect(container.querySelector("section#achievements")!.className).toContain(
+      "dark:from-slate-950"
+    );
+    const cards = container.querySelectorAll("section#achievements .grid > div");
+    expect(cards).toHaveLength(3);
+    for (const card of Array.from(cards)) {
+      expect(card.className).toContain("dark:bg-slate-800");
+    }
+  });
 });

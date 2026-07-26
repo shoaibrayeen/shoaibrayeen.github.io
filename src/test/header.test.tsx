@@ -13,18 +13,10 @@ const NAV_ITEMS = [
   "contact",
 ];
 
-// The hamburger toggle is the only button rendered outside a <nav>.
-// (It currently has no accessible name — icon-only, no aria-label.)
-const getHamburgerButton = () => {
-  const navButtons = new Set(
-    screen
-      .getAllByRole("navigation")
-      .flatMap((nav) => within(nav).queryAllByRole("button"))
-  );
-  const button = screen.getAllByRole("button").find((b) => !navButtons.has(b));
-  expect(button).toBeDefined();
-  return button!;
-};
+const getHamburgerButton = (state: "open" | "close" = "open") =>
+  screen.getByRole("button", {
+    name: state === "open" ? /open navigation menu/i : /close navigation menu/i,
+  });
 
 describe("Header", () => {
   afterEach(() => {
@@ -102,7 +94,7 @@ describe("Header", () => {
     await user.click(getHamburgerButton());
     expect(screen.getAllByRole("navigation")).toHaveLength(2);
 
-    await user.click(getHamburgerButton());
+    await user.click(getHamburgerButton("close"));
     expect(screen.getAllByRole("navigation")).toHaveLength(1);
   });
 
@@ -128,6 +120,22 @@ describe("Header", () => {
     }
   });
 
+  it("renders the theme toggle outside both navigations", async () => {
+    const user = userEvent.setup();
+    render(<Header />);
+
+    // Bare render (no ThemeProvider) falls back to the light state.
+    const toggle = screen.getByRole("button", { name: /switch to dark theme/i });
+    expect(toggle).toBeInTheDocument();
+
+    const desktopNav = screen.getByRole("navigation");
+    expect(within(desktopNav).queryByRole("button", { name: /theme/i })).toBeNull();
+
+    await user.click(getHamburgerButton());
+    const mobileNav = screen.getAllByRole("navigation")[1];
+    expect(within(mobileNav).queryByRole("button", { name: /theme/i })).toBeNull();
+  });
+
   it("switches from a transparent to a solid background after scrolling past 50px", () => {
     render(<Header />);
     const header = screen.getByRole("banner");
@@ -138,6 +146,7 @@ describe("Header", () => {
       Object.defineProperty(window, "scrollY", { value: 100, configurable: true });
       fireEvent.scroll(window);
       expect(header.className).toContain("bg-white/90");
+      expect(header.className).toContain("dark:bg-slate-900/90");
       expect(header.className).not.toContain("bg-transparent");
 
       Object.defineProperty(window, "scrollY", { value: 0, configurable: true });

@@ -8,6 +8,18 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="theme-color" content="#0d9488" />
+
+    <!-- Theme init: apply a persisted dark theme before first paint (no white flash).
+         Key/value contract matches next-themes storageKey="theme" in src/App.tsx. -->
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (e) { /* storage unavailable -> default light */ }
+    </script>
+
     <title>Shoaib Rayeen</title>
     <meta name="description" content="Technical Lead specializing in Backend Architecture, Gen AI, MCP, and Scalable Distributed Systems. Expert in Java, Spring Boot, PostgreSQL, MongoDB, and modern web technologies." />
     <meta name="author" content="Mohd Shoaib Rayeen" />

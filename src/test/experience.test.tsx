@@ -118,4 +118,14 @@ describe("Experience section", () => {
       screen.getByText(/dropping average query response time by 25%/i)
     ).toBeInTheDocument();
   });
+
+  it("carries dark-theme surface classes on the section and cards", () => {
+    const { container } = render(<Experience />);
+    expect(container.querySelector("section#experience")!.className).toContain(
+      "dark:from-slate-950"
+    );
+    const card = container.querySelector("section#experience .bg-white");
+    expect(card).not.toBeNull();
+    expect(card!.className).toContain("dark:bg-slate-800");
+  });
 });

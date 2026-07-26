@@ -79,16 +79,16 @@ const Experience = () => {
 
   const renderAchievement = (achievement: string | { title: string; items: string[] }) => {
     if (typeof achievement === 'string') {
-      return <span className="text-gray-700">{achievement}</span>;
+      return <span className="text-gray-700 dark:text-gray-300">{achievement}</span>;
     }
     return (
       <div className="mb-4">
-        <h5 className="font-bold text-gray-800 mb-2">{achievement.title}</h5>
+        <h5 className="font-bold text-gray-800 dark:text-gray-100 mb-2">{achievement.title}</h5>
         <ul className="space-y-1 ml-4">
           {achievement.items.map((item, idx) => (
             <li key={idx} className="flex items-start space-x-2">
-              <span className="text-teal-600 mt-1.5">•</span>
-              <span className="text-gray-700">{item}</span>
+              <span className="text-teal-600 dark:text-teal-400 mt-1.5">•</span>
+              <span className="text-gray-700 dark:text-gray-300">{item}</span>
             </li>
           ))}
         </ul>
@@ -97,13 +97,13 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-950 dark:to-teal-950">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Experience
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             My professional journey building scalable systems and AI-driven solutions.
           </p>
         </div>
@@ -111,36 +111,36 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           {experiences.map((exp, index) => (
             <div key={index} className="relative mb-12 last:mb-0">
-              <div className="bg-white rounded-xl shadow-lg p-8 ml-8 relative">
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 ml-8 relative">
                 {/* Timeline dot */}
-                <div className="absolute -left-12 top-8 w-4 h-4 bg-teal-600 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="absolute -left-12 top-8 w-4 h-4 bg-teal-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg"></div>
                 
                 {/* Timeline line */}
                 {index !== experiences.length - 1 && (
-                  <div className="absolute -left-10 top-12 w-px h-24 bg-teal-200"></div>
+                  <div className="absolute -left-10 top-12 w-px h-24 bg-teal-200 dark:bg-teal-800"></div>
                 )}
 
                 <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-teal-600 mb-2">{exp.company}</h3>
+                  <h3 className="text-2xl font-bold text-teal-600 dark:text-teal-400 mb-2">{exp.company}</h3>
                   
                   {exp.positions ? (
                     <div className="space-y-4">
                       {exp.positions.map((pos, posIndex) => (
-                        <div key={posIndex} className="border-l-4 border-teal-200 pl-4">
+                        <div key={posIndex} className="border-l-4 border-teal-200 dark:border-teal-800 pl-4">
                           <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h4 className="text-xl font-semibold text-gray-800">{pos.title}</h4>
-                            <span className="text-gray-500 font-medium">{pos.duration}</span>
+                            <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{pos.title}</h4>
+                            <span className="text-gray-500 dark:text-gray-400 font-medium">{pos.duration}</span>
                           </div>
                           {pos.promotion && (
-                            <p className="text-sm text-emerald-600 font-medium mb-2">{pos.promotion}</p>
+                            <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium mb-2">{pos.promotion}</p>
                           )}
                         </div>
                       ))}
                     </div>
                   ) : (
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                      <h4 className="text-xl font-semibold text-gray-800">{exp.position}</h4>
-                      <span className="text-gray-500 font-medium">{exp.duration}</span>
+                      <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{exp.position}</h4>
+                      <span className="text-gray-500 dark:text-gray-400 font-medium">{exp.duration}</span>
                     </div>
                   )}
                 </div>
@@ -149,7 +149,7 @@ const Experience = () => {
                   {exp.achievements.map((achievement, idx) => (
                     <div key={idx} className="flex items-start space-x-2">
                       {typeof achievement === 'string' && (
-                        <span className="text-teal-600 mt-1.5">•</span>
+                        <span className="text-teal-600 dark:text-teal-400 mt-1.5">•</span>
                       )}
                       <div className="flex-1">
                         {renderAchievement(achievement)}

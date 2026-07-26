@@ -74,4 +74,14 @@ describe("Projects section", () => {
     render(<Projects />);
     expect(screen.queryAllByRole("link")).toHaveLength(0);
   });
+
+  it("carries dark-theme classes on the section and card titles", () => {
+    const { container } = render(<Projects />);
+    expect(container.querySelector("section#projects")!.className).toContain(
+      "dark:from-slate-950"
+    );
+    const title = screen.getByRole("heading", { name: "Talk-to-Document" });
+    expect(title.className).toContain("dark:text-gray-100");
+    expect(title.className).toContain("dark:group-hover:text-teal-400");
+  });
 });

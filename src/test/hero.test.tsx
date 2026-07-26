@@ -133,4 +133,14 @@ describe("Hero section", () => {
     // The temporary anchor is removed again after the click.
     expect(document.body.contains(appendedAnchor!)).toBe(false);
   });
+
+  it("carries dark-theme variant classes on the backdrop and headline", () => {
+    const { container } = render(<Hero />);
+    const backdrop = container.querySelector("section#home > div");
+    expect(backdrop).not.toBeNull();
+    expect(backdrop!.className).toContain("dark:via-slate-900");
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Mohd Shoaib Rayeen" }).className
+    ).toContain("dark:from-teal-400");
+  });
 });

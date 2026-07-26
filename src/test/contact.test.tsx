@@ -225,4 +225,21 @@ describe("Contact section", () => {
     expect(toast.success).not.toHaveBeenCalled();
     expect(screen.getByRole("button", { name: /send message/i })).toBeEnabled();
   });
+
+  it("carries dark-theme classes on the section and all three form fields", () => {
+    const { container } = render(<Contact />);
+    expect(container.querySelector("section#contact")!.className).toContain(
+      "dark:bg-slate-900"
+    );
+    const fields = [
+      screen.getByLabelText(/your name/i),
+      screen.getByLabelText(/your email/i),
+      screen.getByLabelText(/your message/i),
+    ];
+    for (const field of fields) {
+      expect(field.className).toContain("dark:bg-slate-900");
+      expect(field.className).toContain("dark:text-gray-100");
+      expect(field.className).toContain("dark:placeholder-gray-400");
+    }
+  });
 });

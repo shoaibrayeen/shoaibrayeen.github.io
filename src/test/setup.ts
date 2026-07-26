@@ -1,4 +1,13 @@
 import "@testing-library/jest-dom/vitest";
+import { afterEach } from "vitest";
+
+// next-themes persists the choice in localStorage and mutates <html>
+// (class + inline color-scheme); jsdom keeps both across tests, so reset.
+afterEach(() => {
+  window.localStorage.clear();
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.style.removeProperty("color-scheme");
+});
 
 Object.defineProperty(window, "matchMedia", {
   writable: true,

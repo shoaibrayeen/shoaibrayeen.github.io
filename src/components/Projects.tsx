@@ -59,13 +59,13 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-950 dark:to-teal-950">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             A showcase of scalable systems, AI integrations, and distributed computing solutions I've built.
           </p>
         </div>
@@ -74,23 +74,23 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:scale-105"
+              className="bg-white dark:bg-slate-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group hover:scale-105"
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-bold text-gray-800 group-hover:text-teal-600 transition-colors duration-200">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-200">
                     {project.title}
                   </h3>
                   <div className="w-3 h-3 bg-teal-500 rounded-full group-hover:bg-cyan-500 transition-colors duration-200"></div>
                 </div>
                 
                 <div className="mb-4">
-                  <span className="text-sm font-medium text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
+                  <span className="text-sm font-medium text-teal-600 bg-teal-50 dark:text-teal-300 dark:bg-teal-900 px-3 py-1 rounded-full">
                     {project.tech}
                   </span>
                 </div>
                 
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
                   {project.description}
                 </p>
               </div>

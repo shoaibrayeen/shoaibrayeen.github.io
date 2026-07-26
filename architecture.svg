@@ -76,8 +76,9 @@
   <text x="536" y="396" font-size="10.5" fill="#8a8a8a">redirect to /?/any-path</text>
 
   <rect x="430" y="296" width="250" height="60" rx="8" fill="#ffffff" stroke="#c9c9c9"/>
-  <text x="555" y="320" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">index.html</text>
-  <text x="555" y="338" font-size="10.5" fill="#777" text-anchor="middle">decode script: history.replaceState</text>
+  <text x="555" y="316" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">index.html</text>
+  <text x="555" y="332" font-size="10.5" fill="#777" text-anchor="middle">decode script: history.replaceState</text>
+  <text x="555" y="348" font-size="10.5" fill="#777" text-anchor="middle">theme init: pre-paint dark class</text>
 
   <line x1="680" y1="326" x2="768" y2="326" stroke="#0d9488" stroke-width="1.5" marker-end="url(#arrowTeal)"/>
   <text x="724" y="316" font-size="10.5" fill="#0d9488" text-anchor="middle">clean URL</text>
@@ -100,7 +101,8 @@
 
   <rect x="250" y="548" width="740" height="66" rx="8" fill="#ffffff" stroke="#c9c9c9"/>
   <text x="620" y="572" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">src/App.tsx — providers &amp; routing</text>
-  <text x="620" y="592" font-size="10.5" fill="#777" text-anchor="middle">QueryClientProvider · TooltipProvider · Toaster / Sonner · BrowserRouter (no basename — root site)</text>
+  <text x="620" y="590" font-size="10.5" fill="#777" text-anchor="middle">ThemeProvider (light/dark · localStorage "theme") · QueryClientProvider · TooltipProvider</text>
+  <text x="620" y="606" font-size="10.5" fill="#777" text-anchor="middle">Toaster / Sonner · BrowserRouter (no basename — root site)</text>
 
   <line x1="480" y1="614" x2="400" y2="648" stroke="#8a8a8a" stroke-width="1.5" marker-end="url(#arrow)"/>
   <text x="415" y="636" font-size="10" fill="#8a8a8a">route "/"</text>

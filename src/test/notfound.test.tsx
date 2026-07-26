@@ -91,4 +91,14 @@ describe("NotFound page", () => {
       "/another/missing/route"
     );
   });
+
+  it("carries dark-theme classes on the backdrop and the requested-path chip", () => {
+    renderAt("/dark-theme-check");
+    const backdrop = document.querySelector("div.absolute.inset-0.bg-gradient-to-br");
+    expect(backdrop).not.toBeNull();
+    expect(backdrop!.className).toContain("dark:via-slate-900");
+    const code = screen.getByText("/dark-theme-check");
+    expect(code.className).toContain("dark:bg-slate-800");
+    expect(code.className).toContain("dark:text-teal-300");
+  });
 });

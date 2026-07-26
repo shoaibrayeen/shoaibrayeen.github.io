@@ -101,4 +101,14 @@ describe("Skills section", () => {
       expect(screen.getByText(competency)).toBeInTheDocument();
     }
   });
+
+  it("carries dark-theme classes on the section and skill chips", () => {
+    const { container } = render(<Skills />);
+    expect(container.querySelector("section#skills")!.className).toContain(
+      "dark:bg-slate-900"
+    );
+    const chip = screen.getByText("Java");
+    expect(chip.className).toContain("dark:bg-teal-900");
+    expect(chip.className).toContain("dark:text-teal-300");
+  });
 });

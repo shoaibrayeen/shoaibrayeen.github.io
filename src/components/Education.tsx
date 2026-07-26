@@ -26,26 +26,26 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-white">
+    <section id="education" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Education
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Academic foundation that shaped my technical expertise and problem-solving approach.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
           {education.map((edu, index) => (
-            <div key={index} className="bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+            <div key={index} className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="flex flex-col md:flex-row md:items-center justify-between">
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
-                  <h4 className="text-lg text-teal-600 font-semibold mb-1">{edu.institution}</h4>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">{edu.degree}</h3>
+                  <h4 className="text-lg text-teal-600 dark:text-teal-400 font-semibold mb-1">{edu.institution}</h4>
                   {edu.duration && (
-                    <p className="text-sm text-gray-500 font-medium">{edu.duration}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{edu.duration}</p>
                   )}
                 </div>
                 {/* COMMENTED - Grade percentages */}

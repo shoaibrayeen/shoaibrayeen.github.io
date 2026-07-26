@@ -22,3 +22,11 @@ describe("routing", () => {
     expect(screen.getByText("404")).toBeInTheDocument();
   });
 });
+
+describe("theme provider", () => {
+  it("applies the default light theme class to <html> on mount", () => {
+    renderAt("/");
+    expect(document.documentElement.classList.contains("light")).toBe(true);
+    expect(document.documentElement.classList.contains("dark")).toBe(false);
+  });
+});

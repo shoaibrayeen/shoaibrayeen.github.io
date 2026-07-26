@@ -60,13 +60,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Let's discuss opportunities to build scalable systems and AI-driven solutions together.
           </p>
         </div>
@@ -78,25 +78,25 @@ const Contact = () => {
               href="https://www.linkedin.com/in/shoaibrayeen/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
-                <Linkedin size={32} className="text-blue-600" />
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
+                <Linkedin size={32} className="text-blue-600 dark:text-blue-400" />
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">LinkedIn</h3>
-              <p className="text-gray-600 text-sm">@shoaibrayeen</p>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">LinkedIn</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
             </a>
 
             {/* Email */}
             <button
               onClick={handleEmailClick}
-              className="group bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="group bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 transition-colors duration-300">
-                <Mail size={32} className="text-teal-600" />
+              <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 dark:group-hover:bg-teal-800 transition-colors duration-300">
+                <Mail size={32} className="text-teal-600 dark:text-teal-400" />
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Email</h3>
-              <p className="text-gray-600 text-xs break-all">shoaibrayeen.me@gmail.com</p>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">Email</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-xs break-all">shoaibrayeen.me@gmail.com</p>
             </button>
 
             {/* GitHub */}
@@ -104,23 +104,23 @@ const Contact = () => {
               href="https://github.com/shoaibrayeen"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-gray-50 to-slate-50 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="group bg-gradient-to-br from-gray-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 transition-colors duration-300">
-                <Github size={32} className="text-gray-600" />
+              <div className="w-16 h-16 bg-gray-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 dark:group-hover:bg-slate-600 transition-colors duration-300">
+                <Github size={32} className="text-gray-600 dark:text-gray-300" />
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">GitHub</h3>
-              <p className="text-gray-600 text-sm">@shoaibrayeen</p>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">GitHub</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
             </a>
           </div>
 
           {/* Contact Form */}
           <div className="mt-12">
-            <div className="bg-gradient-to-br from-gray-50 to-teal-50 rounded-xl p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-800 mb-2 text-center">
+            <div className="bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-800 dark:to-teal-950 rounded-xl p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
                 Send Me a Message
               </h3>
-              <p className="text-gray-600 text-center mb-8">
+              <p className="text-gray-600 dark:text-gray-400 text-center mb-8">
                 Have a question or want to work together? Drop me a message below.
               </p>
 
@@ -130,7 +130,7 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       Your Name
                     </label>
                     <input
@@ -139,11 +139,11 @@ const Contact = () => {
                       name="name"
                       required
                       placeholder="John Doe"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 dark:border-slate-600 dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                       Your Email
                     </label>
                     <input
@@ -152,13 +152,13 @@ const Contact = () => {
                       name="email"
                       required
                       placeholder="john@example.com"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 dark:border-slate-600 dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                     Your Message
                   </label>
                   <textarea
@@ -167,7 +167,7 @@ const Contact = () => {
                     required
                     rows={5}
                     placeholder="Tell me about your project or idea..."
-                    className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-800 placeholder-gray-400 dark:border-slate-600 dark:bg-slate-900 dark:text-gray-100 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200 resize-none"
                   />
                 </div>
 

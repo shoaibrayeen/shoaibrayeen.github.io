@@ -29,4 +29,11 @@ describe("About section (cross-repo source of truth)", () => {
       expect(screen.getByRole("heading", { name: area })).toBeInTheDocument();
     }
   });
+
+  it("carries the dark-theme surface class on the section", () => {
+    const { container } = render(<About />);
+    expect(container.querySelector("section#about")!.className).toContain(
+      "dark:bg-slate-900"
+    );
+  });
 });
