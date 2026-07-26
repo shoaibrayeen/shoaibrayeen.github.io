@@ -25,10 +25,6 @@ const Contact = () => {
     }
   };
 
-  const handleConversationClick = () => {
-    window.open('https://www.linkedin.com/in/shoaibrayeen/', '_blank');
-  };
-
   const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -72,56 +68,15 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/shoaibrayeen/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
-                <Linkedin size={32} className="text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">LinkedIn</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
-            </a>
-
-            {/* Email */}
-            <button
-              onClick={handleEmailClick}
-              className="group bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 dark:group-hover:bg-teal-800 transition-colors duration-300">
-                <Mail size={32} className="text-teal-600 dark:text-teal-400" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">Email</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-xs break-all">shoaibrayeen.me@gmail.com</p>
-            </button>
-
-            {/* GitHub */}
-            <a
-              href="https://github.com/shoaibrayeen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-gray-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-gray-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 dark:group-hover:bg-slate-600 transition-colors duration-300">
-                <Github size={32} className="text-gray-600 dark:text-gray-300" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">GitHub</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
-            </a>
-          </div>
-
-          {/* Contact Form */}
-          <div className="mt-12">
+          {/* Ready to Collaborate — invitation and message form in one card.
+              Leads the section; the direct-channel cards follow underneath. */}
+          <div>
             <div className="bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-800 dark:to-teal-950 rounded-xl p-8 shadow-sm">
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 text-center">
-                Send Me a Message
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">
+                Ready to Collaborate?
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-center mb-8">
-                Have a question or want to work together? Drop me a message below.
+              <p className="text-gray-600 dark:text-gray-400 text-center mb-8 max-w-2xl mx-auto leading-relaxed">
+                I'm always open to exploring impactful opportunities, especially those centered around innovation, scalability, and AI-driven technologies. If you're working on something that aligns, I'd be glad to connect and discuss further.
               </p>
 
               <form onSubmit={handleFormSubmit} className="max-w-2xl mx-auto space-y-6">
@@ -194,20 +149,46 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Ready to Collaborate */}
-          <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-teal-600 to-cyan-600 rounded-xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Ready to Collaborate?</h3>
-              <p className="text-lg mb-6">
-                I'm always open to exploring impactful opportunities, especially those centered around innovation, scalability, and AI-driven technologies. If you're working on something that aligns, I'd be glad to connect and discuss further.
-              </p>
-              <button
-                onClick={handleConversationClick}
-                className="inline-block bg-white text-teal-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200"
-              >
-                Start a Conversation
-              </button>
-            </div>
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/shoaibrayeen/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
+                <Linkedin size={32} className="text-blue-600 dark:text-blue-400" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">LinkedIn</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
+            </a>
+
+            {/* Email */}
+            <button
+              onClick={handleEmailClick}
+              className="group bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 dark:group-hover:bg-teal-800 transition-colors duration-300">
+                <Mail size={32} className="text-teal-600 dark:text-teal-400" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">Email</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-xs break-all">shoaibrayeen.me@gmail.com</p>
+            </button>
+
+            {/* GitHub */}
+            <a
+              href="https://github.com/shoaibrayeen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-gray-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <div className="w-16 h-16 bg-gray-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 dark:group-hover:bg-slate-600 transition-colors duration-300">
+                <Github size={32} className="text-gray-600 dark:text-gray-300" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">GitHub</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
+            </a>
           </div>
         </div>
       </div>

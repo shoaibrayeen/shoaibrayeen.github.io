@@ -21,6 +21,7 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 ├── MIGRATION.md                # historical: Jekyll → React migration notes
 ├── public/
 │   ├── 404.html                # spa-github-pages redirect (pathSegmentsToKeep = 0) + branded "redirecting" splash
+│   ├── changelog.html          # standalone release history at /changelog.html — self-contained CSS/JS, shares the "theme" storage key
 │   ├── .nojekyll               # disable Jekyll on Pages
 │   ├── favicon.svg             # "SR" monogram tab icon (teal→cyan brand gradient)
 │   ├── favicon-32x32.png       # PNG fallback favicon
@@ -41,7 +42,7 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
     │   ├── Skills.tsx          # #skills — skillCategories[] (11 categories) + competency badges
     │   ├── Projects.tsx        # #projects — projects[] (11 featured project cards)
     │   ├── Education.tsx       # #education — education[] (MCA, B.Sc.)
-    │   ├── Contact.tsx         # #contact — social cards + form → Web3Forms API
+    │   ├── Contact.tsx         # #contact — "Ready to Collaborate?" card (invite + form → Web3Forms API), then LinkedIn/email/GitHub cards
     │   ├── Achievements.tsx    # #achievements — awards / certifications / leadership arrays
     │   ├── Hobbies.tsx         # #hobbies — hobbies[] (6 cards); Cinema card links out to cinema-hub
     │   ├── Footer.tsx          # fixed bottom copyright bar
@@ -74,11 +75,15 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 
 Deep links on GitHub Pages use the spa-github-pages pair: `public/404.html` (**`pathSegmentsToKeep = 0`**, root domain — unlike a project site) redirects unknown paths to `/?/<path>`, and the decode script in `index.html` restores the URL with `history.replaceState` before React mounts.
 
+`/changelog.html` is the one page **outside** the React app: a static file in `public/` served directly by Pages (so the 404 redirect never fires for it), with its own inline styles, its own theme script, and a link back to `/`. Adding routes to the router does not affect it.
+
 ## Styling
 
 Tailwind utility-first with HSL design tokens in `src/index.css`. Brand palette: **teal/cyan gradients** (`from-teal-600 to-cyan-600`) on headings, CTAs, and accents; section backgrounds alternate white and soft teal gradients. Icons via lucide-react. No custom fonts (system stack).
 
-**User-selectable light/dark theme** (light and dark only — no "system" option; default is light): a Sun/Moon `ThemeToggle` in the Header drives next-themes' `ThemeProvider` (`attribute="class"`, matching Tailwind's `darkMode: ["class"]`; `enableSystem={false}`; `disableTransitionOnChange`). The choice persists in localStorage under the key **`"theme"`** (raw `"light"`/`"dark"`) — note cinema-hub shares this origin, so the key would be shared if that repo ever themes itself. A tiny inline script in `index.html` applies a persisted dark theme to `<html>` **before first paint** (no white flash on reload); it must stay in sync with the provider's `storageKey`. Dark styling is implemented as `dark:` variant classes added alongside the untouched light classes (slate surfaces + teal-950 gradient tints, accents brightened to `-400`/`-300`) — the light design is pixel-identical to before the feature. `Footer.tsx` is intentionally identical in both themes (it was already dark). shadcn/ui primitives and sonner toasts flip automatically via the `.dark` token block.
+**User-selectable light/dark theme** (light and dark only — no "system" option; default is light): a Sun/Moon `ThemeToggle` in the Header drives next-themes' `ThemeProvider` (`attribute="class"`, matching Tailwind's `darkMode: ["class"]`; `enableSystem={false}`; `disableTransitionOnChange`). The choice persists in localStorage under the key **`"theme"`** (raw `"light"`/`"dark"`) — note cinema-hub shares this origin, so the key would be shared if that repo ever themes itself. A tiny inline script in `index.html` applies a persisted dark theme to `<html>` **before first paint** (no white flash on reload); it must stay in sync with the provider's `storageKey`. Dark styling is implemented as `dark:` variant classes added alongside the untouched light classes (slate surfaces + teal-tinted gradients, accents brightened to `-400`/`-300`) — the light design is pixel-identical to before the feature. `Footer.tsx` is intentionally identical in both themes (it was already dark). shadcn/ui primitives and sonner toasts flip automatically via the `.dark` token block. `public/changelog.html` carries its own copy of the palette as CSS variables under `html.dark`.
+
+**Dark-surface elevation rule.** Tailwind's `teal-950` is ~8× brighter than `slate-950`, so a card at `-950` on a `to-teal-950` section is invisible (≈1.0:1 surface contrast). The alternating gradient sections therefore fade to `dark:to-teal-950/50`, neutral cards sit at `dark:bg-slate-800`, and Hobbies' colour-coded cards sit at `-900` with `dark:ring-white/15` for an edge. Brighter card surfaces need brighter body text — Hobbies descriptions use `dark:text-gray-300` where `-400` would drop under 4.5:1.
 
 ## Build & deployment
 
@@ -106,7 +111,8 @@ Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mo
 - `src/test/hobbies.test.tsx` — the 6 hobby cards and the cinema-hub link (href/target/rel)
 - `src/test/app.test.tsx` — the portfolio renders at `/`, 404 fallback for unknown routes, ThemeProvider applies the default light class
 - `src/test/theme-toggle.test.tsx` — light↔dark switching, localStorage persistence, persisted-choice restore, provider-less fallback (bare renders stay safe)
-- `src/test/contact.test.tsx` — contact form posts to Web3Forms (fetch mocked), success/failure paths
+- `src/test/contact.test.tsx` — contact form posts to Web3Forms (fetch mocked), success/failure paths, merged collaborate card and its position above the channel cards
+- `src/test/changelog.test.ts` — `public/changelog.html` structure: self-contained (no external CSS/JS), one Unreleased block first, every entry tagged, shared `"theme"` storage key
 
 ## Known gaps (accepted, documented for maintainers)
 

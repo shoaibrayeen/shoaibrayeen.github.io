@@ -11,6 +11,14 @@
 - If the change alters a flow (build/deploy pipeline, request/deep-link handling, page → section → content relationships, external integrations), **update [architecture.svg](architecture.svg) as well** so the diagram matches the doc.
 - New sections, components, or integrations are not done until they appear in both files.
 
+## Changelog stays current (mandatory)
+
+- **Every user-visible change must add an entry to [public/changelog.html](public/changelog.html) in the same commit** — new sections or features, content rewrites, visual/theme changes, bug fixes, removals. Skip it only for changes a visitor could never notice (test-only edits, internal refactors, doc/rule edits).
+- Newest first. Work in progress goes in the single **Unreleased** block at the top (`<span class="badge-current">Unreleased</span>`); when the owner ships it, that block gets a real date (`<span class="date">26 Jul 2026</span>`) and a fresh Unreleased block is started for the next batch. Add to the existing Unreleased block rather than creating a second one.
+- Each item is a `<li>` with a category tag — `added`, `changed`, `fixed` or `removed` — then plain-language wording aimed at a **site visitor, not a developer**: describe what changed for them, not file names, class names or commit hashes.
+- The page is served at `/changelog.html` and is deliberately **standalone**: `public/` is copied verbatim by Vite, so Tailwind never processes it. Keep all CSS/JS inline in the file and never reference the app bundle. Its theme script reads the same `localStorage` key `"theme"` as `src/App.tsx` — if that key ever changes, update this file, `index.html` and the provider together.
+- `src/test/changelog.test.ts` guards the page's structure and the storage-key contract; update it when the page's shape changes.
+
 ## Tests required for every change (mandatory)
 
 - **Every code change must add or update test cases covering it, in the same commit.** New sections/components need at least a render test; content changes to contract-covered sections (About) need assertion updates.

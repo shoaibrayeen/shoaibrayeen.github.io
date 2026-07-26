@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { toast } from "sonner";
 import Contact from "@/components/Contact";
@@ -73,25 +73,43 @@ describe("Contact section", () => {
     );
   });
 
-  it("opens LinkedIn from Start a Conversation in the Ready to Collaborate card", async () => {
-    const openSpy = vi.spyOn(window, "open").mockImplementation(() => null);
-    const user = userEvent.setup();
+  it("renders the collaborate invitation and the message form in a single card", () => {
     render(<Contact />);
 
+    // The invitation and the form were two separate cards before — they are now
+    // one, so the heading, the blurb and the fields must share a card wrapper.
+    const heading = screen.getByRole("heading", { name: /ready to collaborate/i });
+    const card = heading.parentElement as HTMLElement;
+
     expect(
-      screen.getByRole("heading", { name: /ready to collaborate/i })
+      within(card).getByText(/always open to exploring impactful opportunities/i)
     ).toBeInTheDocument();
+    expect(within(card).getByLabelText(/your name/i)).toBeInTheDocument();
+    expect(within(card).getByLabelText(/your email/i)).toBeInTheDocument();
+    expect(within(card).getByLabelText(/your message/i)).toBeInTheDocument();
+    expect(within(card).getByRole("button", { name: /send message/i })).toBeInTheDocument();
 
-    await user.click(screen.getByRole("button", { name: /start a conversation/i }));
+    // The old duplicate heading and the LinkedIn CTA are gone (LinkedIn stays
+    // reachable through the social card above).
+    expect(screen.queryByRole("heading", { name: /send me a message/i })).toBeNull();
+    expect(screen.queryByRole("button", { name: /start a conversation/i })).toBeNull();
+  });
 
-    expect(openSpy).toHaveBeenCalledTimes(1);
-    expect(openSpy).toHaveBeenCalledWith("https://www.linkedin.com/in/shoaibrayeen/", "_blank");
+  it("puts the collaborate card above the direct-channel cards", () => {
+    render(<Contact />);
+
+    const collaborate = screen.getByRole("heading", { name: /ready to collaborate/i });
+    const linkedin = screen.getByRole("link", { name: /linkedin/i });
+
+    // DOCUMENT_POSITION_FOLLOWING: the LinkedIn card comes after the heading.
+    expect(
+      collaborate.compareDocumentPosition(linkedin) & Node.DOCUMENT_POSITION_FOLLOWING
+    ).toBeTruthy();
   });
 
   it("renders the message form with required name, email and message fields", () => {
     render(<Contact />);
 
-    expect(screen.getByRole("heading", { name: /send me a message/i })).toBeInTheDocument();
     expect(screen.getByLabelText(/your name/i)).toBeRequired();
     expect(screen.getByLabelText(/your email/i)).toBeRequired();
     expect(screen.getByLabelText(/your message/i)).toBeRequired();

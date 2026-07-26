@@ -98,13 +98,19 @@ describe("Hobbies section", () => {
     expect(container.querySelector("section#hobbies")!.className).toContain(
       "dark:from-slate-950"
     );
-    // Card gradients live in the data-driven `color` strings; the ring keeps
-    // teal-tinted cards separable from the teal-tinted section in dark mode.
+    // Card gradients live in the data-driven `color` strings. They must stay at
+    // the -900 step: at -950 the cards matched the teal-950 section's luminance
+    // and read as invisible slabs. Descriptions ride up to gray-300 to keep AA
+    // contrast against the brighter surface.
     const card = getHobbyCard("Sports Enthusiast");
-    expect(card.className).toContain("dark:from-teal-950");
+    expect(card.className).toContain("dark:from-teal-900");
     expect(card.className).toContain("dark:ring-1");
+    expect(card.className).not.toContain("-950");
+    expect(
+      screen.getByText(/passionate about cricket/i).className
+    ).toContain("dark:text-gray-300");
     const link = screen.getByRole("link", { name: /explore my cinema hub/i });
-    expect(link.className).toContain("dark:bg-slate-800");
+    expect(link.className).toContain("dark:bg-slate-900");
     expect(link.className).toContain("dark:hover:text-white");
   });
 });

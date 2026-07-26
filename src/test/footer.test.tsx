@@ -11,7 +11,7 @@ describe("Footer", () => {
   it("shows the copyright year range inside the landmark", () => {
     render(<Footer />);
     const footer = screen.getByRole("contentinfo");
-    expect(within(footer).getByText(/© 2021 - present/i)).toBeInTheDocument();
+    expect(within(footer).getByText(/© 2018 - present/i)).toBeInTheDocument();
   });
 
   it("shows the owner's full name inside the landmark", () => {
@@ -25,7 +25,7 @@ describe("Footer", () => {
     // halves must live in the same text node.
     render(<Footer />);
     expect(
-      screen.getByText(/© 2021 - present,\s+mohd shoaib rayeen/i)
+      screen.getByText(/© 2018 - present,\s+mohd shoaib rayeen/i)
     ).toBeInTheDocument();
   });
 

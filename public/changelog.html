@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0d9488" />
+
+    <!-- Theme init: apply a persisted dark theme before first paint.
+         Key/value contract matches next-themes storageKey="theme" in src/App.tsx. -->
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (e) { /* storage unavailable -> default light */ }
+    </script>
+
+    <title>Changelog — Mohd Shoaib Rayeen</title>
+    <meta name="description" content="Release history and change log for shoaibrayeen.github.io — the portfolio of Mohd Shoaib Rayeen." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://shoaibrayeen.github.io/changelog.html" />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --bg-alt: #f9fafb;
+        --surface: #ffffff;
+        --surface-alt: #f0fdfa;
+        --text: #1f2937;
+        --text-muted: #4b5563;
+        --text-subtle: #6b7280;
+        --accent: #0d9488;
+        --accent-2: #0891b2;
+        --border: #e5e7eb;
+        --border-accent: #ccfbf1;
+        --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --tag-added-bg: #d1fae5; --tag-added-fg: #047857;
+        --tag-changed-bg: #cffafe; --tag-changed-fg: #0e7490;
+        --tag-fixed-bg: #fef3c7; --tag-fixed-fg: #b45309;
+        --tag-removed-bg: #ffe4e6; --tag-removed-fg: #be123c;
+      }
+
+      html.dark {
+        --bg: #020817;
+        --bg-alt: #0f172a;
+        --surface: #1e293b;
+        --surface-alt: #042f2e;
+        --text: #f3f4f6;
+        --text-muted: #9ca3af;
+        --text-subtle: #9ca3af;
+        --accent: #2dd4bf;
+        --accent-2: #22d3ee;
+        --border: #334155;
+        --border-accent: #115e59;
+        --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+        --tag-added-bg: #064e3b; --tag-added-fg: #6ee7b7;
+        --tag-changed-bg: #164e63; --tag-changed-fg: #67e8f9;
+        --tag-fixed-bg: #78350f; --tag-fixed-fg: #fcd34d;
+        --tag-removed-bg: #881337; --tag-removed-fg: #fda4af;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+
+      /* ---------- header ---------- */
+      header.page {
+        background: linear-gradient(to bottom right, var(--bg-alt), var(--surface-alt));
+        border-bottom: 1px solid var(--border);
+        padding: 3rem 0 2.5rem;
+      }
+      .top-row {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;
+      }
+      .back {
+        display: inline-flex; align-items: center; gap: 0.5rem;
+        color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.95rem;
+        padding: 0.5rem 0.875rem; border-radius: 9999px;
+        border: 1px solid var(--border-accent); background: var(--surface);
+        transition: color .2s, border-color .2s, transform .2s;
+      }
+      .back:hover { color: var(--accent-2); border-color: var(--accent); transform: translateX(-2px); }
+      #theme-toggle {
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 2.5rem; height: 2.5rem; padding: 0;
+        border-radius: 9999px; border: 1px solid var(--border);
+        background: var(--surface); color: var(--text-muted);
+        cursor: pointer; transition: color .2s, border-color .2s;
+      }
+      #theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+      #theme-toggle svg { width: 1.25rem; height: 1.25rem; }
+
+      h1 {
+        font-size: clamp(2.25rem, 6vw, 3.5rem); line-height: 1.1; margin: 0 0 0.75rem;
+        font-weight: 800;
+        background: linear-gradient(to right, var(--accent), var(--accent-2));
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+      }
+      header.page p.lede { margin: 0; color: var(--text-muted); font-size: 1.05rem; max-width: 44rem; }
+      header.page p.note {
+        margin: 1rem 0 0; color: var(--text-subtle); font-size: 0.875rem; max-width: 44rem;
+      }
+
+      /* ---------- entries ---------- */
+      main { padding: 3rem 0 4rem; }
+
+      .release { margin-bottom: 2.5rem; }
+      .release-head {
+        display: flex; align-items: baseline; gap: 0.75rem; flex-wrap: wrap;
+        margin-bottom: 0.85rem;
+      }
+      .release-head h2 {
+        font-size: 1.4rem; font-weight: 700; margin: 0; color: var(--text);
+      }
+      .date {
+        font-size: 0.85rem; color: var(--text-subtle); font-variant-numeric: tabular-nums;
+      }
+      .badge-current {
+        font-size: 0.7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+        padding: 0.15rem 0.5rem; border-radius: 9999px;
+        background: var(--tag-added-bg); color: var(--tag-added-fg);
+      }
+      .card {
+        background: var(--surface); border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+        border-radius: 0.75rem; padding: 1.25rem 1.5rem; box-shadow: var(--shadow);
+      }
+      .card > ul { margin: 0; padding-left: 0; list-style: none; }
+      .card > ul > li {
+        display: flex; gap: 0.75rem; align-items: flex-start;
+        padding: 0.4rem 0; color: var(--text-muted);
+      }
+      .card > ul > li + li { border-top: 1px solid var(--border); }
+      .tag {
+        flex: 0 0 auto; min-width: 5.25rem; text-align: center;
+        font-size: 0.7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+        padding: 0.2rem 0.5rem; border-radius: 9999px; margin-top: 0.2rem;
+      }
+      .tag.added   { background: var(--tag-added-bg);   color: var(--tag-added-fg); }
+      .tag.changed { background: var(--tag-changed-bg); color: var(--tag-changed-fg); }
+      .tag.fixed   { background: var(--tag-fixed-bg);   color: var(--tag-fixed-fg); }
+      .tag.removed { background: var(--tag-removed-bg); color: var(--tag-removed-fg); }
+      .card strong { color: var(--text); font-weight: 600; }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.85em; padding: 0.1rem 0.35rem; border-radius: 0.25rem;
+        background: var(--surface-alt); color: var(--accent);
+        border: 1px solid var(--border-accent);
+      }
+
+      /* era divider for the pre-rewrite history */
+      .era {
+        margin: 3.5rem 0 2rem; padding-top: 1.75rem; border-top: 1px solid var(--border);
+      }
+      .era h2 {
+        font-size: 1.15rem; margin: 0 0 0.4rem; color: var(--text);
+        display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+      }
+      .era p { margin: 0; color: var(--text-subtle); font-size: 0.9rem; max-width: 44rem; }
+
+      footer.page {
+        border-top: 1px solid var(--border); padding: 2rem 0 2.5rem;
+        color: var(--text-subtle); font-size: 0.875rem; text-align: center;
+      }
+      footer.page a { color: var(--accent); }
+
+      @media (max-width: 640px) {
+        .card { padding: 1rem 1.1rem; }
+        .card > ul > li { flex-direction: column; gap: 0.3rem; }
+        .tag { min-width: 0; align-self: flex-start; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="page">
+      <div class="wrap">
+        <div class="top-row">
+          <a class="back" href="/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="m12 19-7-7 7-7" /><path d="M19 12H5" />
+            </svg>
+            Back to portfolio
+          </a>
+          <button id="theme-toggle" type="button" aria-label="Switch to dark theme"></button>
+        </div>
+
+        <h1>Changelog</h1>
+        <p class="lede">
+          Every notable change to <strong>shoaibrayeen.github.io</strong> — the portfolio of
+          Mohd Shoaib Rayeen — newest first.
+        </p>
+        <p class="note">
+          Entries from the May 2026 React rewrite onward are per-release. Everything before it
+          covers the original Jekyll site (2018–2025) and is grouped by year, summarised from
+          434 commits of history.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <section class="release">
+          <div class="release-head">
+            <h2>Contact rework, changelog &amp; dark-mode polish</h2>
+            <span class="badge-current">Unreleased</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span><strong>Contact</strong> — the “Ready to Collaborate?” invitation and the message form are now a <strong>single card</strong> instead of two, and it leads the section, with LinkedIn / email / GitHub cards underneath.</span></li>
+              <li><span class="tag removed">Removed</span><span>The separate “Start a Conversation” button; LinkedIn is still one click away from its own card.</span></li>
+              <li><span class="tag fixed">Fixed</span><span><strong>Hobbies</strong> cards were nearly invisible in dark mode — the tinted surfaces matched the section behind them. Cards are now a step brighter with a defined edge, and their text moved up to stay legible.</span></li>
+              <li><span class="tag fixed">Fixed</span><span>Experience, Projects and Achievements sections had the same washed-out backdrop in dark mode; their gradient is now darker so cards read as raised.</span></li>
+              <li><span class="tag added">Added</span><span>This changelog page at <code>/changelog.html</code>, theme-aware and linked back to the portfolio.</span></li>
+              <li><span class="tag changed">Changed</span><span>Footer copyright now reads <strong>© 2018 - Present, Mohd Shoaib Rayeen</strong>, covering the site from its first commit.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Light &amp; dark theme</h2>
+            <span class="date">26 Jul 2026</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Visitor-selectable <strong>light and dark theme</strong> with a sun/moon toggle in the header, on desktop and mobile.</span></li>
+              <li><span class="tag added">Added</span><span>Theme choice persists across visits in <code>localStorage</code>, and applies before first paint so a reload in dark mode never flashes white.</span></li>
+              <li><span class="tag added">Added</span><span>Dark styling across every section, tuned so all text clears WCAG AA contrast in both themes.</span></li>
+              <li><span class="tag changed">Changed</span><span>Light theme is the default and is visually unchanged for anyone who does not switch.</span></li>
+              <li><span class="tag added">Added</span><span>Accessible names on the theme toggle and the mobile menu button, plus tests for switching, persistence and keyboard operation.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Contact form hardening</h2>
+            <span class="date">19 Jul 2026</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span>Web3Forms access key moved out of the source into the <code>EMAIL_API_KEY</code> repository secret, injected at build time.</span></li>
+              <li><span class="tag fixed">Fixed</span><span>Message sending failure caused by stray whitespace in the stored key — the value is now stripped in both the workflow and the app.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Test suite &amp; project docs</h2>
+            <span class="date">5 Jul 2026</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Unit tests covering every component, page, hook and utility, wired into CI so a failure blocks deployment.</span></li>
+              <li><span class="tag added">Added</span><span>Architecture documentation and contributor rules, including the cross-repo contract with the Cinema Hub site.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Profile &amp; resume refresh</h2>
+            <span class="date">4 Jun 2026</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span>New profile photo and an updated resume download link.</span></li>
+              <li><span class="tag removed">Removed</span><span>Unused icon and favicon assets.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Rebuilt on React + Vite</h2>
+            <span class="date">12 May 2026</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Complete rebuild as a single-page React + TypeScript + Tailwind site, replacing the Jekyll version — one scrolling page with Hero, About, Experience, Skills, Projects, Education, Contact, Achievements and Hobbies sections.</span></li>
+              <li><span class="tag added">Added</span><span>Working contact form via Web3Forms, with success and failure feedback.</span></li>
+              <li><span class="tag added">Added</span><span>Branded 404 page and deep-link support for GitHub Pages.</span></li>
+              <li><span class="tag changed">Changed</span><span>Footer pinned to the bottom of the viewport; summary and section copy rewritten.</span></li>
+              <li><span class="tag changed">Changed</span><span>Deployment moved to GitHub Actions, building on every push to the deploy branch.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="era">
+          <h2>Jekyll site <span class="date">2018 – 2025</span></h2>
+          <p>The original site: a Jekyll build with Markdown content pages, grouped here by year.</p>
+        </div>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Content refresh</h2>
+            <span class="date">2025</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span>Home and portfolio pages reworked, footer updated, emoji introduced through the copy.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Role updates</h2>
+            <span class="date">2023 – 2024</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span>Employer name and link updated to Sirion; experience and portfolio entries refreshed.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Experience &amp; skills summary</h2>
+            <span class="date">2022</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag changed">Changed</span><span>Experience and skill summaries rewritten on the home and portfolio pages.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Scheduling, links &amp; resume preview</h2>
+            <span class="date">2021</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Google Calendar booking, a Linktree link and a GitLab icon in the footer.</span></li>
+              <li><span class="tag added">Added</span><span>Resume preview through Google Docs, alongside images in the resume and portfolio pages.</span></li>
+              <li><span class="tag changed">Changed</span><span>Wider page layout, corrected Alexa skill links, updated contact email. Tagged <code>v1</code> in May 2021.</span></li>
+              <li><span class="tag removed">Removed</span><span>Standalone contact page, folded back into the footer.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Projects &amp; academics</h2>
+            <span class="date">2020</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Internship and project write-ups, placement and coursework notes, a voice-assistant skill directory.</span></li>
+              <li><span class="tag changed">Changed</span><span>Front page rebuilt around the current company and role.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>Custom domain &amp; browser games</h2>
+            <span class="date">2019</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>Custom domain <code>shoaibrayeen.me</code> via a CNAME, later retired.</span></li>
+              <li><span class="tag added">Added</span><span>Playable chess and tic-tac-toe pages, plus a guide to building sites with GitHub Pages.</span></li>
+              <li><span class="tag fixed">Fixed</span><span>Chess move-handling bug shipped as a hotfix.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="release">
+          <div class="release-head">
+            <h2>First release</h2>
+            <span class="date">22 Mar 2018</span>
+          </div>
+          <div class="card">
+            <ul>
+              <li><span class="tag added">Added</span><span>The site goes live on GitHub Pages with a Jekyll theme, home and resume pages, and social links.</span></li>
+              <li><span class="tag added">Added</span><span>Writing on Amazon Alexa skills and starting a new programming language; algorithm notes.</span></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page">
+      <div class="wrap">
+        © 2018 - Present, Mohd Shoaib Rayeen ·
+        <a href="/">Back to portfolio</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var MOON = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>';
+        var SUN = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>';
+        var btn = document.getElementById('theme-toggle');
+
+        function paint() {
+          var dark = document.documentElement.classList.contains('dark');
+          btn.innerHTML = dark ? SUN : MOON;
+          btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+        }
+
+        btn.addEventListener('click', function () {
+          var dark = !document.documentElement.classList.contains('dark');
+          document.documentElement.classList.toggle('dark', dark);
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+          try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) { /* ignore */ }
+          paint();
+        });
+
+        paint();
+      })();
+    </script>
+  </body>
+</html>
