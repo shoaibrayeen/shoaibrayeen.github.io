@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:ci": "vitest run --exclude 'src/test/ui-*.test.tsx'",
     "test:watch": "vitest"
   },
   "dependencies": {

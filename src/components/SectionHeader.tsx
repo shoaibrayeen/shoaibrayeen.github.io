@@ -14,7 +14,7 @@ const SectionHeader = ({ eyebrow, title, lead, children }: SectionHeaderProps) =
     <p className="text-sm font-bold uppercase tracking-[0.2em] text-teal-700 dark:text-teal-300 mb-4">
       {eyebrow}
     </p>
-    <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
+    <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
       {title}
     </h2>
     <div
@@ -22,7 +22,7 @@ const SectionHeader = ({ eyebrow, title, lead, children }: SectionHeaderProps) =
       aria-hidden="true"
     ></div>
     {lead && (
-      <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
+      <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0">
         {lead}
       </p>
     )}

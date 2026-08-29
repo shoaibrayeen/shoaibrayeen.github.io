@@ -10,6 +10,9 @@ describe("SectionHeader (shared split-layout rail)", () => {
     expect(title).toBeInTheDocument();
     expect(title.className).toContain("bg-clip-text");
     expect(title.className).toContain("dark:from-teal-400");
+    // Type scale: section headings are 30px, 36px from md up.
+    expect(title.className).toContain("text-3xl");
+    expect(title.className).toContain("md:text-4xl");
     expect(screen.getByText("My journey.")).toBeInTheDocument();
   });
 

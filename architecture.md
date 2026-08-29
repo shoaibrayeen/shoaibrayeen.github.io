@@ -8,7 +8,7 @@
 
 A fully static single-page portfolio: one scrolling page composed of self-contained section components, rendered client-side with all content hardcoded in the components themselves. No backend and no CMS — the only network calls are the contact form (Web3Forms) and the resume download (Google Drive). It deploys as a **GitHub Pages user site** served at the domain root `https://shoaibrayeen.github.io/`.
 
-**Stack:** Vite 5 · React 18 · TypeScript (loose mode) · React Router 6 · Tailwind CSS + shadcn/ui (Radix) · next-themes (light/dark) · lucide-react icons · sonner toasts. **Tests:** Vitest 3 + Testing Library (jsdom).
+**Stack:** Vite 5 · React 18 · TypeScript (loose mode) · React Router 6 · Tailwind CSS + shadcn/ui (Radix) · next-themes (light/dark) · lucide-react icons · sonner toasts. **Type:** Inter (`font-sans`) + JetBrains Mono (`font-mono`) via Google Fonts links in `index.html`, mapped in `tailwind.config.ts`. **Tests:** Vitest 3 + Testing Library (jsdom).
 
 ## Directory layout
 
@@ -108,7 +108,7 @@ push to master_revamp ─┬→ deploy.yml: checkout → setup-node 24 → npm i
 
 ## Testing
 
-Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mocks matchMedia/ResizeObserver/IntersectionObserver/scrollIntoView). `npm test` runs once (CI mode); `npm run test:watch` for development. **Every change must ship with tests** (see CLAUDE.md).
+Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mocks matchMedia/ResizeObserver/IntersectionObserver/scrollIntoView). `npm test` runs the full suite once (the local pre-push gate); `npm run test:watch` for development; `npm run test:ci` is what the Tests workflow runs — it excludes the `ui-*.test.tsx` generated-primitive suites because Radix popper components (Tooltip/Popover/Select/menus) run 20–60s per test (up to wedged workers) in jsdom on shared Actions runners while exercising library, not site, behavior. **Every change must ship with tests** (see CLAUDE.md).
 
 **Every source file is covered** (except `vite-env.d.ts`, which has no runtime code): one suite per section component/page/hook/util, `main.test.tsx` for the entry point (including the `index.html` mount-container contract), `resume-section.test.tsx` for the dead-code component, and clustered `ui-*.test.tsx` suites covering all 48 shadcn/ui primitives. Contracts worth knowing:
 

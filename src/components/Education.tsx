@@ -38,12 +38,12 @@ const Education = () => {
           >
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
               <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
-                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">{education.length}</div>
-                <div className="text-gray-600 dark:text-gray-400">Degrees</div>
+                <div className="text-3xl font-extrabold text-teal-600 dark:text-teal-400">{education.length}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Degrees</div>
               </div>
               <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
-                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">2014–2020</div>
-                <div className="text-gray-600 dark:text-gray-400">University of Delhi</div>
+                <div className="text-2xl font-extrabold text-cyan-600 dark:text-cyan-400">2014–2020</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">University of Delhi</div>
               </div>
             </div>
           </SectionHeader>

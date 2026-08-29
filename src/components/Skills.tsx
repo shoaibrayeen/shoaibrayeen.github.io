@@ -97,7 +97,7 @@ const Skills = () => {
                 ].map((competency, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-full text-sm font-medium hover:scale-105 transition-transform duration-200"
+                    className="px-4 py-2 bg-gradient-to-r from-teal-600 to-cyan-600 text-white rounded-full text-xs font-medium hover:scale-105 transition-transform duration-200"
                   >
                     {competency}
                   </span>
@@ -118,7 +118,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300 rounded-full text-sm font-medium hover:bg-teal-200 dark:hover:bg-teal-800 transition-colors duration-200"
+                    className="px-3 py-1 bg-teal-100 text-teal-700 dark:bg-teal-900 dark:text-teal-300 rounded-full text-xs font-medium hover:bg-teal-200 dark:hover:bg-teal-800 transition-colors duration-200"
                   >
                     {skill}
                   </span>

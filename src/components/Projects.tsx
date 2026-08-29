@@ -71,12 +71,12 @@ const Projects = () => {
           >
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
               <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
-                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">{projects.length}</div>
-                <div className="text-gray-600 dark:text-gray-400">Featured Builds</div>
+                <div className="text-3xl font-extrabold text-teal-600 dark:text-teal-400">{projects.length}</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Featured Builds</div>
               </div>
               <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
-                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">3</div>
-                <div className="text-gray-600 dark:text-gray-400">Industries</div>
+                <div className="text-3xl font-extrabold text-cyan-600 dark:text-cyan-400">3</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Industries</div>
               </div>
             </div>
             <div className="mt-4 max-w-md mx-auto lg:mx-0 text-center lg:text-left">
@@ -101,7 +101,7 @@ const Projects = () => {
                 </div>
                 
                 <div className="mb-4">
-                  <span className="text-sm font-medium text-teal-600 bg-teal-50 dark:text-teal-300 dark:bg-teal-900 px-3 py-1 rounded-full">
+                  <span className="text-xs font-medium text-teal-600 bg-teal-50 dark:text-teal-300 dark:bg-teal-900 px-3 py-1 rounded-full">
                     {project.tech}
                   </span>
                 </div>

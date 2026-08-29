@@ -48,7 +48,7 @@ const Hero = () => {
               Technical Lead I · 6+ Years
             </p>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 dark:text-gray-100">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900 dark:text-gray-100">
               Backend systems,{' '}
               <span className="bg-gradient-to-r from-teal-600 via-cyan-600 to-emerald-600 dark:from-teal-400 dark:via-cyan-400 dark:to-emerald-400 bg-clip-text text-transparent">
                 <span className="whitespace-nowrap">Gen AI</span> in production.
@@ -92,7 +92,7 @@ const Hero = () => {
               {['Java', 'Spring Boot', 'PostgreSQL', 'MongoDB', 'Apache Pulsar', 'Redis', 'GoLang', 'MCP', 'Gen AI'].map((tech) => (
                 <span
                   key={tech}
-                  className="px-5 py-2.5 bg-gradient-to-r from-teal-50 to-cyan-50 text-teal-700 dark:from-teal-950 dark:to-cyan-950 dark:text-teal-300 rounded-full text-sm font-medium border border-teal-100 dark:border-teal-800 hover:from-teal-100 hover:to-cyan-100 dark:hover:from-teal-900 dark:hover:to-cyan-900 transition-all duration-200 shadow-sm hover:shadow-md"
+                  className="px-5 py-2.5 bg-gradient-to-r from-teal-50 to-cyan-50 text-teal-700 dark:from-teal-950 dark:to-cyan-950 dark:text-teal-300 rounded-full text-xs font-medium border border-teal-100 dark:border-teal-800 hover:from-teal-100 hover:to-cyan-100 dark:hover:from-teal-900 dark:hover:to-cyan-900 transition-all duration-200 shadow-sm hover:shadow-md"
                 >
                   {tech}
                 </span>

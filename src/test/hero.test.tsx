@@ -25,12 +25,14 @@ afterEach(() => {
 describe("Hero section", () => {
   it("renders the split-hero headline, name and role eyebrow", () => {
     render(<Hero />);
-    expect(
-      screen.getByRole("heading", {
-        level: 1,
-        name: /backend systems, gen ai in production\./i,
-      })
-    ).toBeInTheDocument();
+    const headline = screen.getByRole("heading", {
+      level: 1,
+      name: /backend systems, gen ai in production\./i,
+    });
+    expect(headline).toBeInTheDocument();
+    // Type scale: hero headline peaks at 72px / weight 800 on large screens.
+    expect(headline.className).toContain("lg:text-7xl");
+    expect(headline.className).toContain("font-extrabold");
     expect(
       screen.getByRole("heading", { level: 2, name: "Mohd Shoaib Rayeen" })
     ).toBeInTheDocument();

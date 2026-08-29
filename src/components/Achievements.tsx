@@ -52,15 +52,15 @@ const Achievements = () => {
           >
             <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
               <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
-                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">{achievements.length}</div>
+                <div className="text-3xl font-extrabold text-teal-600 dark:text-teal-400">{achievements.length}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Award</div>
               </div>
               <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
-                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">{certifications.length}</div>
+                <div className="text-3xl font-extrabold text-cyan-600 dark:text-cyan-400">{certifications.length}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Certification</div>
               </div>
               <div className="text-center p-4 bg-emerald-50 dark:bg-emerald-950 rounded-lg">
-                <div className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">{positions.length}</div>
+                <div className="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">{positions.length}</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Leadership Roles</div>
               </div>
             </div>

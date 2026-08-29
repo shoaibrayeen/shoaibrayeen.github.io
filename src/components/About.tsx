@@ -10,18 +10,18 @@ const About = () => {
           <SectionHeader eyebrow="Who I Am" title="About Me">
             <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
               <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
-                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">6+</div>
-                <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
+                <div className="text-3xl font-extrabold text-teal-600 dark:text-teal-400">6+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
-                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">15+</div>
-                <div className="text-gray-600 dark:text-gray-400">Projects</div>
+                <div className="text-3xl font-extrabold text-cyan-600 dark:text-cyan-400">15+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
             </div>
           </SectionHeader>
 
           <div className="space-y-8">
-            <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
               I am Mohd Shoaib Rayeen, a Technical Lead with 6+ years of experience architecting scalable backend systems,
               AI-powered pipelines, and LLM-integrated workflows across legal-tech and fintech domains.
               Delivered production-grade Generative AI, RAG, and MCP server solutions integrated with OpenAI, Claude, Llama, Gemini, Mistral, Cerebras, and WatsonX.AI.

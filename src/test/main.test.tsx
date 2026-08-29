@@ -74,6 +74,14 @@ describe("app entry (src/main.tsx)", () => {
     expect(document.getElementById("root")).toContainElement(headings[0]);
   });
 
+  it("ships the Inter and JetBrains Mono font stylesheets in index.html", () => {
+    // Typography contract: tailwind.config.ts maps font-sans → Inter and
+    // font-mono → JetBrains Mono; index.html must load both from Google Fonts.
+    const html = readFileSync(resolve(process.cwd(), "index.html"), "utf-8");
+    expect(html).toContain("fonts.googleapis.com/css2?family=Inter:");
+    expect(html).toContain("family=JetBrains+Mono");
+  });
+
   it("can be re-imported against a fresh root without errors", async () => {
     await importEntry();
     await waitFor(() =>

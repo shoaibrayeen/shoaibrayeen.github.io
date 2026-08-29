@@ -26,5 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Test
-        run: npm test
+      # test:ci excludes the src/test/ui-*.test.tsx suites (generated shadcn/
+      # Radix primitives, mostly unused by the site). Their popper-positioned
+      # components (Tooltip/Popover/Select/menus) are pathologically slow in
+      # jsdom on shared runners — 20-60s per test vs milliseconds locally, up
+      # to wedged workers ("Timeout calling onTaskUpdate") — while testing
+      # library behavior, not site behavior. The full suite (`npm test`)
+      # remains the local pre-push gate.
+      - name: Test (site suites)
+        run: npm run test:ci
