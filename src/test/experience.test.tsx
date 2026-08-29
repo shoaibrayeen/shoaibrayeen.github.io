@@ -41,8 +41,8 @@ describe("Experience section", () => {
   it("pairs each Sirion position title with its own date range", () => {
     render(<Experience />);
     const rows: Array<[string, string]> = [
-      ["Jun 2025 - Present", "Technical Lead I"],
-      ["Apr 2024 - May 2025", "Senior Software Engineer 1"],
+      ["Apr 2026 - Present", "Technical Lead I"],
+      ["Apr 2024 - Mar 2026", "Senior Software Engineer 1"],
       ["Jan 2023 - Mar 2024", "Software Engineer 1"],
       ["Aug 2021 - Dec 2022", "Software Engineer"],
     ];
@@ -60,10 +60,10 @@ describe("Experience section", () => {
     const positionBlock = (duration: string) =>
       screen.getByText(duration).parentElement!.parentElement!;
 
-    expect(positionBlock("Jun 2025 - Present")).toHaveTextContent(
+    expect(positionBlock("Apr 2026 - Present")).toHaveTextContent(
       /promoted from senior software engineer 1/i
     );
-    expect(positionBlock("Apr 2024 - May 2025")).toHaveTextContent(
+    expect(positionBlock("Apr 2024 - Mar 2026")).toHaveTextContent(
       /promoted from software engineer 1/i
     );
     expect(positionBlock("Jan 2023 - Mar 2024")).toHaveTextContent(
