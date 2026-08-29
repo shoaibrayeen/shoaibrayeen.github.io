@@ -2,6 +2,7 @@
 import { useState, FormEvent } from 'react';
 import { Mail, Github, Linkedin, Send, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
+import SectionHeader from './SectionHeader';
 
 // Injected at build time: mapped from the EMAIL_API_KEY repo secret in the deploy
 // workflow; .env.local for local dev (template in .env.example); random stub in tests.
@@ -58,18 +59,64 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
-            Get In Touch
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss opportunities to build scalable systems and AI-driven solutions together.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[0.35fr_0.65fr] gap-12 lg:gap-16 items-start">
+          <SectionHeader
+            eyebrow="Contact"
+            title="Get In Touch"
+            lead="Let's discuss opportunities to build scalable systems and AI-driven solutions together."
+          >
+            {/* Direct channels live in the rail; the message form is the
+                main column. Keep roles/labels intact — contact.test.tsx
+                addresses these by accessible name. */}
+            <div className="mt-10 space-y-4 max-w-md mx-auto lg:mx-0">
+              <a
+                href="https://www.linkedin.com/in/shoaibrayeen/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+              >
+                <span className="w-12 h-12 shrink-0 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
+                  <Linkedin size={22} className="text-blue-600 dark:text-blue-400" />
+                </span>
+                <span className="text-left min-w-0">
+                  <span className="block text-base font-bold text-gray-800 dark:text-gray-100">LinkedIn</span>
+                  <span className="block text-sm text-gray-600 dark:text-gray-400">@shoaibrayeen</span>
+                </span>
+              </a>
 
-        <div className="max-w-4xl mx-auto">
-          {/* Ready to Collaborate — invitation and message form in one card.
-              Leads the section; the direct-channel cards follow underneath. */}
+              <button
+                onClick={handleEmailClick}
+                className="group w-full flex items-center gap-4 p-4 bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+              >
+                <span className="w-12 h-12 shrink-0 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center group-hover:bg-teal-200 dark:group-hover:bg-teal-800 transition-colors duration-300">
+                  <Mail size={22} className="text-teal-600 dark:text-teal-400" />
+                </span>
+                <span className="text-left min-w-0">
+                  <span className="block text-base font-bold text-gray-800 dark:text-gray-100">Email</span>
+                  <span className="block text-sm text-gray-600 dark:text-gray-400 break-all">shoaibrayeen.me@gmail.com</span>
+                </span>
+              </button>
+
+              <a
+                href="https://github.com/shoaibrayeen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 p-4 bg-gradient-to-br from-gray-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+              >
+                <span className="w-12 h-12 shrink-0 bg-gray-100 dark:bg-slate-700 rounded-full flex items-center justify-center group-hover:bg-gray-200 dark:group-hover:bg-slate-600 transition-colors duration-300">
+                  <Github size={22} className="text-gray-600 dark:text-gray-300" />
+                </span>
+                <span className="text-left min-w-0">
+                  <span className="block text-base font-bold text-gray-800 dark:text-gray-100">GitHub</span>
+                  <span className="block text-sm text-gray-600 dark:text-gray-400">@shoaibrayeen</span>
+                </span>
+              </a>
+            </div>
+          </SectionHeader>
+
+          <div>
+          {/* Ready to Collaborate — invitation and message form in one card,
+              filling the main column; the direct channels sit in the rail. */}
           <div>
             <div className="bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-800 dark:to-teal-950 rounded-xl p-8 shadow-sm">
               <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">
@@ -149,46 +196,6 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/shoaibrayeen/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors duration-300">
-                <Linkedin size={32} className="text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">LinkedIn</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
-            </a>
-
-            {/* Email */}
-            <button
-              onClick={handleEmailClick}
-              className="group bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-200 dark:group-hover:bg-teal-800 transition-colors duration-300">
-                <Mail size={32} className="text-teal-600 dark:text-teal-400" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">Email</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-xs break-all">shoaibrayeen.me@gmail.com</p>
-            </button>
-
-            {/* GitHub */}
-            <a
-              href="https://github.com/shoaibrayeen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-gray-50 to-slate-50 dark:from-slate-800 dark:to-slate-700 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105"
-            >
-              <div className="w-16 h-16 bg-gray-100 dark:bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gray-200 dark:group-hover:bg-slate-600 transition-colors duration-300">
-                <Github size={32} className="text-gray-600 dark:text-gray-300" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2">GitHub</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">@shoaibrayeen</p>
-            </a>
           </div>
         </div>
       </div>

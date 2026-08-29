@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Hero from "@/components/Hero";
 
@@ -23,14 +23,18 @@ afterEach(() => {
 });
 
 describe("Hero section", () => {
-  it("renders the name headline and role title", () => {
+  it("renders the split-hero headline, name and role eyebrow", () => {
     render(<Hero />);
     expect(
-      screen.getByRole("heading", { level: 1, name: "Mohd Shoaib Rayeen" })
+      screen.getByRole("heading", {
+        level: 1,
+        name: /backend systems, gen ai in production\./i,
+      })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 2, name: "Technical Lead I" })
+      screen.getByRole("heading", { level: 2, name: "Mohd Shoaib Rayeen" })
     ).toBeInTheDocument();
+    expect(screen.getByText("Technical Lead I · 6+ Years")).toBeInTheDocument();
   });
 
   it("renders the summary blurb", () => {
@@ -45,8 +49,10 @@ describe("Hero section", () => {
 
   it("renders all 9 tech-stack badges", () => {
     render(<Hero />);
+    // Scope to the pills row: "Gen AI" also appears inside the headline.
+    const pillsRow = screen.getByText("Java").parentElement as HTMLElement;
     for (const tech of TECH_BADGES) {
-      expect(screen.getByText(tech)).toBeInTheDocument();
+      expect(within(pillsRow).getByText(tech)).toBeInTheDocument();
     }
   });
 
@@ -54,6 +60,25 @@ describe("Hero section", () => {
     render(<Hero />);
     const img = screen.getByRole("img", { name: "Mohd Shoaib Rayeen" });
     expect(img).toHaveAttribute("src", "/profile.png");
+    // Portrait size: w-52 on mobile, w-64 from md up.
+    expect(img.className).toContain("w-52");
+    expect(img.className).toContain("md:w-64");
+  });
+
+  it("lays intro and portrait out as a two-column split on large screens", () => {
+    const { container } = render(<Hero />);
+    const grid = container.querySelector("section#home .grid");
+    expect(grid).not.toBeNull();
+    expect(grid!.className).toContain("lg:grid-cols-[1.2fr_0.8fr]");
+  });
+
+  it("renders the portrait card's proof-point chips and domain caption", () => {
+    render(<Hero />);
+    expect(screen.getByText("6+ years")).toBeInTheDocument();
+    expect(screen.getByText("backend & AI systems")).toBeInTheDocument();
+    expect(screen.getByText("Gen AI · RAG · MCP")).toBeInTheDocument();
+    expect(screen.getByText("in production")).toBeInTheDocument();
+    expect(screen.getByText("Legal-tech · Fintech · Real Estate")).toBeInTheDocument();
   });
 
   it("scrolls to the projects section when 'View My Work' is clicked", async () => {
@@ -134,13 +159,13 @@ describe("Hero section", () => {
     expect(document.body.contains(appendedAnchor!)).toBe(false);
   });
 
-  it("carries dark-theme variant classes on the backdrop and headline", () => {
+  it("carries dark-theme variant classes on the backdrop and name heading", () => {
     const { container } = render(<Hero />);
     const backdrop = container.querySelector("section#home > div");
     expect(backdrop).not.toBeNull();
     expect(backdrop!.className).toContain("dark:via-slate-900");
     expect(
-      screen.getByRole("heading", { level: 1, name: "Mohd Shoaib Rayeen" }).className
+      screen.getByRole("heading", { level: 2, name: "Mohd Shoaib Rayeen" }).className
     ).toContain("dark:from-teal-400");
   });
 });

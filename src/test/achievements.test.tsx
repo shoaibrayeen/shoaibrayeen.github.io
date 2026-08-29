@@ -113,7 +113,8 @@ describe("Achievements section", () => {
     expect(container.querySelector("section#achievements")!.className).toContain(
       "dark:from-slate-950"
     );
-    const cards = container.querySelectorAll("section#achievements .grid > div");
+    // The three white content cards (the rail's stat tiles are tinted, not white).
+    const cards = container.querySelectorAll("section#achievements .grid .grid > div.bg-white");
     expect(cards).toHaveLength(3);
     for (const card of Array.from(cards)) {
       expect(card.className).toContain("dark:bg-slate-800");

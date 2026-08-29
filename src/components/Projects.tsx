@@ -1,4 +1,6 @@
 
+import SectionHeader from './SectionHeader';
+
 const Projects = () => {
   const projects = [
     {
@@ -61,16 +63,30 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-950 dark:to-teal-950/50">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
-            Featured Projects
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A showcase of scalable systems, AI integrations, and distributed computing solutions I've built.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[0.35fr_0.65fr] gap-12 lg:gap-16 items-start">
+          <SectionHeader
+            eyebrow="Selected Work"
+            title="Featured Projects"
+            lead="A showcase of scalable systems, AI integrations, and distributed computing solutions I've built."
+          >
+            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
+              <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
+                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">{projects.length}</div>
+                <div className="text-gray-600 dark:text-gray-400">Featured Builds</div>
+              </div>
+              <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
+                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">3</div>
+                <div className="text-gray-600 dark:text-gray-400">Industries</div>
+              </div>
+            </div>
+            <div className="mt-4 max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                From enterprise Gen AI pipelines and payment gateways to personal builds.
+              </p>
+            </div>
+          </SectionHeader>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -98,6 +114,7 @@ const Projects = () => {
               <div className="h-1 bg-gradient-to-r from-teal-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

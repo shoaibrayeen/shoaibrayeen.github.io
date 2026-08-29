@@ -7,6 +7,7 @@ const categoryTitles = [
   "Frameworks",
   "AI & Machine Learning",
   "LLM Inference APIs",
+  "Coding Assistance",
   "Vector Databases",
   "Databases",
   "Messaging & Caching",
@@ -41,12 +42,12 @@ describe("Skills section", () => {
     ).toBeInTheDocument();
   });
 
-  it("renders all 11 skill category titles as headings and no unexpected extras", () => {
+  it("renders all 12 skill category titles as headings and no unexpected extras", () => {
     render(<Skills />);
     for (const title of categoryTitles) {
       expect(screen.getByRole("heading", { level: 3, name: title })).toBeInTheDocument();
     }
-    // The only level-3 headings are the 11 categories plus "Core Competencies".
+    // The only level-3 headings are the 12 categories plus "Core Competencies".
     expect(screen.getAllByRole("heading", { level: 3 })).toHaveLength(
       categoryTitles.length + 1
     );
@@ -59,6 +60,7 @@ describe("Skills section", () => {
       ["Frameworks", "Spring Boot"],
       ["AI & Machine Learning", "Retrieval-Augmented Generation (RAG)"],
       ["LLM Inference APIs", "Claude (Anthropic)"],
+      ["Coding Assistance", "Cursor"],
       ["Vector Databases", "Qdrant"],
       ["Databases", "PostgreSQL"],
       ["Messaging & Caching", "Apache Kafka"],
@@ -81,12 +83,20 @@ describe("Skills section", () => {
     }
   });
 
-  it("renders the Core Competencies heading and all nine competency badges", () => {
+  it("renders the Core Competencies heading and all fourteen competency badges", () => {
     render(<Skills />);
-    expect(
-      screen.getByRole("heading", { level: 3, name: /core competencies/i })
-    ).toBeInTheDocument();
+    const heading = screen.getByRole("heading", { level: 3, name: /core competencies/i });
+    // Scope to the competencies block: names like Java, Spring Boot and
+    // MongoDB also exist as badges inside category cards.
+    const block = heading.parentElement as HTMLElement;
     const competencies = [
+      "Java",
+      "Spring Boot",
+      "GoLang",
+      "MongoDB",
+      "LLM",
+      "Prompts",
+      "Scalable Systems",
       "Distributed Systems",
       "Microservices Architecture",
       "RESTful API Design",
@@ -94,12 +104,14 @@ describe("Skills section", () => {
       "Event-Driven Architecture",
       "System Design",
       "Agile & Scrum",
-      "Cloud Computing",
-      "Leadership",
     ];
     for (const competency of competencies) {
-      expect(screen.getByText(competency)).toBeInTheDocument();
+      expect(within(block).getByText(competency)).toBeInTheDocument();
     }
+    // Dropped from the competency list (Leadership still exists in the
+    // Achievements section, but must not render here).
+    expect(within(block).queryByText("Cloud Computing")).toBeNull();
+    expect(within(block).queryByText("Leadership")).toBeNull();
   });
 
   it("carries dark-theme classes on the section and skill chips", () => {
@@ -107,7 +119,8 @@ describe("Skills section", () => {
     expect(container.querySelector("section#skills")!.className).toContain(
       "dark:bg-slate-900"
     );
-    const chip = screen.getByText("Java");
+    // Scope to the category card — "Java" is also a competency badge in the rail.
+    const chip = within(getCategoryCard("Programming Languages")).getByText("Java");
     expect(chip.className).toContain("dark:bg-teal-900");
     expect(chip.className).toContain("dark:text-teal-300");
   });

@@ -95,15 +95,16 @@ describe("Contact section", () => {
     expect(screen.queryByRole("button", { name: /start a conversation/i })).toBeNull();
   });
 
-  it("puts the collaborate card above the direct-channel cards", () => {
+  it("keeps the direct channels in the rail, before the collaborate card", () => {
     render(<Contact />);
 
     const collaborate = screen.getByRole("heading", { name: /ready to collaborate/i });
     const linkedin = screen.getByRole("link", { name: /linkedin/i });
 
-    // DOCUMENT_POSITION_FOLLOWING: the LinkedIn card comes after the heading.
+    // The rail (channel cards) comes first in the DOM; the collaborate/form
+    // card fills the main column after it.
     expect(
-      collaborate.compareDocumentPosition(linkedin) & Node.DOCUMENT_POSITION_FOLLOWING
+      linkedin.compareDocumentPosition(collaborate) & Node.DOCUMENT_POSITION_FOLLOWING
     ).toBeTruthy();
   });
 

@@ -1,4 +1,6 @@
 
+import SectionHeader from './SectionHeader';
+
 const Experience = () => {
 
   const experiences = [
@@ -99,52 +101,55 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-teal-50 dark:from-slate-950 dark:to-teal-950/50">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
-            Experience
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            My professional journey building scalable systems and AI-driven solutions.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[0.35fr_0.65fr] gap-12 lg:gap-16 items-start">
+          <SectionHeader
+            eyebrow="Career"
+            title="Experience"
+            lead="My professional journey building scalable systems and AI-driven solutions."
+          >
+            {/* Role history: companies, titles, durations and promotions live in
+                the rail; the matching highlight cards sit in the right column. */}
+            <div className="mt-10 space-y-8 text-left max-w-md mx-auto lg:mx-0">
+              {experiences.map((exp, index) => (
+                <div key={index} className="relative pl-6">
+                  <div className="absolute left-0 top-1.5 w-3 h-3 bg-teal-600 dark:bg-teal-400 rounded-full border-2 border-white dark:border-slate-900 shadow"></div>
+                  {index !== experiences.length - 1 && (
+                    <div className="absolute left-[5px] top-6 -bottom-8 w-px bg-teal-200 dark:bg-teal-800"></div>
+                  )}
 
-        <div className="max-w-4xl mx-auto">
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative mb-12 last:mb-0">
-              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 ml-8 relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-12 top-8 w-4 h-4 bg-teal-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg"></div>
-                
-                {/* Timeline line */}
-                {index !== experiences.length - 1 && (
-                  <div className="absolute -left-10 top-12 w-px h-24 bg-teal-200 dark:bg-teal-800"></div>
-                )}
+                  <h3 className="text-lg font-bold text-teal-600 dark:text-teal-400 mb-3">{exp.company}</h3>
 
-                <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-teal-600 dark:text-teal-400 mb-2">{exp.company}</h3>
-                  
                   {exp.positions ? (
                     <div className="space-y-4">
                       {exp.positions.map((pos, posIndex) => (
-                        <div key={posIndex} className="border-l-4 border-teal-200 dark:border-teal-800 pl-4">
-                          <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{pos.title}</h4>
-                            <span className="text-gray-500 dark:text-gray-400 font-medium">{pos.duration}</span>
+                        <div key={posIndex} className="border-l-2 border-teal-200 dark:border-teal-800 pl-3">
+                          <div>
+                            <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{pos.title}</h4>
+                            <span className="text-xs font-medium text-gray-500 dark:text-gray-400">{pos.duration}</span>
                           </div>
                           {pos.promotion && (
-                            <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium mb-2">{pos.promotion}</p>
+                            <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium mt-1">{pos.promotion}</p>
                           )}
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                      <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-100">{exp.position}</h4>
-                      <span className="text-gray-500 dark:text-gray-400 font-medium">{exp.duration}</span>
+                    <div className="border-l-2 border-teal-200 dark:border-teal-800 pl-3">
+                      <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{exp.position}</h4>
+                      <span className="text-xs font-medium text-gray-500 dark:text-gray-400">{exp.duration}</span>
                     </div>
                   )}
                 </div>
+              ))}
+            </div>
+          </SectionHeader>
 
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <div key={index} className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-teal-600 dark:text-teal-400 mb-4">
+                  {exp.company} · Highlights
+                </p>
                 <div className="space-y-2">
                   {exp.achievements.map((achievement, idx) => (
                     <div key={idx} className="flex items-start space-x-2">
@@ -158,8 +163,8 @@ const Experience = () => {
                   ))}
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

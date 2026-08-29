@@ -36,16 +36,17 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
     │   └── NotFound.tsx        # branded 404 page (teal/cyan, requested-path echo, home/back CTAs, mailto)
     ├── components/             # one component per portfolio section (content lives inside each)
     │   ├── Header.tsx          # fixed top nav, scroll-blur effect, theme toggle, mobile hamburger
-    │   ├── Hero.tsx            # #home — profile, headline, CTAs, resume download (Google Drive)
+    │   ├── Hero.tsx            # #home — split hero: eyebrow/headline/name/bio/CTAs/stack left, photo card + proof chips right; resume download (Google Drive)
     │   ├── About.tsx           # #about — bio, stat cards, 3 expertise cards  ← source of truth for cinema-hub's About Me
-    │   ├── Experience.tsx      # #experience — experiences[] timeline (Sirion ×4 roles, Airtel, PropTiger)
-    │   ├── Skills.tsx          # #skills — skillCategories[] (11 categories) + competency badges
+    │   ├── Experience.tsx      # #experience — experiences[]: role history (durations/promotions) in the rail, per-company highlight cards right
+    │   ├── Skills.tsx          # #skills — skillCategories[] (12 categories); Core Competencies badges in the rail
     │   ├── Projects.tsx        # #projects — projects[] (11 featured project cards)
     │   ├── Education.tsx       # #education — education[] (MCA, B.Sc.)
-    │   ├── Contact.tsx         # #contact — "Ready to Collaborate?" card (invite + form → Web3Forms API), then LinkedIn/email/GitHub cards
+    │   ├── Contact.tsx         # #contact — "Ready to Collaborate?" card (invite + form → Web3Forms API); LinkedIn/email/GitHub channel cards in the rail
     │   ├── Achievements.tsx    # #achievements — awards / certifications / leadership arrays
     │   ├── Hobbies.tsx         # #hobbies — hobbies[] (6 cards); Cinema card links out to cinema-hub
     │   ├── Footer.tsx          # fixed bottom copyright bar
+    │   ├── SectionHeader.tsx   # shared sticky rail (eyebrow + gradient title + lead) used by every section's split layout
     │   ├── ThemeToggle.tsx     # sun/moon light↔dark switch (next-themes useTheme), rendered in Header
     │   ├── ResumeSection.tsx   # UNUSED — commented out of Index; resume DL lives in Hero
     │   └── ui/                 # ~47 shadcn/ui primitives (generated; only a few used)
@@ -58,6 +59,8 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 
 `Index.tsx` renders every section in a fixed order (Header → Hero → About → Experience → Skills → Projects → Education → Contact → Achievements → Hobbies → Footer) with a fade-in on mount. **Navigation is smooth-scroll to section `id`s** (`scrollIntoView`), not routing — the router only distinguishes `/` from the 404 fallback.
 
+**Split layout (site-wide UX).** The Hero splits `lg:grid-cols-[1.2fr_0.8fr]` — intro/CTAs/stack left, photo card with proof chips right. Every other section splits `lg:grid-cols-[0.35fr_0.65fr]`: a sticky `SectionHeader` rail (eyebrow + gradient title + accent bar + optional lead) on the left, the section's content on the right. Each rail carries a section summary so it never reads as empty: About and Projects/Education/Achievements park stat tiles there, Skills its Core Competencies badges, Hobbies a decorative icon strip, Contact the LinkedIn/email/GitHub channel cards (the form fills the main column), and Experience the full role history — companies, titles, durations, promotions as a timeline — while the right column holds per-company highlight cards. Below `lg` everything stacks (rail first, centered). `src/test/split-layout.test.tsx` asserts the pattern per section.
+
 **All content is hardcoded inside each section component** as local data arrays (`experiences[]`, `skillCategories[]`, `projects[]`, `education[]`, `achievements[]`, `hobbies[]`) or inline JSX (Hero, About). There is no shared data file — to edit portfolio content, edit the owning component. No props flow between sections; each is self-contained.
 
 ### External integrations (the only network calls)
@@ -66,7 +69,7 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 |---|---|---|
 | **Web3Forms** | `Contact.tsx` | `POST https://api.web3forms.com/submit` with access key from `import.meta.env.VITE_WEB3FORMS_ACCESS_KEY` (GitHub Actions secret in CI, `.env.local` locally), whitespace-stripped (`/\s/g`) so a newline pasted into the secret can't produce an invalid-UUID rejection; honeypot spam field; sonner toast feedback; `isSubmitting` state |
 | **Google Drive** | `Hero.tsx` | Direct-download link for `Mohd_Shoaib_Rayeen_Resume.pdf` via temporary `<a>` element |
-| **Social links** | `Contact.tsx`, `Hero.tsx` | LinkedIn, GitHub, mailto |
+| **Social links** | `Contact.tsx` | LinkedIn, GitHub, mailto |
 | **cinema-hub** | `Hobbies.tsx` | "Explore my Cinema Hub" link on the Cinema Enthusiast card → https://shoaibrayeen.github.io/cinema-hub/ (new tab, noopener) |
 
 ## Routing & deep links
@@ -116,7 +119,6 @@ Vitest + jsdom + Testing Library (`vitest.config.ts`, `src/test/setup.ts` — mo
 
 ## Known gaps (accepted, documented for maintainers)
 
-- `Hero.tsx` uses `animate-fade-in` / `animate-fade-in-delay-*` classes that are **not defined** in `tailwind.config.ts` — those entrance animations silently don't run.
 - `ResumeSection.tsx` is dead code (commented out of Index); the resume button lives in Hero.
 - Many installed deps are unused (recharts, embla-carousel, most shadcn primitives, react-query is mounted but fetches nothing).
 - TypeScript runs in loose mode (`strict: false`, `noImplicitAny: false`).

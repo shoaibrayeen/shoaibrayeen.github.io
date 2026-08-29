@@ -10,7 +10,7 @@ const renderAt = (path: string) => {
 describe("routing", () => {
   it("renders the portfolio page at /", () => {
     renderAt("/");
-    // Both the Header logo and the Hero headline are h1s with the same name
+    // The Header logo is an h1 with the owner's name (the Hero h1 is the value-prop headline)
     expect(
       screen.getAllByRole("heading", { level: 1, name: /mohd shoaib rayeen/i }).length
     ).toBeGreaterThanOrEqual(1);

@@ -1,3 +1,5 @@
+import SectionHeader from './SectionHeader';
+
 const Education = () => {
   const education = [
     {
@@ -28,16 +30,25 @@ const Education = () => {
   return (
     <section id="education" className="py-20 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-cyan-600 dark:from-teal-400 dark:to-cyan-400 bg-clip-text text-transparent">
-            Education
-          </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Academic foundation that shaped my technical expertise and problem-solving approach.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[0.35fr_0.65fr] gap-12 lg:gap-16 items-start">
+          <SectionHeader
+            eyebrow="Foundations"
+            title="Education"
+            lead="Academic foundation that shaped my technical expertise and problem-solving approach."
+          >
+            <div className="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 mt-8">
+              <div className="text-center p-4 bg-teal-50 dark:bg-teal-950 rounded-lg">
+                <div className="text-2xl font-bold text-teal-600 dark:text-teal-400">{education.length}</div>
+                <div className="text-gray-600 dark:text-gray-400">Degrees</div>
+              </div>
+              <div className="text-center p-4 bg-cyan-50 dark:bg-cyan-950 rounded-lg">
+                <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">2014–2020</div>
+                <div className="text-gray-600 dark:text-gray-400">University of Delhi</div>
+              </div>
+            </div>
+          </SectionHeader>
 
-        <div className="max-w-4xl mx-auto space-y-8">
+          <div className="space-y-8">
           {education.map((edu, index) => (
             <div key={index} className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="flex flex-col md:flex-row md:items-center justify-between">
@@ -57,6 +68,7 @@ const Education = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>

@@ -75,11 +75,11 @@ describe("Experience section", () => {
     );
   });
 
-  it("shows the Airtel Africa and PropTiger roles with their date ranges in the right cards", () => {
+  it("shows the Airtel Africa and PropTiger roles with their date ranges in the rail role history", () => {
     render(<Experience />);
 
     // "Software Engineer" also exists as a Sirion position, so scope by the
-    // unique duration and confirm the surrounding card names the company.
+    // unique duration and confirm the surrounding company block names the company.
     const airtelRow = screen.getByText("Aug 2020 - Aug 2021").parentElement!;
     expect(within(airtelRow).getByRole("heading", { name: "Software Engineer" })).toBeInTheDocument();
     expect(airtelRow.parentElement).toHaveTextContent("Airtel Africa");
