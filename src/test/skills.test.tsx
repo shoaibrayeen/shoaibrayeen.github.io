@@ -66,6 +66,7 @@ describe("Skills section", () => {
       ["Messaging & Caching", "Apache Kafka"],
       ["Cloud Platforms", "AWS"],
       ["DevOps & CI/CD", "Docker"],
+      ["DevOps & CI/CD", "CI/CD"],
       ["Monitoring & Observability", "Grafana"],
       ["Testing", "JUnit"],
     ];

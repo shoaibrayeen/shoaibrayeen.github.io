@@ -23,7 +23,7 @@
 
 - **Every code change must add or update test cases covering it, in the same commit.** New sections/components need at least a render test; content changes to contract-covered sections (About) need assertion updates.
 - Tests live in `src/test/` (Vitest + Testing Library + jsdom; config in `vitest.config.ts`, browser-API mocks in `src/test/setup.ts`). One suite per component/page/hook/util — notable contracts: `about.test.tsx` (About content — the cross-repo contract), `hobbies.test.tsx` (cinema-hub link), `app.test.tsx` (routing + 404 fallback).
-- Run `npm test` before handing work over. CI runs the suite on every push to `master_revamp` and a failure blocks deployment.
+- Run `npm test` before handing work over — the local run is the real gate. CI runs the suite on every push to `master_revamp` in a separate `Tests` workflow (`.github/workflows/test.yml`) that does **not** block deployment (Actions runners proved slow enough to flake UI-interaction tests); treat a red Tests run as a signal to investigate, not a blocked release.
 
 ## About Me is the source of truth for cinema-hub (cross-repo)
 

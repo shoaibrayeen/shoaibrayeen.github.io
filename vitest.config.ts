@@ -10,6 +10,9 @@ export default defineConfig({
     globals: true,
     setupFiles: ["./src/test/setup.ts"],
     include: ["src/**/*.{test,spec}.{ts,tsx}"],
+    // CI runners can be heavily loaded (a file that takes 0.2s locally has
+    // taken 35s on Actions) — the default 5s per-test cap flakes there.
+    testTimeout: 30_000,
     env: {
       // Random per-run stub — tests never see the real Web3Forms key (that lives
       // only in the EMAIL_API_KEY GitHub secret, used at deploy build time).

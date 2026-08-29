@@ -50,7 +50,7 @@ const Skills = () => {
     },
     {
       title: 'DevOps & CI/CD',
-      skills: ['Docker', 'Jenkins', 'GitHub Actions', 'SonarQube', 'Bitbucket', 'Keycloak'],
+      skills: ['CI/CD', 'Docker', 'Jenkins', 'GitHub Actions', 'SonarQube', 'Bitbucket', 'Keycloak'],
       color: 'bg-indigo-500'
     },
     {

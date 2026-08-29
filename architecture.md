@@ -18,6 +18,7 @@ A fully static single-page portfolio: one scrolling page composed of self-contai
 ├── vite.config.ts              # default base "/" (user site), @ → src alias, dev port 8080
 ├── .env.example                # template for .env.local (VITE_WEB3FORMS_ACCESS_KEY — contact-form key)
 ├── .github/workflows/deploy.yml  # CI/CD — triggers on master_revamp (NOT master); maps EMAIL_API_KEY secret → build env
+├── .github/workflows/test.yml    # Tests — Vitest suite on every master_revamp push, parallel to deploy, non-blocking
 ├── MIGRATION.md                # historical: Jekyll → React migration notes
 ├── public/
 │   ├── 404.html                # spa-github-pages redirect (pathSegmentsToKeep = 0) + branded "redirecting" splash
@@ -93,13 +94,14 @@ Tailwind utility-first with HSL design tokens in `src/index.css`. Brand palette:
 ⚠️ **Deploys trigger on `master_revamp`** — the repo's default branch on origin is `master`, but pushing `master` does **not** deploy. [deploy.yml](.github/workflows/deploy.yml):
 
 ```
-push to master_revamp → checkout → setup-node 24 → npm install → npm test
-                      → npm run build (env: VITE_WEB3FORMS_ACCESS_KEY ← EMAIL_API_KEY repo secret)
-                      → configure-pages → upload dist/ → deploy-pages
+push to master_revamp ─┬→ deploy.yml: checkout → setup-node 24 → npm install
+                       │             → npm run build (env: VITE_WEB3FORMS_ACCESS_KEY ← EMAIL_API_KEY repo secret)
+                       │             → configure-pages → upload dist/ → deploy-pages
+                       └→ test.yml:   checkout → setup-node 24 → npm install → npm test   (parallel, non-blocking)
 ```
 
 - **No lockfile is committed** (no package-lock.json/bun.lockb) and CI uses `npm install`, so dependencies re-resolve on every deploy.
-- **Tests gate the deploy** — a red suite blocks publishing.
+- **Tests do NOT gate the deploy** — they run in the parallel `Tests` workflow ([test.yml](.github/workflows/test.yml)); a red run is an investigation signal, not a blocked release. Local `npm test` before pushing is the real gate (Actions runners proved slow enough to time out UI-interaction tests; `vitest.config.ts` sets `testTimeout: 30_000` to absorb that).
 - **Build-time secret:** the Web3Forms access key is not in the source — the build step maps the **`EMAIL_API_KEY`** repo secret (Settings → Secrets and variables → Actions) onto the `VITE_WEB3FORMS_ACCESS_KEY` env var (Vite only exposes `VITE_`-prefixed vars to client code) and **fails the workflow if it's missing** rather than deploying a broken contact form. The real key exists **only** in that secret — `.env.local` (gitignored; template in `.env.example`) holds a placeholder so local dev builds run (local form submissions are rejected by Web3Forms unless the real key is pasted in temporarily), and tests use a random per-run stub (`vitest.config.ts` `test.env`). Being a Vite `VITE_`-prefixed var, it is still embedded in the built JS bundle — Web3Forms keys are public-facing by design; the secret keeps it out of the repo source, not out of the shipped site. **Whitespace hardening:** GitHub stores secret values verbatim, so a key pasted with an embedded newline/CR (or a trailing `\n` from `echo`) would be baked in as-is and rejected by Web3Forms as an invalid UUID. Both layers strip it defensively — the build step runs the value through `tr -d '[:space:]'`, and `Contact.tsx` applies `.replace(/\s/g, '')` at load — so a dirty secret can no longer break the form.
 - Vite outputs `dist/` with root-relative asset URLs; `404.html`, `.nojekyll`, `profile.png`, `robots.txt` copy over from `public/`.
 - Live URL: https://shoaibrayeen.github.io/ (also the source of truth for the About Me card in the cinema-hub repo).

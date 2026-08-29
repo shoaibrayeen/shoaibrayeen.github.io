@@ -1,0 +1,30 @@
+name: Tests
+
+# Runs the Vitest suite on every push to master_revamp, in parallel with the
+# deploy workflow. Deliberately NOT a deploy gate: a red run here is a signal
+# to investigate, not a blocked release (see CLAUDE.md → Tests required).
+on:
+  push:
+    branches: [master_revamp]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test
+        run: npm test

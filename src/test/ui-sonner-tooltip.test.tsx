@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { act, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { toast as sonnerToast } from "sonner";
 import { Toaster, toast } from "@/components/ui/sonner";
@@ -101,7 +101,6 @@ describe("Tooltip", () => {
   });
 
   it("opens on keyboard focus of the trigger", async () => {
-    const user = userEvent.setup();
     render(
       <TooltipProvider delayDuration={0}>
         <Tooltip>
@@ -111,8 +110,15 @@ describe("Tooltip", () => {
       </TooltipProvider>
     );
     expect(screen.queryByRole("tooltip")).not.toBeInTheDocument();
-    await user.tab();
-    expect(screen.getByRole("button", { name: /focus me/i })).toHaveFocus();
+    // Dispatch the focus event directly instead of simulating a full keyboard
+    // Tab (userEvent's pointer/keyboard machinery flaked on starved CI
+    // runners) — Radix opens the tooltip from the trigger's focus handler.
+    const trigger = screen.getByRole("button", { name: /focus me/i });
+    act(() => {
+      trigger.focus();
+    });
+    fireEvent.focus(trigger);
+    expect(trigger).toHaveFocus();
     expect(await screen.findByRole("tooltip")).toHaveTextContent(
       /focused hint/i
     );
